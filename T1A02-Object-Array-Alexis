@@ -1,0 +1,29 @@
+<h2 align=center> try to seperate complex object array by alexis<br>
+open debug wimdow crl-shift-i <br> </h2>
+
+<br>
+<input id="myInput" type=text size=120 value='{"x":"5", "y":"2", "myArray": [3,7,8]}'><br>
+<input type=button value="show Object" onclick="{
+	
+	//myCoolObject = {'x':'5', 'y':'2', 'myArray': [3,7,8]}
+	myCoolObject  = 
+	
+	JSON.parse(document.getElementById('myInput').value)
+
+//thisTellsItToShowTheVariableORArray
+ document.getElementById('myDiv01').innerHTML = 
+
+//Text
+`This is x: `+
+
+//showArraysXvalue
+ myCoolObject.x +`, this is y: `+ myCoolObject.y + `<br>` +
+
+ `Lets print an Array `+ myCoolObject.myArray + `<br>` +
+
+ `Lets print an Array last number `+ 
+	myCoolObject.myArray[2] + `<br>`
+
+ 
+}"> <br>
+<div id="myDiv01">...</div>
