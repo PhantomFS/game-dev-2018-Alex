@@ -19,4 +19,18 @@ document.getElementById('mydiv01').innerHTML += `x is  ` +x+ `<br>`
 
 }">
 
+<input type=button value="run For Loop" onclick="{
+
+
+document.getElementById('mydiv01').innerHTML = ''
+
+for (let x=0; x >= document.getElementById('myText01').value; x--) {
+
+document.getElementById('mydiv01').innerHTML += `x is  ` +x+ `<br>`
+
+}
+
+}">
+
+
 <div id="mydiv01"></div>
