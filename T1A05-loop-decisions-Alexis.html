@@ -1,0 +1,82 @@
+<input type=text id="myText01" value=500>
+<input type=button value="run For Loop" onclick="{
+
+document.getElementById('mydiv01').innerHTML = ''
+
+for (let x=0; x < document.getElementById('myText01').value; x++) {
+
+document.getElementById('mydiv01').innerHTML += `<b>x is  ` +x+ `</b><br>`
+
+if (x % 2 == 0){ 
+document.getElementById('mydiv01').innerHTML += '<font color=red>divisble by 2</font> <br>'
+}
+
+
+if (x % 3 == 0){ 
+document.getElementById('mydiv01').innerHTML += '<font color=orange> divisible by 3</font> <br>'
+}
+
+
+if (x % 4 == 0){ 
+document.getElementById('mydiv01').innerHTML += '<font color=yellow>divisble by 4</font> <br>'
+}
+
+
+if (x % 5 == 0){ 
+document.getElementById('mydiv01').innerHTML += '<font color=green>divisble by 5</font> <br>'
+}
+
+if (x % 6 == 0){ 
+document.getElementById('mydiv01').innerHTML += '<font color=blue>divisble by 6</font> <br>'
+}
+
+
+if (x % 7 == 0){ 
+document.getElementById('mydiv01').innerHTML += '<font color=purple>divisble by 7</font> <br>'
+}
+
+
+if((x > 3)&&(x < 50)){ 
+document.getElementById('mydiv01').innerHTML += '<font color=brown>boo</font><br>'}
+
+
+
+if((x == 3)||(x == 50)){ 
+document.getElementById('mydiv01').innerHTML += '<font color=grey>Spook</font><br>'}	
+	
+	
+
+
+
+if (x != 420){ 
+document.getElementById('mydiv01').innerHTML += '<h6>uncool</h6> <br>'
+}
+
+if ((x == 420)&&(x == 321)){ 
+document.getElementById('mydiv01').innerHTML += '<h2>cool</h2><br> '
+}
+
+}
+}">
+
+
+
+
+<input type=button value="run For negative Loop" onclick="{
+
+
+document.getElementById('mydiv01').innerHTML = ''
+
+for (let x=document.getElementById('mydiv01').innerHTML; x >= document.getElementById('myText01').value; x--) {
+
+document.getElementById('mydiv01').innerHTML += `x is  ` +x+ `<br>`
+
+}
+
+
+
+}">
+
+
+
+<div id="mydiv01"></div>
