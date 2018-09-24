@@ -48,11 +48,11 @@ document.getElementById('mydiv01').innerHTML += '<font color=grey>Spook</font><b
 
 
 
-if (x != 420){ 
+if ((x != 420)&&(x != 96)&&(x != 9)){ 
 document.getElementById('mydiv01').innerHTML += '<h6>uncool</h6> <br>'
 }
 
-if ((x == 420)&&(x == 321)){ 
+else {
 document.getElementById('mydiv01').innerHTML += '<h2>cool</h2><br> '
 }
 
@@ -62,20 +62,7 @@ document.getElementById('mydiv01').innerHTML += '<h2>cool</h2><br> '
 
 
 
-<input type=button value="run For negative Loop" onclick="{
 
-
-document.getElementById('mydiv01').innerHTML = ''
-
-for (let x=document.getElementById('mydiv01').innerHTML; x >= document.getElementById('myText01').value; x--) {
-
-document.getElementById('mydiv01').innerHTML += `x is  ` +x+ `<br>`
-
-}
-
-
-
-}">
 
 
 
