@@ -1,3 +1,6 @@
+
+<p align=center>
+
 <input type=text id="myText01" value=500>
 <input type=button value="run For Loop" onclick="{
 
@@ -53,32 +56,52 @@ document.getElementById('mydiv01').innerHTML += '<h6>uncool</h6> <br>'
 }
 
 else {
-document.getElementById('mydiv01').innerHTML += '<h2>cool</h2><br> '
+document.getElementById('mydiv01').innerHTML += '<h2>cool</h2> <img width=50 height=50 src=https://openclipart.org/image/2400px/svg_to_png/184718/Cool.png><br> '
 }
 
+
+
 if ((x == 10)&&(x == 345)){ 
-document.getElementById('mydiv01').innerHTML += 'Some Random Nmber<br>'
+document.getElementById('mydiv01').innerHTML += 'Some Random Number<br>'
 }
 
 else {
 document.getElementById('mydiv01').innerHTML += 'Random<br> '
 }
 
+
+
+
+
+
+
 }
 
-if (document.getElementById('myText01').value == 500){ 
-alert('bruh why tho')
+
+
+if ((document.getElementById('myText01').value == 10)||(document.getElementById('myText01').value == 500)){ 
+ 
+ document.getElementById('mydiv02').innerHTML = 'bruh why tho'
+ 
+}
+
+else {
+
+document.getElementById('mydiv02').innerHTML = 'meh.... I guess.'
+
 
 }
+
+
+
 }">
 
 
+<div align=right id="mydiv02">...</div>
 
 
 
 
 
-
-<div id="mydiv01"></div>
-
-
+<div align=left id="mydiv01"></div>
+</p>
