@@ -1,3 +1,34 @@
+<h2 align=center> Function BY Alexis </h2>
+
+<input type=text id="myText01" value=3>
+
+<select id="myOp">
+	<option value="1"> +</option>
+	<option value="2"> -</option>
+	<option value="3"> *</option>
+	<option value="4"> / </option>
+	<option value="5"> <superscript>2</superscript> </option>
+	
+</select>
+<input type=text id="myText02" value=3>
+
+
+
+<br>
+
+<input type=button value="Calculate" onclick="{
+
+
+
+
+function myPlus(){
+
+document.getElementById('myDiv01').innerHTML = +document.getElementById('myText01').value+ ` + ` +document.getElementById('myText02').value+ ` = ` +
+	document.getElementById('myText01').value +
+document.getElementById('myText02').value
+
+}
+
 function mySubtract(){
 
 document.getElementById('myDiv01').innerHTML = +document.getElementById('myText01').value+ ` - ` +document.getElementById('myText02').value+ ` = ` +
