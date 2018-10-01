@@ -1,0 +1,42 @@
+<h3 align=center> my moving Image by Alexis </h3>
+
+
+
+<img id="myImg01" width=40 src="https://i.gifer.com/JUl.gif" style="position:absolute; left:600px; top:200px">
+<img id="myImg02" width=90 src="https://33.media.tumblr.com/17ffd65788d459e6591e5aade7a5b24d/tumblr_nwr7rtfzyt1ske259o1_500.gif" style="position:absolute; left:500px; top:200px">
+
+
+<table id="myTable"><tr><td>
+
+<input type=button value="Up" onclick="{
+
+document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 10 +'px'
+
+}"> </tr></td>
+	<tr><td>
+<input type=button value="Right" onclick="{
+document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 +'px'
+
+}">
+
+</td>
+<td>
+
+
+<input type=button value="Left" onclick="{
+document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 10 +'px'
+
+}">
+</tr></td>
+<tr><td>
+
+<input type=button value="Down" onclick="{
+document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 +'px'
+
+}">
+
+
+</td></tr>
+
+</table>
+ 
