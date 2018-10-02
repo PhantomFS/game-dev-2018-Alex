@@ -1,9 +1,82 @@
-<h3 align=center> my moving Image by Alexis </h3>
+<h3 align=center> My Moving Image by Alexis </h3>
+<script type="text/javascript">
 
 
 
-<img id="myImg01" width=40 src="https://i.gifer.com/JUl.gif" style="position:absolute; left:600px; top:200px">
-<img id="myImg02" width=90 src="https://33.media.tumblr.com/17ffd65788d459e6591e5aade7a5b24d/tumblr_nwr7rtfzyt1ske259o1_500.gif" style="position:absolute; left:500px; top:200px">
+
+
+
+
+document.onkeydown = checkKey;
+
+function checkKey (myEventA) {
+document.getElementById('myDiv').innerHTML = 'keyCode: '+myEventA.keyCode
+
+
+
+
+
+
+if (myEventA.keyCode == 87){document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) - 10 +'px'     //w up
+document.getElementById('myImg01').style.transform= 'rotate(270deg)'
+
+}
+if (myEventA.keyCode == 65){ document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 10 +'px'  //a left
+document.getElementById('myImg01').style.transform= 'scale(-1:1)'
+
+}
+if (myEventA.keyCode == 68){ document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 +'px'  //d right
+document.getElementById('myImg01').style.transform= 'rotate(0deg)'
+}
+
+if (myEventA.keyCode == 83){document.getElementById('myImg01').style.top = parseInt(document.getElementById('myImg01').style.top) + 10 +'px'     //s down
+document.getElementById('myImg01').style.transform= 'rotate(90deg)'
+
+}
+if (myEventA.keyCode == 38){document.getElementById('myImg02').style.top = parseInt(document.getElementById('myImg02').style.top) - 10 +'px'     //arrow up
+document.getElementById('myImg02').style.transform= 'rotate(270deg)'
+
+}
+if (myEventA.keyCode == 37){ document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) - 10 +'px'  //arrow left
+document.getElementById('myImg02').style.transform= 'rotate(0deg)'
+
+}
+if (myEventA.keyCode == 39){ document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + 10 +'px'  //arrow right
+document.getElementById('myImg02').style.transform= 'rotate(0deg)'
+
+
+}
+if (myEventA.keyCode == 40){document.getElementById('myImg02').style.top = parseInt(document.getElementById('myImg02').style.top) + 10 +'px'    //arrow down
+document.getElementById('myImg02').style.transform= 'rotate(90deg)'
+
+
+}
+
+
+
+if(((document.getElementById('myImg01').style.top == '0px')||(document.getElementById('myImg01').style.left == '0px'))||((document.getElementById('myImg01').style.top == '720px')||(document.getElementById('myImg01').style.left == '1500px'))){
+
+document.getElementById('myImg01').style.top = '200px'
+
+document.getElementById('myImg01').style.left = '600px'}
+
+
+if(((document.getElementById('myImg02').style.top == '0px')||(document.getElementById('myImg02').style.left == '0px'))||((document.getElementById('myImg02').style.top == '720px')||(document.getElementById('myImg02').style.left == '1500px'))){
+
+document.getElementById('myImg02').style.top = '200px'
+
+document.getElementById('myImg02').style.left = '500px'}
+
+}
+
+
+
+
+</script>
+
+
+<img id="myImg01" width=40 src="https://i.gifer.com/JUl.gif" style="position:absolute; left:600px; top:200px; width=50; height:50;">
+<img id="myImg02" width=90 src="https://33.media.tumblr.com/17ffd65788d459e6591e5aade7a5b24d/tumblr_nwr7rtfzyt1ske259o1_500.gif" style="position:absolute; left:500px; top:200px; width=50; height:50;">
 
 
 <table id="myTable"><tr><td>
@@ -38,5 +111,25 @@ document.getElementById('myImg01').style.top = parseInt(document.getElementById(
 
 </td></tr>
 
+<td><tr>
+
+<input type=button value="Reset" onclick="{
+
+document.getElementById('myImg01').style.top = '200px'
+
+document.getElementById('myImg01').style.left = '600px'
+
+document.getElementById('myImg02').style.top = '200px'
+
+document.getElementById('myImg02').style.left = '500px'
+
+}">
+
+</td></tr>
 </table>
- 
+
+<div id="myDiv">..</div>
+
+
+
+
