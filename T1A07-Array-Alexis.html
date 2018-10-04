@@ -1,27 +1,58 @@
 <h2 align=center> 1D Array BY Alexis</h2>
 
-<input type=text id="myText01" value=2>
+//more
+
+
+<input type=text id="myText01" value=3>
 
 <input type=button value="1D Array" onclick="{
 
 
 	myProgramTerms = [] // creates array
 
-myProgramTerms[0] = `variables `
+myProgramTerms[0] = `variables`
 
-myProgramTerms[1] = `decisions `
+myProgramTerms[1] = `decisions`
 
-myProgramTerms[2] = `loops `
+myProgramTerms[2] = `loops`
+
+document.getElementById('myDiv01').innerHTML = ``
 
 //document.getElementById('myDiv01').innerHTML = document.getElementById('myText01').value
 
 for (let myLoop=0; myLoop < 3; myLoop++){
 
-document.getElementById('myDiv01').innerHTML += myProgramTerms [myLoop]
+document.getElementById('myDiv01').innerHTML += myLoop+ `: ` +myProgramTerms[myLoop]
++ `<br>`
 }
 
 
 	}">
 
 
-<div id="myDiv01"></div>
+<input type=button value="1D Array 2.0" onclick="{
+
+
+	myProgramTermsSeven = [] // creates array
+
+myProgramTermsSeven[0] = `One Thing`
+
+myProgramTermsSeven[1] = `Two Thing`
+
+myProgramTermsSeven[2] = `Three Thing`
+
+document.getElementById('myDiv01').innerHTML = ``
+
+//document.getElementById('myDiv01').innerHTML = document.getElementById('myText01').value
+
+for (let myLoop=0; myLoop < 3; myLoop++){
+
+document.getElementById('myDiv01').innerHTML += myLoop+ `: ` +myProgramTermsSeven[myLoop]
++ `<br>`
+}
+
+
+	}">
+
+
+<div id="myDiv01">...</div>
