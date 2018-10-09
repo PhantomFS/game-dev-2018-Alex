@@ -104,12 +104,55 @@ document.getElementById('myImg02').style.transform= 'rotate(0deg)'
 if (myEventA.keyCode == 40){document.getElementById('myImg02').style.top = parseInt(document.getElementById('myImg02').style.top) + 10 +'px'    //arrow down
 document.getElementById('myImg02').style.transform= 'rotate(90deg)'
 }
-if(((document.getElementById('myImg01').style.top == '0px')||(document.getElementById('myImg01').style.left == '0px'))||((document.getElementById('myImg01').style.top == '720px')||(document.getElementById('myImg01').style.left == '1500px'))){
-document.getElementById('myImg01').style.top = '200px'
-document.getElementById('myImg01').style.left = '600px'}
-if(((document.getElementById('myImg02').style.top == '0px')||(document.getElementById('myImg02').style.left == '0px'))||((document.getElementById('myImg02').style.top == '720px')||(document.getElementById('myImg02').style.left == '1500px'))){
-document.getElementById('myImg02').style.top = '200px'
-document.getElementById('myImg02').style.left = '500px'}
+
+
+
+
+if (document.getElementById('myImg01').style.top == '0px'){
+document.getElementById('myImg01').style.top = '720px'
+}
+
+else if (document.getElementById('myImg01').style.top == '720px'){
+document.getElementById('myImg01').style.top = '0px'
+}
+
+else if (document.getElementById('myImg01').style.left == '0px'){
+document.getElementById('myImg01').style.left = '1500px'
+}
+
+else if (document.getElementById('myImg01').style.left == '1500px'){
+document.getElementById('myImg01').style.left = '0px'
+}
+
+
+
+
+
+
+
+
+
+
+if (document.getElementById('myImg02').style.top == '0px'){
+document.getElementById('myImg02').style.top = '720px'
+}
+
+else if (document.getElementById('myImg02').style.top == '720px'){
+document.getElementById('myImg02').style.top = '0px'
+}
+
+else if (document.getElementById('myImg02').style.left == '0px'){
+document.getElementById('myImg02').style.left = '1500px'
+}
+
+else if (document.getElementById('myImg02').style.left == '1500px'){
+document.getElementById('myImg02').style.left = '0px'
+}
+
+
+
+
+
 }
 </script>
 
@@ -142,6 +185,16 @@ document.getElementById('myImg01').style.top = '200px'
 document.getElementById('myImg01').style.left = '600px'
 document.getElementById('myImg02').style.top = '200px'
 document.getElementById('myImg02').style.left = '500px'
+treasureScore = 0
+
+score=0
+
+
+document.getElementById('myDiv1').innerHTML = `BMO Score : ` +score
+
+
+document.getElementById('myDiv2').innerHTML = `Treasure Score : ` +treasureScore
+
 
 }">
 </td><td>
