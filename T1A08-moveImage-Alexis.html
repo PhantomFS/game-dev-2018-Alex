@@ -20,7 +20,9 @@ function myHitOther(my1,my2){
    }
 }
 
+let treasureScore = 0
 
+let score=0
 
 myStart = new Date().getTime()
 
@@ -40,7 +42,21 @@ document.getElementById('myImg01').style.top = '200px'
 document.getElementById('myImg01').style.left = '600px'
 document.getElementById('myImg02').style.top = '200px'
 document.getElementById('myImg02').style.left = '500px'
+
+score = score+1
+
+
+document.getElementById('myDiv1').innerHTML = `BMO Score : ` +score
+
+
+
    }
+
+
+
+
+
+
 
 
 if(myDuration >= 30){
@@ -53,6 +69,10 @@ document.getElementById('myImg01').style.top = '200px'
 document.getElementById('myImg01').style.left = '600px'
 document.getElementById('myImg02').style.top = '200px'
 document.getElementById('myImg02').style.left = '500px'
+
+treasureScore = treasureScore+1
+
+document.getElementById('myDiv2').innerHTML = `Treasure Score : ` +treasureScore
 }
 
 
@@ -147,4 +167,5 @@ document.getElementById('myImg01').style.top = parseInt(document.getElementById(
 
 <div id="myDiv">..</div>
 
-<div id="myDiv1">..</div>
+<div id="myDiv1">0</div>
+<div id="myDiv2">0</div>
