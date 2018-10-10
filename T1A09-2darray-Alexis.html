@@ -1,0 +1,73 @@
+<h2 aligh=center>2D Array by alexis </h2>
+
+
+<input type=text id="myText01" value=3>
+<div id="mydiv01">...</div>
+
+<input type=button id="button" value="Generate 2D array" onclick="{
+
+document.getElementById('mydiv01').innerHTML = ''
+
+
+let myChart = []
+
+myChart[0]= []
+myChart[1]= []
+myChart[2]= []
+
+myChart[0][0] = 3
+myChart[0][1] = 5
+myChart[0][2] = 7
+myChart[1][0] = 4
+myChart[1][1] = 8
+myChart[1][2] = 12
+myChart[2][0] = 2
+myChart[2][1] = 6
+myChart[2][2] = 9
+
+document.getElementById('mydiv01').innerHTML += ` 
+<table id='table' border=1>
+<tr><td>  ${myChart[0][0]} </td><td> ${myChart[0][1]} </td><td> ${myChart[0][2]} </td></tr>
+<tr><td>  ${myChart[1][0]} </td><td> ${myChart[1][1]} </td><td> ${myChart[1][2]} </td></tr>
+<tr><td>  ${myChart[2][0]} </td><td> ${myChart[2][1]} </td><td> ${myChart[2][2]} </td></tr>
+
+
+</table>
+
+`
+
+}">
+
+<input type=button id="button" value="Generate Another 2D array" onclick="{
+
+document.getElementById('mydiv01').innerHTML = ''
+
+
+let myChart2 = []
+
+myChart2[0]= []
+myChart2[1]= []
+myChart2[2]= []
+
+myChart2[0][0] = 4
+myChart2[0][1] = 6
+myChart2[0][2] = 8
+myChart2[1][0] = 5
+myChart2[1][1] = 9
+myChart2[1][2] = 13
+myChart2[2][0] = 3
+myChart2[2][1] = 7
+myChart2[2][2] = 10
+
+document.getElementById('mydiv01').innerHTML += ` 
+<table id='table' border=1>
+<tr><td>  ${myChart2[0][0]} </td><td> ${myChart2[0][1]} </td><td> ${myChart2[0][2]} </td></tr>
+<tr><td>  ${myChart2[1][0]} </td><td> ${myChart2[1][1]} </td><td> ${myChart2[1][2]} </td></tr>
+<tr><td>  ${myChart2[2][0]} </td><td> ${myChart2[2][1]} </td><td> ${myChart2[2][2]} </td></tr>
+
+
+</table>
+
+`
+
+}">
