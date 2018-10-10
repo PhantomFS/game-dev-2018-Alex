@@ -38,6 +38,9 @@ document.getElementById('mydiv01').innerHTML += `
 
 }">
 
+
+
+
 <input type=button id="button" value="Generate Another 2D array" onclick="{
 
 document.getElementById('mydiv01').innerHTML = ''
@@ -65,6 +68,102 @@ document.getElementById('mydiv01').innerHTML += `
 <tr><td>  ${myChart2[1][0]} </td><td> ${myChart2[1][1]} </td><td> ${myChart2[1][2]} </td></tr>
 <tr><td>  ${myChart2[2][0]} </td><td> ${myChart2[2][1]} </td><td> ${myChart2[2][2]} </td></tr>
 
+
+</table>
+
+`
+
+}">
+
+
+
+<input type=button id="button" value="Generate 3D array" onclick="{
+
+document.getElementById('mydiv01').innerHTML = ''
+
+
+let myChart3 = []
+
+myChart3[0]= []
+myChart3[1]= []
+myChart3[2]= []
+
+myChart3[0][0] = []
+myChart3[0][1] = []
+myChart3[0][2] = []
+myChart3[1][0] = []
+myChart3[1][1] = []
+myChart3[1][2] = []
+myChart3[2][0] = []
+myChart3[2][1] = []
+myChart3[2][2] = []
+
+
+myChart3[0][0][0] = 3
+myChart3[0][0][1] = 5
+myChart3[0][0][2] = 7
+myChart3[0][1][0] = 4
+myChart3[0][1][1] = 8
+myChart3[0][1][2] = 12
+myChart3[0][2][0] = 2
+myChart3[0][2][1] = 6
+myChart3[0][2][2] = 9
+
+
+
+myChart3[1][0][0] = 4
+myChart3[1][0][1] = 6
+myChart3[1][0][2] = 8
+myChart3[1][1][0] = 5
+myChart3[1][1][1] = 9
+myChart3[1][1][2] = 13
+myChart3[1][2][0] = 3
+myChart3[1][2][1] = 7
+myChart3[1][2][2] = 10
+
+
+myChart3[2][0][0] = 5 
+myChart3[2][0][1] = 7
+myChart3[2][0][2] = 9
+myChart3[2][1][0] = 6
+myChart3[2][1][1] = 10
+myChart3[2][1][2] = 14
+myChart3[2][2][0] = 4
+myChart3[2][2][1] = 8
+myChart3[2][2][2] = 11
+
+
+document.getElementById('mydiv01').innerHTML += ` 
+<table>
+<tr><td>
+
+<table border=1>
+<tr><td>  ${myChart3[0][0][0]} </td><td> ${myChart3[0][0][1]} </td><td> ${myChart3[0][0][2]} </td></tr>
+<tr><td>  ${myChart3[0][1][0]} </td><td> ${myChart3[0][1][1]} </td><td> ${myChart3[0][1][2]} </td></tr>
+<tr><td>  ${myChart3[0][2][0]} </td><td> ${myChart3[0][2][1]} </td><td> ${myChart3[0][2][2]} </td></tr>
+
+</table>
+</td>
+<td></td>
+<td>
+<table border=1>
+<tr><td>  ${myChart3[1][0][0]} </td><td> ${myChart3[1][0][1]} </td><td> ${myChart3[1][0][2]} </td></tr>
+<tr><td>  ${myChart3[1][1][0]} </td><td> ${myChart3[1][1][1]} </td><td> ${myChart3[1][1][2]} </td></tr>
+<tr><td>  ${myChart3[1][2][0]} </td><td> ${myChart3[1][2][1]} </td><td> ${myChart3[1][2][2]} </td></tr>
+
+</table>
+</td>
+<td></td>
+<td>
+<table border=1>
+<tr><td>  ${myChart3[2][0][0]} </td><td> ${myChart3[2][0][1]} </td><td> ${myChart3[2][0][2]} </td></tr>
+<tr><td>  ${myChart3[2][1][0]} </td><td> ${myChart3[2][1][1]} </td><td> ${myChart3[2][1][2]} </td></tr>
+<tr><td>  ${myChart3[2][2][0]} </td><td> ${myChart3[2][2][1]} </td><td> ${myChart3[2][2][2]} </td></tr>
+
+
+</table>
+
+</td></tr>
 
 </table>
 
