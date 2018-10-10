@@ -1,7 +1,7 @@
 <h2 align=center>2D Array by alexis </h2>
 
 
-<input type=text id="myText01" value=3>
+
 <div id="mydiv01">...</div>
 
 <input type=button id="button" value="Generate 2D array" onclick="{
@@ -170,3 +170,66 @@ document.getElementById('mydiv01').innerHTML += `
 `
 
 }">
+
+
+
+
+
+
+
+<input type=button id="button" value="Make Your Own 2D array" onclick="{
+
+document.getElementById('mydiv01').innerHTML = ''
+
+
+let myChart4 = []
+
+myChart4[0]= []
+myChart4[1]= []
+myChart4[2]= []
+
+myChart4[0][0] = parseInt(document.getElementById('myText01').value)
+myChart4[0][1] = parseInt(document.getElementById('myText02').value)
+myChart4[0][2] = parseInt(document.getElementById('myText03').value)
+myChart4[1][0] = parseInt(document.getElementById('myText04').value)
+myChart4[1][1] = parseInt(document.getElementById('myText05').value)
+myChart4[1][2] = parseInt(document.getElementById('myText06').value)
+myChart4[2][0] = parseInt(document.getElementById('myText07').value)
+myChart4[2][1] = parseInt(document.getElementById('myText08').value)
+myChart4[2][2] = parseInt(document.getElementById('myText09').value)
+
+document.getElementById('mydiv01').innerHTML += ` 
+
+<table id='table' border=1>
+
+<tr><td>  ${myChart4[0][0]} </td><td> ${myChart4[0][1]} </td><td> ${myChart4[0][2]} </td></tr>
+<tr><td>  ${myChart4[1][0]} </td><td> ${myChart4[1][1]} </td><td> ${myChart4[1][2]} </td></tr>
+<tr><td>  ${myChart4[2][0]} </td><td> ${myChart4[2][1]} </td><td> ${myChart4[2][2]} </td></tr>
+
+
+</table>
+
+`
+
+}">
+
+<br><br>
+Numbers for custom array:<br>
+<input type=text id="myText01" value=0 size="1%">
+
+<input type=text id="myText02" value=0 size="1%">
+
+<input type=text id="myText03" value=0 size="1%"><br>
+
+<input type=text id="myText04" value=0 size="1%">
+
+<input type=text id="myText05" value=0 size="1%">
+
+<input type=text id="myText06" value=0 size="1%"><br>
+
+<input type=text id="myText07" value=0 size="1%">
+
+<input type=text id="myText08" value=0 size="1%">
+
+<input type=text id="myText09" value=0 size="1%">
+
