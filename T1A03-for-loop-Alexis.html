@@ -9,14 +9,6 @@ document.getElementById('mydiv01').innerHTML += `x is  ` +x+ `<br>`
 
 }
 
-
-
-
-	//document.getElementById('mydiv01').innerHTML = 
-	//document.getElementById('myText01').value
-
-
-
 }">
 
 <input type=button value="run For Loop" onclick="{
@@ -24,11 +16,24 @@ document.getElementById('mydiv01').innerHTML += `x is  ` +x+ `<br>`
 
 document.getElementById('mydiv01').innerHTML = ''
 
-for (let x=0; x >= document.getElementById('myText01').value; x--) {
+for (let y=document.getElementById('myText01').value; y >= 0; y--) {
 
-document.getElementById('mydiv01').innerHTML += `x is  ` +x+ `<br>`
+
+
+document.getElementById('mydiv01').innerHTML += `x is  ` +y+ `<br>`
 
 }
+
+}">
+
+
+
+<input type=button value="Clear" onclick="{
+
+
+document.getElementById('mydiv01').innerHTML = ''
+
+
 
 }">
 
