@@ -18,22 +18,23 @@
 
 <input type=button value="Calculate" onclick="{
 
+let oneNum = parseInt(document.getElementById('myText01').value)
+let twoNum = parseInt(document.getElementById('myText02').value)
 
+let plus = oneNum+twoNum
 
+let minus = oneNum-twoNum
 
 function myPlus(){
 
 document.getElementById('myDiv01').innerHTML = +document.getElementById('myText01').value+ ` + ` +document.getElementById('myText02').value+ ` = ` +
-	document.getElementById('myText01').value +
-document.getElementById('myText02').value
-
+	plus
 }
 
 function mySubtract(){
 
 document.getElementById('myDiv01').innerHTML = +document.getElementById('myText01').value+ ` - ` +document.getElementById('myText02').value+ ` = ` +
-	document.getElementById('myText01').value - 
-	document.getElementById('myText02').value 
+	minus
 
 }
 
