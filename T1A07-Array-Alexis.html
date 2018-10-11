@@ -1,6 +1,6 @@
 <h2 align=center> 1D Array BY Alexis</h2>
 
-//more
+
 
 
 <input type=text id="myText01" value=3>
@@ -30,26 +30,40 @@ document.getElementById('myDiv01').innerHTML += myLoop+ `: ` +myProgramTerms[myL
 	}">
 
 
-<input type=button value="1D Array 2.0" onclick="{
+<input type=button value="2D Array" onclick="{
 
 
 	myProgramTermsSeven = [] // creates array
 
-myProgramTermsSeven[0] = `One Thing`
+myProgramTermsSeven[0] = []
+myProgramTermsSeven[1] = []
+myProgramTermsSeven[2] = []
 
-myProgramTermsSeven[1] = `Two Thing`
 
-myProgramTermsSeven[2] = `Three Thing`
 
-document.getElementById('myDiv01').innerHTML = ``
+myProgramTermsSeven[0][0] = `One Thing`
+myProgramTermsSeven[0][1] = `Two Thing`
+myProgramTermsSeven[0][2] = `Three Thing`
 
-//document.getElementById('myDiv01').innerHTML = document.getElementById('myText01').value
+myProgramTermsSeven[1][0] = `Four Thing`
+myProgramTermsSeven[1][1] = `FiveThing`
+myProgramTermsSeven[1][2] = `Six Thing`
 
-for (let myLoop=0; myLoop < 3; myLoop++){
+myProgramTermsSeven[2][0] = `Seven Thing`
+myProgramTermsSeven[2][1] = `Eight Thing`
+myProgramTermsSeven[2][2] = `Nine Thing`
 
-document.getElementById('myDiv01').innerHTML += myLoop+ `: ` +myProgramTermsSeven[myLoop]
-+ `<br>`
-}
+document.getElementById('myDiv01').innerHTML = ` 
+<table >
+<tr><td>  ${myProgramTermsSeven[0][0]} </td><td> ${myProgramTermsSeven[0][1]} </td><td> ${myProgramTermsSeven[0][2]} </td></tr>
+<tr><td>  ${myProgramTermsSeven[1][0]} </td><td> ${myProgramTermsSeven[1][1]} </td><td> ${myProgramTermsSeven[1][2]} </td></tr>
+<tr><td>  ${myProgramTermsSeven[2][0]} </td><td> ${myProgramTermsSeven[2][1]} </td><td> ${myProgramTermsSeven[2][2]} </td></tr>
+
+</table>
+
+`
+
+
 
 
 	}">
