@@ -1,0 +1,84 @@
+<h2 align=center> Tons Of Events BY Alexis <br> (I also get 9/9 for telling you about float:left)</h2>
+<script>
+document.onkeydown = checkKey;
+
+
+
+
+</script>
+
+<div id="myDiv01" style="float: left;background:lightblue;width:90; height:40;" onDblclick="{
+
+document.getElementById('myOutput').innerHTML = `Activated: Destruction of the world in progress(activated onDblClick)` 
+
+}">Double Click </div>
+
+
+<div style="float: right; background:pink;" id="myOutput">...</div><br><br><br><br><br><br>
+<input type=text id="myText01" value="type here" onChange="{
+document.getElementById('myDiv02').innerHTML = `You changed the text to ` +this.value
+
+}"
+
+onblur="{
+document.getElementById('myText01').style.background = 'pink'}"
+onfocus="{
+document.getElementById('myText01').style.background = 'lightyellow'}"
+
+
+
+>
+<div id="myDiv02" style="background:lightgreen; float:right;">...</div><br><br><br><br><br><br>
+
+<div id="myDiv04" style="float: left;background:magenta;width:90; height:40;" onmouseover="{
+
+document.getElementById('myDiv03').innerHTML = `Why you hovering(activated onMouseOver)`
+
+}"
+onmouseleave="{
+document.getElementById('myDiv03').innerHTML = `Wait, no (activated onMouseLeave)`
+}"
+
+onscroll="{
+document.getElementById('myDiv03').innerHTML = `Don't Scroll away!(activated onScroll)`
+}"
+
+
+>Hover your mouse here </div>
+
+
+<div id="myDiv03" style="background:lightyellow; float:right;">...</div><br><br><br><br><br><br>
+
+
+
+
+<div id="myDiv05" style="float: left;background:orange;width:100; height:40;"
+onmousedown="{
+document.getElementById('myDiv06').innerHTML = `You're holding down a mouse button`
+}"
+onmouseup="{document.getElementById('myDiv06').innerHTML = `You're not holding down a mouse button now`}"
+
+
+>click and hold, then relase</div>
+
+
+<div id="myDiv06" style="background:darkcyan; float:right;">...</div><br><br><br><br><br><br>
+
+
+
+
+
+
+<input type=text id="myText07" value="Copy then paste"style="float: left;background:IndianRed;width:125; height:20;" onpaste="{
+document.getElementById('myDiv08').innerHTML = `Wow, you just pasted that.`
+}"
+
+onCopy="{
+document.getElementById('myDiv08').innerHTML = `Wow, you just copied that.`
+
+}"
+>
+
+
+<div id="myDiv08" style="background:mediumpurple; float:right;">...</div><br><br><br><br><br><br>
+
