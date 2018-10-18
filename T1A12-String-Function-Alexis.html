@@ -1,0 +1,69 @@
+<h2 align=center>String Function by Alexis</h2>
+<input id="myIn" type=text value="Hello" style="width:100; height:20;"> 
+
+
+<input type=button value="Upcase" onclick="{
+   document.getElementById('myOut').innerHTML = document.getElementById('myIn').value.toUpperCase()
+}">
+<input type=button value="LowCase" onclick="{
+   document.getElementById('myOut').innerHTML = document.getElementById('myIn').value.toLowerCase()
+}">
+
+
+
+<input type=button value="Includes" onclick="{
+ let x = document.getElementById('myIn').value.includes('Hi')
+if (x==true){
+   document.getElementById('myOut').innerHTML = `Hello! Your message included the word Hello`
+}
+ let y = document.getElementById('myIn').value.includes('Hello')
+if (y==true){
+   document.getElementById('myOut').innerHTML = `Hi! Your message included the word Hello`
+}
+ let z = document.getElementById('myIn').value.includes('hi')
+if (z==true){
+   document.getElementById('myOut').innerHTML = `Hello! Your message included the word Hi`
+}
+ let a = document.getElementById('myIn').value.includes('hello')
+if (a==true){
+   document.getElementById('myOut').innerHTML = `Hi! Your message included the word Hello`
+}
+}">
+
+
+
+<input type=button value="Replace" onclick="{
+document.getElementById('myIn').value = document.getElementById('myIn').value.replace('Hello','Goodbye')
+document.getElementById('myOut').innerHTML = `Replaced the Hello with Goodbye`
+
+}">
+
+
+
+
+<input type=button value="CharAt" onclick="{
+document.getElementById('myOut').innerHTML = `The first letter is ` +document.getElementById('myIn').value.charAt(0)+
+`<br>The last letter is ` + document.getElementById('myIn').value.charAt(document.getElementById('myIn').value.length-1)
+
+}">
+
+
+<input type=button value="Split" onclick="{
+   document.getElementById('myOut').innerHTML = `The characters that make up your message is: ` +document.getElementById('myIn').value.split('')
+}">
+
+
+
+
+<input type=button value="Slice" onclick="{
+   document.getElementById('myOut').innerHTML = `Your sliced message is: ` +document.getElementById('myIn').value.slice(3)
+
+
+}">
+
+
+
+<input type=button value="IndexOf" onclick="{
+   document.getElementById('myOut').innerHTML = `The location of e is: ` +document.getElementById('myIn').value.indexOf('e')
+}">
+<div id="myOut">...</div>
