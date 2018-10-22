@@ -87,4 +87,16 @@ document.getElementById('myOut').innerHTML = `The first letter is ` +document.ge
 <input type=button value="IndexOf" onclick="{
    document.getElementById('myOut').innerHTML = `The location of e is: ` +document.getElementById('myIn').value.indexOf('e')
 }">
+
+<input type=button value="ConCat" onclick="{
+
+let x = ' and Goodbye';
+   document.getElementById('myOut').innerHTML = `The joined string of Hello and Goodbye is: <b>` +document.getElementById('myIn').value.concat(x) 
+
+}">
+
+
+
+
+
 <div id="myOut">...</div>
