@@ -8,7 +8,12 @@
 <input type=button value="LowCase" onclick="{
    document.getElementById('myOut').innerHTML = document.getElementById('myIn').value.toLowerCase()
 }">
-
+<input type=button value="italic" onclick="{
+   document.getElementById('myOut').innerHTML = document.getElementById('myIn').value.italics()
+}">
+<input type=button value="Bold" onclick="{
+   document.getElementById('myOut').innerHTML = document.getElementById('myIn').value.bold()
+}">
 
 
 <input type=button value="Includes" onclick="{
@@ -20,22 +25,38 @@ if (x==true){
 if (y==true){
    document.getElementById('myOut').innerHTML = `Hi! Your message included the word Hello`
 }
- let z = document.getElementById('myIn').value.includes('hi')
+ let z = document.getElementById('myIn').value.includes('HELLO')
 if (z==true){
-   document.getElementById('myOut').innerHTML = `Hello! Your message included the word Hi`
+   document.getElementById('myOut').innerHTML = `Hello! Your message included the word Hello`
 }
  let a = document.getElementById('myIn').value.includes('hello')
 if (a==true){
    document.getElementById('myOut').innerHTML = `Hi! Your message included the word Hello`
+}
+let b = document.getElementById('myIn').value.includes('Goodbye')
+if (b==true){
+   document.getElementById('myOut').innerHTML = `Bye! Your message included the word Goodbye`
+}
+let c = document.getElementById('myIn').value.includes('goodbye')
+if (c==true){
+   document.getElementById('myOut').innerHTML = `Bye! Your message included the word Goodbye`
+}
+let d = document.getElementById('myIn').value.includes('GOODBYE')
+if (d==true){
+   document.getElementById('myOut').innerHTML = `Bye! Your message included the word Goodbye`
 }
 }">
 
 
 
 <input type=button value="Replace" onclick="{
+if (document.getElementById('myIn').value == 'Hello'){
 document.getElementById('myIn').value = document.getElementById('myIn').value.replace('Hello','Goodbye')
 document.getElementById('myOut').innerHTML = `Replaced the Hello with Goodbye`
+}
 
+else {document.getElementById('myIn').value = document.getElementById('myIn').value.replace('Goodbye','Hello')
+document.getElementById('myOut').innerHTML = `Replaced the Goodbye with Hello`}
 }">
 
 
