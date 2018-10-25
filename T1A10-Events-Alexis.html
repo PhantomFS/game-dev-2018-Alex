@@ -1,22 +1,21 @@
-<h2 align=center> Tons Of Events BY Alexis <br> (I also get 9/9 for telling you about float:left)</h2>
-<script>
-document.onkeydown = checkKey;
+<h2 align=center> Tons Of Events BY Alexis <br> (I also get 9/9 for suggesting float:left)</h2>
 
-
-
-
-</script>
-
-<div id="myDiv01" style="float: left;background:lightblue;width:90; height:40;" onDblclick="{
+<div id="myDiv01" style="float: left;background:lightblue;width:110; height:40;" onDblclick="{
 
 document.getElementById('myOutput').innerHTML = `Activated: Destruction of the world in progress(activated onDblClick)` 
 
-}">Double Click </div>
+}"
+
+onContextmenu="{
+document.getElementById('myOutput').innerHTML = `Deactivated: Destruction of the world has stopped(activated onContextMenu)`
+}"
+
+>Double Click or Right Click </div>
 
 
 <div style="float: right; background:pink;" id="myOutput">...</div><br><br><br><br><br><br>
-<input type=text id="myText01" value="type here" onChange="{
-document.getElementById('myDiv02').innerHTML = `You changed the text to ` +this.value
+<input type=text id="myText01" value="type here" style="float: left;background:darkturquoise;width:155; height:20;" onChange="{
+document.getElementById('myDiv02').innerHTML = `You changed the text to <font color=red>` +this.value + `</font>`
 
 }"
 
@@ -30,7 +29,7 @@ document.getElementById('myText01').style.background = 'lightyellow'}"
 >
 <div id="myDiv02" style="background:lightgreen; float:right;">...</div><br><br><br><br><br><br>
 
-<div id="myDiv04" style="float: left;background:magenta;width:90; height:40;" onmouseover="{
+<div id="myDiv04" style="float: left;background:plum;width:90; height:40;" onmouseover="{
 
 document.getElementById('myDiv03').innerHTML = `Why you hovering(activated onMouseOver)`
 
@@ -69,7 +68,7 @@ onmouseup="{document.getElementById('myDiv06').innerHTML = `You're not holding d
 
 
 
-<input type=text id="myText07" value="Copy then paste"style="float: left;background:IndianRed;width:125; height:20;" onpaste="{
+<input type=text id="myText07" value="Copy then cut then paste."style="float: left;background:MistyRose;width:155; height:20;" onpaste="{
 document.getElementById('myDiv08').innerHTML = `Wow, you just pasted that.`
 }"
 
@@ -77,8 +76,33 @@ onCopy="{
 document.getElementById('myDiv08').innerHTML = `Wow, you just copied that.`
 
 }"
+onCut="{
+document.getElementById('myDiv08').innerHTML = `How dare you cut my text.`
+
+}"
+onFocusIn="{
+document.getElementById('myText07').style.background = 'lightgreen'
+
+}"
+onFocusOut="{
+document.getElementById('myText07').style.background = 'lightcoral'
+
+}"
 >
 
 
 <div id="myDiv08" style="background:mediumpurple; float:right;">...</div><br><br><br><br><br><br>
 
+<input type=button value="reset" onclick="{
+
+document.getElementById('myOutput').innerHTML = `...`
+document.getElementById('myDiv02').innerHTML = `...`
+document.getElementById('myDiv03').innerHTML = `...`
+document.getElementById('myDiv06').innerHTML = `...`
+document.getElementById('myDiv08').innerHTML = `...`
+document.getElementById('myText01').value = `type here`
+document.getElementById('myText01').style.background = 'darkturquoise'
+document.getElementById('myText07').value = `Copy then cut then paste`
+document.getElementById('myText07').style.background = 'MistyRose'
+
+}">
