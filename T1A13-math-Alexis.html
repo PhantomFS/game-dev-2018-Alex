@@ -230,11 +230,11 @@ document.getElementById('myDiv').innerHTML =g+ ` - `
 <tr>
 	<td><input type=button value="x^y" onclick="{
 op = 5
-v = document.getElementById('myText').value
+g = document.getElementById('myText').value
 
 
 document.getElementById('myText').value = ``
-document.getElementById('myDiv').innerHTML += v+ `^`
+document.getElementById('myDiv').innerHTML += g+ `^`
 }">
 	</td>
 
@@ -277,17 +277,17 @@ if(op == 4){
 	document.getElementById('myDiv02').innerHTML = ' ' +(parseFloat(g) + parseFloat(f))
 	}
 
-
 if(op == 5){
 	
-	t = Math.pow(v,f)
+	t = Math.pow(g,f)
+	document.getElementById('myDiv').innerHTML +=f + ' = '
 	document.getElementById('myDiv02').innerHTML= t
 }
 
 
 u = (parseFloat(g) + 
 parseFloat(f))
-}
+
 w = document.getElementById('myDiv02').innerHTML
 }">
 
