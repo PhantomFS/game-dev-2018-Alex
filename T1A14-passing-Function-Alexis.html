@@ -1,0 +1,92 @@
+<h2 align=center>Passing to Function By Alexis</h2>
+<script>
+	myObj = {}
+	myObj = {firstName:"Tim", lastName:"Tom", age:"456"}
+function myFun01(myIn){
+	return myIn + '<br>'
+}
+function myFun02(myIn){
+	return myIn + '<br>'
+}
+function myFun03(myIn){
+	return myIn + '<br>'
+}
+function myFun04(myIn){
+	return myIn + '<br>'
+}
+function myFun05(myIn){
+	return myIn + '<br>'
+}
+function myFun06(myIn){
+	return myIn + '<br>'
+}
+function myFun07(myIn){
+	return myIn + '<br>'
+}
+function myFun08(myIn){
+	return myIn + '<br>'
+}
+
+</script>
+
+<input type=text id="myText" value="Type here">
+
+<select id="myNum">
+	<option value="1"> 1</option>
+	<option value="2"> 2</option>
+	<option value="3"> 3</option>
+	<option value="4"> 4 </option>
+	<option value="5"> 5 </option>
+	
+</select>
+
+<br>
+<input type=button value="say Hi" onclick="{
+
+	document.getElementById('myDiv01').innerHTML += myFun01('hi')
+}">
+<input type=button value="Say Whatever" onclick="{
+
+	document.getElementById('myDiv01').innerHTML += myFun02(document.getElementById('myText').value)
+}">
+<input type=button value="Select a Number" onclick="{
+	if (document.getElementById('myNum').value == '1')
+		{ document.getElementById('myDiv01').innerHTML += myFun03('One')
+		}
+	else if (document.getElementById('myNum').value == '2')
+		{ document.getElementById('myDiv01').innerHTML += myFun03('Two')
+		}
+	else if (document.getElementById('myNum').value == '3')
+		{ document.getElementById('myDiv01').innerHTML += myFun03('Three')
+		}
+	else if (document.getElementById('myNum').value == '4')
+		{ document.getElementById('myDiv01').innerHTML += myFun03('Four')
+		}
+	else if (document.getElementById('myNum').value == '5')
+		{ document.getElementById('myDiv01').innerHTML += myFun03('Five')
+		}
+}">
+<input type=button value="Split your message" onclick="{
+	
+	v = document.getElementById('myText').value.split('')
+	document.getElementById('myDiv01').innerHTML += myFun04(v)
+
+}">
+<input type=button value="Obj First Name" onclick="{
+
+	document.getElementById('myDiv01').innerHTML += myFun05(myObj.firstName)
+}">
+<input type=button value="Obj Last Name" onclick="{
+
+	document.getElementById('myDiv01').innerHTML += myFun06(myObj.lastName)
+}">
+<input type=button value="Obj Age" onclick="{
+
+	document.getElementById('myDiv01').innerHTML += myFun07(myObj.age)
+}">
+<input type=button value="Clear" onclick="{
+
+	document.getElementById('myDiv01').innerHTML = myFun08('')
+}">
+
+<div id="myDiv01"></div>
