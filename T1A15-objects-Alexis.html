@@ -27,7 +27,33 @@ JSON.parse(document.getElementById('myTextAreaObject').value)
 	document.getElementById('myDiv01').innerHTML = 'Name: ' + myObj.firstName + ' ' + myObj.lastName +
 	', Age: ' + myObj.age 
 
+}">
+
+<input type=button value="Array with Obj" onclick="{
+
+
+
+myObj01 = {}
+	myObj01 = {firstName:'Eeny', lastName:'Witsy', age:'12'}
+myObj02 = {}
+	myObj02 = {firstName:'Meeny', lastName:'Itsy', age:'34'}
+myObj03 = {}
+	myObj03 = {firstName:'Miny', lastName:'Bitsy', age:'56'}
+myObj04 = {}
+	myObj04 = {firstName:'Moe', lastName:'Spider', age:'78'}
+
+
+	
+
+myArray = []	
+
+myArray[0] = myObj01
+myArray[1] = myObj02
+myArray[2] = myObj03
+myArray[3] = myObj04
+
+	document.getElementById('myDiv01').innerHTML = myArray['age']
+
 }"><br><br>
 
 <div id="myDiv01">...</div>
-
