@@ -1,0 +1,33 @@
+<h2 align=center>Object By Alexis</h2>
+<script>
+	myObj = {}
+	myObj = {firstName:"Tim", lastName:"Tom", age:"456"}
+
+</script>
+<textarea id="myTextAreaObject" rows="8" cols="70" wrap="false">{
+"firstName":"Super",
+"lastName":"Generic",
+"age":"99",
+"eyeColor":"brown"
+}
+</textarea><br>
+
+<input type=button value="store as object" style="float:left" onclick="{
+
+var myPerson = {}
+myPerson =
+JSON.parse(document.getElementById('myTextAreaObject').value)
+
+	document.getElementById('myDiv01').innerHTML = 'Name: ' + myPerson.firstName + ' ' + myPerson.lastName +
+	', Age: ' + myPerson.age + ', Eye Color: ' + myPerson.eyeColor + '<br>'
+
+}">
+<input type=button value="Another Obj" onclick="{
+	
+	document.getElementById('myDiv01').innerHTML = 'Name: ' + myObj.firstName + ' ' + myObj.lastName +
+	', Age: ' + myObj.age 
+
+}"><br><br>
+
+<div id="myDiv01">...</div>
+
