@@ -1,5 +1,4 @@
 
-
 <h2 align=center>If Else Statements by Alexis</h2>
 <input id="myIn" type=text value=10>
 
@@ -28,6 +27,24 @@ if ((document.getElementById('myIn').value == 10)||(document.getElementById('myI
 else { document.getElementById('myOut').innerHTML = 'that not a ten nor a seven<br>';}
 
 
+if ((document.getElementById('myIn').value > 10)||(document.getElementById('myIn').value < 20)){ 
+ 
+ document.getElementById('myOut').innerHTML += 'This is bewtween 10 and 20<br>'
+ 
+}
+
+else { document.getElementById('myOut').innerHTML = 'this is not between 10 and 20br>';}
+
+
+if ((document.getElementById('myIn').value == 10)||(document.getElementById('myIn').value == 7)){ 
+ 
+ document.getElementById('myOut').innerHTML += 'That a ten or seven<br>'
+ 
+}
+
+else { document.getElementById('myOut').innerHTML = 'that not a ten nor a seven<br>';}
+
+
 
 
 if ((document.getElementById('myIn').value == 10)||(document.getElementById('myIn').value == 500)){ 
@@ -44,13 +61,13 @@ else if (document.getElementById('myIn').value == 7){
 
 else if (document.getElementById('myIn').value == 19){
 	
-	document.getElementById('myOut').innerHTML = 'How about 6<br>';
+	document.getElementById('myOut').innerHTML += 'How about 6<br>';
 		
 	}
 
 else if (document.getElementById('myIn').value == 6){
 	
-	document.getElementById('myOut').innerHTML = 'Maybe 12?<br>';
+	document.getElementById('myOut').innerHTML += 'Maybe 12?<br>';
 		
 	}
 
@@ -62,7 +79,7 @@ else if (document.getElementById('myIn').value == 12){
 
 else if (document.getElementById('myIn').value == 3){
 	
-	document.getElementById('myOut').innerHTML = 'Type 10<br>';
+	document.getElementById('myOut').innerHTML += 'Type 10<br>';
 		
 	}
 
