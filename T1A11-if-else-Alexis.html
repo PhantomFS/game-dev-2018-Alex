@@ -4,30 +4,25 @@
 <input id="myIn" type=text value=10>
 
 <input type=button value="decision if statement" onclick="{
+
    document.getElementById('myOut').innerHTML = ''
 
-  if ( document.getElementById('myIn').value < 3){
+  if (document.getElementById('myIn').value < 3){
       document.getElementById('myOut').innerHTML += 
            'wow the number is less than 3<br>' 
-  } else {
+  } 
+
+else {
      document.getElementById('myOut').innerHTML += 
            'wow the number is greater than 3<br>' 
   }
 
-if ( document.getElementById('myIn').value == 7)( document.getElementById('myIn').value == 10){
-      document.getElementById('myOut').innerHTML += 
-           'wow that's the number seven or a ten. Magical<br>' 
-  } else {
-     document.getElementById('myOut').innerHTML += 
-           'wow, that number it not 10 nor seven<br>' 
-  }
-if (( document.getElementById('myIn').value > 0)||(document.getElementById('myIn').value < 20)){
-      document.getElementById('myOut').innerHTML += 
-           'This is between 0 and 20<br>' 
-  } else {
-     document.getElementById('myOut').innerHTML += 
-           'This isn't between 0 and 20<br>' 
-  }
+
+
+
+
+
+
 
 
 
@@ -68,7 +63,7 @@ else if (document.getElementById('myIn').value == 3){
 		
 	}
 
-else { document.getElementById('mydiv02').innerHTML = 'Type 10';}
+else { document.getElementById('myOut').innerHTML = 'Type 10';}
 
 
 
