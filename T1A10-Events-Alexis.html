@@ -15,19 +15,21 @@ document.getElementById('myOutput').innerHTML = `Deactivated: Destruction of the
 
 <div style="float: right; background:pink;" id="myOutput">...</div><br><br><br><br><br><br>
 <input type=text id="myText01" value="type here" style="float: left;background:darkturquoise;width:155; height:20;" onChange="{
-document.getElementById('myDiv02').innerHTML = `You changed the text to <font color=red>` +this.value + `</font>`
+document.getElementById('myDiv077').innerHTML = `You changed the text to <font color=red>` +this.value + `</font>`
 
 }"
 
 onblur="{
+document.getElementById('myDiv02').innerHTML = `You activated blur`
 document.getElementById('myText01').style.background = 'pink'}"
 onfocus="{
+document.getElementById('myDiv02').innerHTML = `You activated Focus`
 document.getElementById('myText01').style.background = 'lightyellow'}"
 
 
 
 >
-<div id="myDiv02" style="background:lightgreen; float:right;">...</div><br><br><br><br><br><br>
+<div id="myDiv02" style="background:lightgreen; float:right;">...</div><div id="myDiv077" style="background:pearl; float:right;">...</div><br><br><br><br><br>
 
 <div id="myDiv04" style="float: left;background:plum;width:90; height:40;" onmouseover="{
 
@@ -61,7 +63,8 @@ onmouseup="{document.getElementById('myDiv06').innerHTML = `You're not holding d
 >click and hold, then relase</div>
 
 
-<div id="myDiv06" style="background:darkcyan; float:right;">...</div><br><br><br><br><br><br>
+<div id="myDiv06" style="background:darkcyan; float:right;">...</div>
+<br><br><br><br><br><br>
 
 
 
@@ -104,5 +107,5 @@ document.getElementById('myText01').value = `type here`
 document.getElementById('myText01').style.background = 'darkturquoise'
 document.getElementById('myText07').value = `Copy then cut then paste`
 document.getElementById('myText07').style.background = 'MistyRose'
-
+document.getElementById('myDiv077').innerHTML = `...`
 }">
