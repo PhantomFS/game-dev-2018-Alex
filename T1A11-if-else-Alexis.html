@@ -19,51 +19,54 @@ else {
 
 
 
+if ((document.getElementById('myIn').value == 10)||(document.getElementById('myIn').value == 7)){ 
+ 
+ document.getElementById('myOut').innerHTML += 'That a ten or seven<br>'
+ 
+}
 
-
-
-
+else { document.getElementById('myOut').innerHTML = 'that not a ten nor a seven<br>';}
 
 
 
 
 if ((document.getElementById('myIn').value == 10)||(document.getElementById('myIn').value == 500)){ 
  
- document.getElementById('myOut').innerHTML = 'try 7'
+ document.getElementById('myOut').innerHTML += 'try 7<br>'
  
 }
 
 else if (document.getElementById('myIn').value == 7){
 	
-	document.getElementById('myOut').innerHTML = 'Go to 19';
+	document.getElementById('myOut').innerHTML += 'Go to 19<br>';
 		
 	}
 
 else if (document.getElementById('myIn').value == 19){
 	
-	document.getElementById('myOut').innerHTML = 'How about 6';
+	document.getElementById('myOut').innerHTML = 'How about 6<br>';
 		
 	}
 
 else if (document.getElementById('myIn').value == 6){
 	
-	document.getElementById('myOut').innerHTML = 'Maybe 12?';
+	document.getElementById('myOut').innerHTML = 'Maybe 12?<br>';
 		
 	}
 
 else if (document.getElementById('myIn').value == 12){
 	
-	document.getElementById('myOut').innerHTML = 'hmmm... 3?';
+	document.getElementById('myOut').innerHTML += 'hmmm... 3?<br>';
 		
 	}
 
 else if (document.getElementById('myIn').value == 3){
 	
-	document.getElementById('myOut').innerHTML = 'Type 10';
+	document.getElementById('myOut').innerHTML = 'Type 10<br>';
 		
 	}
 
-else { document.getElementById('myOut').innerHTML = 'Type 10';}
+else { document.getElementById('myOut').innerHTML += 'Type 10';}
 
 
 
