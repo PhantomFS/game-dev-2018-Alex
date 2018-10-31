@@ -1,4 +1,5 @@
 
+
 <h2 align=center>If Else Statements by Alexis</h2>
 <input id="myIn" type=text value=10>
 
@@ -13,7 +14,20 @@
            'wow the number is greater than 3<br>' 
   }
 
-
+if ( document.getElementById('myIn').value == 7)( document.getElementById('myIn').value == 10){
+      document.getElementById('myOut').innerHTML += 
+           'wow that's the number seven or a ten. Magical<br>' 
+  } else {
+     document.getElementById('myOut').innerHTML += 
+           'wow, that number it not 10 nor seven<br>' 
+  }
+if (( document.getElementById('myIn').value > 0)||(document.getElementById('myIn').value < 20)){
+      document.getElementById('myOut').innerHTML += 
+           'This is between 0 and 20<br>' 
+  } else {
+     document.getElementById('myOut').innerHTML += 
+           'This isn't between 0 and 20<br>' 
+  }
 
 
 
