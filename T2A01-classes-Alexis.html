@@ -1,8 +1,7 @@
 
-<h2 align=center>Javascript Classes Introduction by Alexis</h2>
+<h2 align=center> Classes by Alexis </h2>
 
-
-<input type=text id="myNameInput" placeholder="Enter an animal name here" value="">
+<input type=text id="myNameInput" placeholder="Enter an animal name here" value=""><input type=text id="myNameInput2" placeholder="Enter an animal age here" value="">
 
 <input id="myButton130" type="button" value="Make and Show the class myAnimal" onclick="{
                                                                                  
@@ -20,8 +19,8 @@
                                                              
    
                                                                                  
-   myDog = new myAnimal(document.getElementById('myNameInput').value, 5)
-   myDog.myShow()     
+   myDog = new myAnimal(document.getElementById('myNameInput').value, document.getElementById('myNameInput2').value)
+   myDog.myShow()      
 
                                                  
 }"><br><br>
