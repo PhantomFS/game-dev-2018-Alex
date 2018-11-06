@@ -1,11 +1,10 @@
-
 <h2 align=center> Classes by Alexis </h2>
 
-<input type=text id="myNameInput" placeholder="Enter an animal name here" value=""><input type=text id="myNameInput2" placeholder="Enter an animal age here" value="">
+<input type=text id="myNameInput" placeholder="Enter your name here" value=""><input type=text id="myNameInput2" placeholder="Enter your age here" value="">
 
-<input id="myButton130" type="button" value="Make and Show the class myAnimal" onclick="{
+<input id="myButton130" type="button" value="Make and Show the class myH" onclick="{
                                                                                  
- class myAnimal {
+ class myH {
     constructor(passName, passAge) {
        this.myName = passName;
        this.myAge = passAge;
@@ -15,14 +14,49 @@
        document.getElementById('myDiv130').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
     }
 
- }  // end class myAnimal
-                                                             
-   
-                                                                                 
-   myDog = new myAnimal(document.getElementById('myNameInput').value, document.getElementById('myNameInput2').value)
-   myDog.myShow()      
+ }  // end class myH
+       
+
+
+
+
+                                                      
+   if ((document.getElementById('myNameInput').value == 0)&&(document.getElementById('myNameInput2').value != 0))
+    {myF = new myH('No Name', document.getElementById('myNameInput2').value)
+   myF.myShow()  
+	} 
+
+else if ((document.getElementById('myNameInput2').value == 0)&&(document.getElementById('myNameInput').value != 0))
+    {myF = new myH(document.getElementById('myNameInput').value,'-0')
+   myF.myShow()  
+	} 	
+
+
+
+else if ((document.getElementById('myNameInput2').value == 0)&&(document.getElementById('myNameInput').value == 0))
+    {myF = new myH('No Name','-0')
+   myF.myShow()  
+	} 	
+
+else {                                                                            
+   myF = new myH(document.getElementById('myNameInput').value, document.getElementById('myNameInput2').value)
+   myF.myShow()      
+}
+
+
+
+
+
+
 
                                                  
 }"><br><br>
 
-<div id='myDiv130'>...</div><br> 
+<div id='myDiv130'>...</div><br><br><br>
+<input type=text id="myNameInput3" placeholder="Enter A message" value="">
+<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+
+<input  type="button" value="Use ResponsiveCode" onclick="{      
+    responsiveVoice.speak(document.getElementById('myNameInput3').value)                                              
+}"><br><br><br><br><br>
+
