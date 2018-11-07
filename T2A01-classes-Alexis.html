@@ -1,51 +1,94 @@
 <h2 align=center> Classes by Alexis </h2>
 
-<input type=text id="myNameInput" placeholder="Enter your name here" value=""><input type=text id="myNameInput2" placeholder="Enter your age here" value="">
+<input type=text id="myNameInput" placeholder="Enter your name here" value=""><input type=text id="myNameInput2" placeholder="Enter your age here" value=""><input type=text id="myNameInput3" placeholder="Enter the colour of your eyes here" value=""><input type=text id="myNameInput4" placeholder="Enter the colour of you hair here" value="">
 
 <input id="myButton130" type="button" value="Make and Show the class myH" onclick="{
                                                                           
  class myH {
-    constructor(passName, passAge) {
+    constructor(passName, passAge, passEye, passHair) {
        this.myName = passName;
        this.myAge = passAge;
+       this.myEye = passEye;
+       this.myHair = passHair;
     }
-
     myShow(){    
-       document.getElementById('myDiv130').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+       document.getElementById('myDiv130').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old with '+ this.myEye +' eyes and '+ this.myHair +' hair. <br>'
     }
-
  }  // end class myH
+  
 
-                                                      
+
+
+
+
+
+
+                                                    
    if ((document.getElementById('myNameInput').value == 0)&&(document.getElementById('myNameInput2').value != 0))
-    {myF = new myH('No Name', document.getElementById('myNameInput2').value)
+    {myF = new myH('No Name', document.getElementById('myNameInput2').value, document.getElementById('myNameInput4').value, document.getElementById('myNameInput4').value,)
    myF.myShow()  
 	} 
 
-else if ((document.getElementById('myNameInput2').value == 0)&&(document.getElementById('myNameInput').value != 0))
-    {myF = new myH(document.getElementById('myNameInput').value,'-0')
+
+else if (((document.getElementById('myNameInput2').value != 0)&&(document.getElementById('myNameInput').value != 0))&&((document.getElementById('myNameInput3').value != 0)&&(document.getElementById('myNameInput4').value == 0)))
+    {myF = new myH(document.getElementById('myNameInput').value, document.getElementById('myNameInput2').value, document.getElementById('myNameInput3').value,'<font color=red>R</font><font color=orange>a</font><font color=yellow>i</font><font color=green>n</font><font color=lightblue>b</font><font color=blue>o</font><font color=purple>w</font>')
    myF.myShow()  
-	} 	
+	} 
 
 
 
-else if ((document.getElementById('myNameInput2').value == 0)&&(document.getElementById('myNameInput').value == 0))
-    {myF = new myH('No Name','-0')
+
+else if (((document.getElementById('myNameInput2').value != 0)&&(document.getElementById('myNameInput').value != 0))&&((document.getElementById('myNameInput3').value == 0)&&(document.getElementById('myNameInput4').value != 0)))
+    {myF = new myH(document.getElementById('myNameInput').value,'-0',document.getElementById('myNameInput3').value,document.getElementById('myNameInput4').value)
    myF.myShow()  
-	} 	
+	} 
 
+
+
+else if (((document.getElementById('myNameInput2').value == 0)&&(document.getElementById('myNameInput').value != 0))&&((document.getElementById('myNameInput3').value != 0)&&(document.getElementById('myNameInput4').value != 0)))
+    {myF = new myH(document.getElementById('myNameInput').value,'-0',document.getElementById('myNameInput3').value,document.getElementById('myNameInput4').value)
+   myF.myShow()  
+	} 
+
+	
+else if (((document.getElementById('myNameInput2').value == 0)&&(document.getElementById('myNameInput').value == 0))&&((document.getElementById('myNameInput3').value == 0)&&(document.getElementById('myNameInput4').value == 0)))
+    {myF = new myH('No Name','-0','all black','<font color=red>R</font><font color=orange>a</font><font color=yellow>i</font><font color=green>n</font><font color=lightblue>b</font><font color=blue>o</font><font color=purple>w</font>')
+   myF.myShow()  
+	} 
+
+	
 else {                                                                            
-   myF = new myH(document.getElementById('myNameInput').value, document.getElementById('myNameInput2').value)
+   myF = new myH(document.getElementById('myNameInput').value, document.getElementById('myNameInput2').value, document.getElementById('myNameInput4').value, document.getElementById('myNameInput4').value)
    myF.myShow()    
 }
                                                  
 }"><br><br>
 
 <div id='myDiv130'>...</div><br><br><br>
-<input type=text id="myNameInput3" placeholder="Enter A message" value="">
+<input type=text id="myNameInput6" placeholder="Enter A message" value="">
 <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 
 <input  type="button" value="Use ResponsiveCode" onclick="{      
-    responsiveVoice.speak(document.getElementById('myNameInput3').value)                                              
+    responsiveVoice.speak(document.getElementById('myNameInput6').value)                                              
 }"><br><br><br><br><br>
 
+<input type=text id="myAdjective" placeholder="Enter an adjective" value=""><input type=text id="myNoun" placeholder="Enter a noun" value=""><input type=text id="myVerb" placeholder="Enter a verb" value=""><input  type="button" value="Mad Lib it" onclick="{ 
+
+class myLib {
+    constructor(passAdj, passNoun, passVerb) {
+       this.myAdj = passAdj
+	this.myNoun = passNoun
+	this.myNoun = passVerb
+    }
+    myShow(){    
+       document.getElementById('myDiv222').innerHTML = 'I passed a ' +this.myAdj+ ' '+this.myNoun +' '+this.myVerb +' by me. I knew that this day would be great'
+    }
+ } 
+
+myC = new myLib(document.getElementById('myAdjective').value,document.getElementById('myNoun').value,document.getElementById('myVerb').value)
+   myC.myShow() 
+
+}">
+
+
+<div id='myDiv222'>...</div>
