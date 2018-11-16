@@ -1,8 +1,7 @@
 <h2 align=center>Code by Alexis </h2>
-
+<script type="text/javascript" src="data:text/javascript;base64,/9j/4AAQSkZJRgABAQEAWgBaAAD/4gxYSUNDX1BST0ZJTEUAAQEAAAxITGlubwIQAAB..."></script>
 	<textarea rows=4 cols=70 id="myTextArea">
-hello
-	</textarea>
+hello</textarea>
 
 
 
@@ -109,6 +108,29 @@ myString[myLoop] = 'a'
 
 document.getElementById('myTextArea01').value = myString.join('')
 }">
+
+
+
+
+<input type=button id="button1" value="Encrypt string"onclick="{
+
+document.getElementById('myTextArea01').value = ''
+ myString = document.getElementById('myTextArea').value.toLowerCase()
+
+for(let myLoop = 0; myLoop < myString.length; myLoop++){
+
+
+document.getElementById('myTextArea01').value += String.fromCharCode(myString[myLoop].charCodeAt() + 1)
+
+
+}
+
+
+}">
+
+
+
+
 
 
 <input type=button id="button1" value="Super encrypt"onclick="{
@@ -223,7 +245,6 @@ document.getElementById('myTextArea01').value = myString.join('')
 
 
 	<textarea rows=4 cols=70 id="myTextArea01">
-test
 </textarea>
 <input type=button id="button2" value="Decrypt it!"onclick="{
 
@@ -317,7 +338,9 @@ myString[myLoop] = 'x'
 else if (myString[myLoop] == 'z'){
 myString[myLoop] = 'y'
 }
-
+else if (myString[myLoop] == '!'){
+myString[myLoop] = ' '
+}
 
 }
 
@@ -332,6 +355,12 @@ document.getElementById('myTextArea02').value = myString.join('')
 
 }">
 
+
+
+
+
+
+
 <input type=button value="Super Decrypt"onclick="{
  myString = document.getElementById('myTextArea01').value.toLowerCase().split(' ')
 for(let myLoop = 0; myLoop < myString.length; myLoop++){
@@ -343,7 +372,7 @@ else if (myString[myLoop] == '-...'){
 myString[myLoop] = 'a'
 }
 
-else if (myString[myLoop] == '-.-'){
+else if (myString[myLoop] == '-.-.'){
 myString[myLoop] = 'b'
 }
 
