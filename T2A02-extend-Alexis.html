@@ -1,56 +1,56 @@
-<h2 align=center> Classes by Alexis </h2>
+<h2 align=center> Extended Classes by Alexis </h2>
 
 <input type=text id="myNameInput" placeholder="Enter your name here" value=""><input type=text id="myNameInput2" placeholder="Enter your age here" value="">
 
 <input id="myButton130" type="button" value="Make and Show the class myH" onclick="{
-                                                                          
- class myH {
+
+class myH {
     constructor(passName, passAge) {
        this.myName = passName;
        this.myAge = passAge;
     }
 
-    myShow(){    
+    myShow(){
        document.getElementById('myDiv130').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
     }
 
  }  // end class myH
 
-                                                      
+
    if ((document.getElementById('myNameInput').value == 0)&&(document.getElementById('myNameInput2').value != 0))
     {myF = new myH('No Name', document.getElementById('myNameInput2').value)
-   myF.myShow()  
-	} 
+   myF.myShow()
+	}
 
 else if ((document.getElementById('myNameInput2').value == 0)&&(document.getElementById('myNameInput').value != 0))
     {myF = new myH(document.getElementById('myNameInput').value,'-0')
-   myF.myShow()  
-	} 	
+   myF.myShow()
+	}
 
 
 
 else if ((document.getElementById('myNameInput2').value == 0)&&(document.getElementById('myNameInput').value == 0))
     {myF = new myH('No Name','-0')
-   myF.myShow()  
-	} 	
+   myF.myShow()
+	}
 
 
 else if ((document.getElementById('myNameInput2').value == 0)&&(document.getElementById('myNameInput').value == 0))
     {myF = new myH('No Name','-0')
-   myF.myShow()  
-	} 
+   myF.myShow()
+	}
 
 
 else if ((document.getElementById('myNameInput2').value == 0)&&(document.getElementById('myNameInput').value == 0))
     {myF = new myH('No Name','-0')
-   myF.myShow()  
-	} 
+   myF.myShow()
+	}
 
-else {                                                                            
+else {
    myF = new myH(document.getElementById('myNameInput').value, document.getElementById('myNameInput2').value)
-   myF.myShow()    
+   myF.myShow()
 }
-                                                 
+
 }"><input id="myButton130" type="button" value="Extend" onclick="{
 
 class myH {
@@ -59,45 +59,136 @@ class myH {
        this.myAge = passAge;
     }
 
-    myShow(){    
+    myShow(){
        document.getElementById('myDiv130').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
     }
-	
-    
+
+
  }
 
 
-class myCat extends myH {                                                                      
+class myCat extends myH {
      myShow(){
-       document.getElementById('myDiv130').innerHTML = this.myName + ' is a great cat who is ' + this.myAge + ' years old<br>'
-    }   
+       document.getElementById('myDiv130').innerHTML = this.myName + ' is a cat who is ' + this.myAge + ' years old<br>'
+    }
 
       myCal(){
-	document.getElementById('myDiv130').innerHTML = 'Nobody owns '+ this.myName + ' is a great cat who is ' + this.myAge + ' years old<br>'
+	document.getElementById('myDiv130').innerHTML = 'Nobody owns '+ this.myName + ' is a lonely cat who is ' + this.myAge + ' years old<br>'
 
 
-}                                                          
+}
 }    // end extended class myCat
-                                                                     
-                                                              
-                                                                                                                                                                                                       
-   myPet = new myCat('Fluffy', 14)
+
+
+
+   myPet = new myCat('bob', 400)
 
 if(document.getElementById('myNameInput').value == 0){
 
 myPet.myCal()
 }
-  
+
 
 else {
 
 myPet.myShow()
-}                                                                      
+}
 
 
 
 }"><br><br>
 
 <div id='myDiv130'>...</div><br><br><br>
+
+
+
+<select id="myArrayOp">
+	<option value="Select"> Select A Number</option>
+	<option value="0">0</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+
+</select>
+
+<input id="myButton1344" type="button" value="Extended Class" onclick="{
+
+  class myH {
+      constructor(passName, passAge) {
+         this.myName = passName;
+         this.myAge = passAge;
+      }
+
+      myShow(){
+         document.getElementById('myDiv130').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+      }
+
+   }
+
+class myAnimal extends myH {
+
+myShow3(){
+
+document.getElementById('myDiv1430').innerHTML += 'The Dog is named '+ this.myName +'and is not '+this.myAge
+
+}
+}
+
+
+
+
+class myAnimal1 extends myH {
+
+myShow4(){
+
+document.getElementById('myDiv1430').innerHTML += 'The Bird is named '+ this.myName +'and hasnt flown for '+this.myAge+' years'
+
+}
+}
+
+
+
+ class myAnimal2 extends myH {
+
+myShow5(){
+
+document.getElementById('myDiv1430').innerHTML += 'The Turtle is named '+ this.myName +'and has been moving for '+this.myAge
+}
+}
+
+
+ class myAnimal3 extends myH {
+
+myShow6(){
+
+document.getElementById('myDiv1430').innerHTML += 'The Pet Rock is named '+ this.myName +'and is '+this.myAge
+}
+}
+
+
+
+
+
+if (document.getElementById('myArrayOp').value == 0){
+
+myPet = new myAnimal('Terry', 500)
+myPet.myShow3()}
+
+else if (document.getElementById('myArrayOp').value == 1){
+myPet = new myAnimal1('Terry', 500)
+myPet.myShow4()}
+
+
+else if (document.getElementById('myArrayOp').value == 2){
+myPet = new myAnimal2('Terry', 500)
+myPet.myShow5()}
+
+
+else if (document.getElementById('myArrayOp').value == 3){
+myPet = new myAnimal3('Terry', 500)
+myPet.myShow6()}
+alert()
+}">
+<div id='myDiv1430'></div>
 
 
