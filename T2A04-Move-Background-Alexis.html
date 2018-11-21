@@ -46,6 +46,64 @@ document.getElementById('myBody').style.backgroundPosition = myPos
 
 
 
+}"><h3 align=center >Background Moving Image by Alexis </h3>
+<body id="myBody"style="background-repeat: repeat; background-size: 90%;" background="https://cdn1.vectorstock.com/i/1000x1000/97/35/seamless-space-background-vector-20669735.jpg">
+
+
+
+<img id="myImg01" class="center" src="https://i.gifer.com/JUl.gif" style="position:absolute; left:100px; top:200px; width:100; height:100">
+<script type="text/javascript">
+
+
+let myMove=0
+let myTime
+let myPos = '0px,00px'
+</script>
+
+
+<input id="myButton01"type=button value="BG Left" onclick="{
+
+
+myMove += 5
+
+myPos = '-' + myMove + 'px, 0px'
+
+document.getElementById('myBody').style.backgroundPosition = myPos
 }">
+
+
+
+
+<input type=button value="BGRight" onclick="{
+
+
+myMove += 5
+
+myPos = myMove + 'px, 0px'
+
+document.getElementById('myBody').style.backgroundPosition = myPos
+}">
+
+
+
+<input type=button value="AutoBG" onclick="{
+
+  clearInterval(myTime)
+ myTime = setInterval(function(){document.getElementById('myButton01').click()}, 100)
+
+
+
+
+}"><br><br><br>
+<input type=button value="Left" onclick="{
+document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) - 10 +'px'
+}"><input type=button value="Right" onclick="{
+document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 +'px'
+}">
+<div id="myDiv01">
+
+</div>
+</body>
+
 
 </body>
