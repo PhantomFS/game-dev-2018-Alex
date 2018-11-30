@@ -1,0 +1,58 @@
+<h2>Pascal's pyramid by Alexis</h2>
+
+
+
+<input type="number" id="myLayers" value="3">
+<input type="button" value="go" onclick="{
+ myRow = parseInt(document.getElementById('myLayers').value)
+  function createPascalTriangle (numRows) {
+    var pascalTriangle = [];
+
+    for (var i = 0; i < numRows; i++) {
+      pascalTriangle[i] = new Array(i+1);
+
+      for (var j = 0; j < i+1; j++) {
+        if (j === 0 || j === i) {
+          pascalTriangle[i][j] = 1;
+        } else {
+          pascalTriangle[i][j] = pascalTriangle[i-1][j-1] + pascalTriangle[i-1][j];
+        }
+      }
+    }
+
+    return pascalTriangle;
+  }
+
+//  console.table(createPascalTriangle(myRow));
+
+let myAr = []
+myAr = createPascalTriangle(myRow)
+
+
+// console.log(createPascalTriangle(myRow))
+
+console.log(myAr)
+
+
+
+document.getElementById('myDiv01').innerHTML = ''
+for(let x = 0; x < myRow; x++ ){
+  for(let y = 0; y < myAr[x].length; y++ ){
+
+
+    document.getElementById('myDiv01').innerHTML += myAr[x][y] + ', '
+
+
+  }
+
+      document.getElementById('myDiv01').innerHTML +=  ` <br>`
+}
+
+
+
+}">
+
+
+<div id="myDiv01">
+  ...
+</div>
