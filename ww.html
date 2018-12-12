@@ -1,0 +1,205 @@
+<h2 align="center">Keyboard DDR</h2>
+<script type="text/javascript">
+
+  let myClock
+
+  let score = 0
+
+  document.onkeyup = checkKey;
+
+  function checkKey(myEventA) {
+
+
+    if (myEventA.keyCode == 87){
+
+        if ((parseInt(document.getElementById('arrow1').style.top) < 90)&&(parseInt(document.getElementById('arrow1').style.top) > 65)) {
+            score = score + 500
+          }
+
+
+          else if (((parseInt(document.getElementById('arrow1').style.top) < 125)&&(parseInt(document.getElementById('arrow1').style.top) > 50))&&(parseInt(document.getElementById('arrow1').style.top) != 75))
+            {
+
+              score = score + 250
+
+            }
+
+        document.getElementById('arrow1').style.visibility = 'hidden'
+
+        document.getElementById('div').innerHTML = 'Score: ' +score
+
+
+
+    }
+
+
+
+      else
+        {
+
+          alert()
+
+        }
+
+
+
+}
+
+if (myEventA.keyCode == 65){
+
+    if ((parseInt(document.getElementById('arrow2').style.top) < 90)&&(parseInt(document.getElementById('arrow2').style.top) > 65)) {
+        score = score + 500
+      }
+
+
+      else if (((parseInt(document.getElementById('arrow2').style.top) < 125)&&(parseInt(document.getElementById('arrow2').style.top) > 50))&&(parseInt(document.getElementById('arrow2').style.top) != 75))
+        {
+
+          score = score + 250
+
+        }
+
+    document.getElementById('arrow2').style.visibility = 'hidden'
+
+    document.getElementById('div').innerHTML = 'Score: ' +score
+
+
+
+}
+if (myEventA.keyCode == 68){
+
+    if ((parseInt(document.getElementById('arrow3').style.top) < 90)&&(parseInt(document.getElementById('arrow3').style.top) > 65)) {
+        score = score + 500
+      }
+
+
+      else if (((parseInt(document.getElementById('arrow3').style.top) < 125)&&(parseInt(document.getElementById('arrow3').style.top) > 50))&&(parseInt(document.getElementById('arrow3').style.top) != 75))
+        {
+
+          score = score + 250
+
+        }
+
+    document.getElementById('arrow3').style.visibility = 'hidden'
+
+    document.getElementById('div').innerHTML = 'Score: ' +score
+
+
+
+}
+if (myEventA.keyCode == 83){
+
+    if ((parseInt(document.getElementById('arrow4').style.top) < 90)&&(parseInt(document.getElementById('arrow4').style.top) > 65)) {
+        score = score + 500
+      }
+
+
+      else if (((parseInt(document.getElementById('arrow4').style.top) < 125)&&(parseInt(document.getElementById('arrow4').style.top) > 50))&&(parseInt(document.getElementById('arrow4').style.top) != 75))
+        {
+
+          score = score + 250
+
+        }
+
+    document.getElementById('arrow4').style.visibility = 'hidden'
+
+    document.getElementById('div').innerHTML = 'Score: ' +score
+
+
+
+}
+  //  if (myEventA.keyCode == 38){document.getElementById('myImg02').style.top = parseInt(document.getElementById('myImg02').style.top) - 10 +'px'     //arrow up
+  //  }
+  //  if (myEventA.keyCode == 37){ document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) - 10 +'px'  //arrow left
+//    document.getElementById('myImg02').style.transform= 'rotate(0deg)'
+  //  }
+  //  if (myEventA.keyCode == 39){ document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + 10 +'px'  //arrow right
+  //  document.getElementById('myImg02').style.transform= 'rotate(0deg)'
+  //  }
+  //  if (myEventA.keyCode == 40){document.getElementById('myImg02').style.top = parseInt(document.getElementById('myImg02').style.top) + 10 +'px'    //arrow down
+  //  document.getElementById('myImg02').style.transform= 'rotate(90deg)'
+  //  }
+
+
+
+
+</script>
+<body id="myBody"style="background-repeat: no-repeat; background-size: cover;" background="https://i.makeagif.com/media/8-08-2015/dsGiIl.gif">
+<input id="myButton01"type=button value="Start" onclick="{
+
+
+     clearInterval(myClock)
+     myClock = setInterval(function(){
+
+       if(document.getElementById('seconds').innerHTML >= 2){
+         document.getElementById('arrow2').style.top = parseInt(document.getElementById('arrow2').style.top) - 10 + 'px'
+
+       }
+
+
+
+       document.getElementById('arrow1').style.top = parseInt(document.getElementById('arrow1').style.top) - 10 + 'px'
+
+     }, 200)
+document.getElementById('arrow1').style.visibility = 'visible'
+document.getElementById('arrow2').style.visibility = 'visible'
+
+
+
+
+
+
+ //  time
+    var minutesLabel = document.getElementById('minutes');
+  var secondsLabel = document.getElementById('seconds');
+  var totalSeconds = 0;
+  setInterval(setTime, 1000);
+
+  function setTime() {
+    ++totalSeconds;
+    secondsLabel.innerHTML = pad(totalSeconds % 60);
+    minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+  }
+
+  function pad(val) {
+    var valString = val + '';
+    if (valString.length < 2) {
+      return '0' + valString;
+    } else {
+      return valString;
+    }
+  }
+
+
+
+
+
+}">
+
+<label id="minutes">00</label>:<label id="seconds">00</label>
+<br><div id="div">
+  Score:
+</div>
+<br><br>
+<img src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(90deg);width:75px; height:75px;position:absolute; left:205px; top:75px;">
+<img src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="width:75px; height:75px;position:absolute; left:45px; top:75px;">
+<img src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(180deg);width:75px; height:75px;position:absolute; left:300px; top:75px;">
+<img src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(270deg);width:75px; height:75px; position:absolute; left:130px; top:75px;">
+
+
+
+
+
+
+
+
+
+<img id="arrow1" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(90deg);width:75px; height:75px;position:absolute; left:205px; top:500px; visibility: hidden">
+<img id="arrow2" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(90deg);width:75px; height:75px;position:absolute; left:45px; top:500px; visibility: hidden;">
+<img id="arrow3" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(90deg);width:75px; height:75px;position:absolute; left:300px; top:500px; visibility: hidden">
+<img id="arrow4" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(90deg);width:75px; height:75px; position:absolute; left:130px; top:500px; visibility: hidden">
+
+
+
+
+</body>
