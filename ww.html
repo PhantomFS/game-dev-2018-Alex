@@ -5,6 +5,13 @@
 
   let score = 0
 
+
+
+
+
+
+
+
   document.onkeyup = checkKey;
 
   function checkKey(myEventA) {
@@ -13,18 +20,19 @@
     if (myEventA.keyCode == 87){
 
         if ((parseInt(document.getElementById('arrow1').style.top) < 90)&&(parseInt(document.getElementById('arrow1').style.top) > 65)) {
+                  document.getElementById('arrow1').style.visibility = 'hidden'
             score = score + 500
           }
 
 
           else if (((parseInt(document.getElementById('arrow1').style.top) < 125)&&(parseInt(document.getElementById('arrow1').style.top) > 50))&&(parseInt(document.getElementById('arrow1').style.top) != 75))
             {
-
+        document.getElementById('arrow1').style.visibility = 'hidden'
               score = score + 250
 
             }
 
-        document.getElementById('arrow1').style.visibility = 'hidden'
+
 
         document.getElementById('div').innerHTML = 'Score: ' +score
 
@@ -33,33 +41,21 @@
     }
 
 
-
-      else
-        {
-
-          alert()
-
-        }
-
-
-
-}
-
 if (myEventA.keyCode == 65){
 
     if ((parseInt(document.getElementById('arrow2').style.top) < 90)&&(parseInt(document.getElementById('arrow2').style.top) > 65)) {
+          document.getElementById('arrow2').style.visibility = 'hidden'
         score = score + 500
       }
 
 
       else if (((parseInt(document.getElementById('arrow2').style.top) < 125)&&(parseInt(document.getElementById('arrow2').style.top) > 50))&&(parseInt(document.getElementById('arrow2').style.top) != 75))
         {
-
+    document.getElementById('arrow2').style.visibility = 'hidden'
           score = score + 250
 
         }
 
-    document.getElementById('arrow2').style.visibility = 'hidden'
 
     document.getElementById('div').innerHTML = 'Score: ' +score
 
@@ -69,18 +65,19 @@ if (myEventA.keyCode == 65){
 if (myEventA.keyCode == 68){
 
     if ((parseInt(document.getElementById('arrow3').style.top) < 90)&&(parseInt(document.getElementById('arrow3').style.top) > 65)) {
+          document.getElementById('arrow3').style.visibility = 'hidden'
         score = score + 500
       }
 
 
       else if (((parseInt(document.getElementById('arrow3').style.top) < 125)&&(parseInt(document.getElementById('arrow3').style.top) > 50))&&(parseInt(document.getElementById('arrow3').style.top) != 75))
         {
-
+    document.getElementById('arrow3').style.visibility = 'hidden'
           score = score + 250
 
         }
 
-    document.getElementById('arrow3').style.visibility = 'hidden'
+
 
     document.getElementById('div').innerHTML = 'Score: ' +score
 
@@ -90,35 +87,226 @@ if (myEventA.keyCode == 68){
 if (myEventA.keyCode == 83){
 
     if ((parseInt(document.getElementById('arrow4').style.top) < 90)&&(parseInt(document.getElementById('arrow4').style.top) > 65)) {
+          document.getElementById('arrow4').style.visibility = 'hidden'
         score = score + 500
       }
 
 
       else if (((parseInt(document.getElementById('arrow4').style.top) < 125)&&(parseInt(document.getElementById('arrow4').style.top) > 50))&&(parseInt(document.getElementById('arrow4').style.top) != 75))
         {
-
+    document.getElementById('arrow4').style.visibility = 'hidden'
           score = score + 250
 
         }
 
-    document.getElementById('arrow4').style.visibility = 'hidden'
+
+
+    document.getElementById('div').innerHTML = 'Score: ' +score
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+if (myEventA.keyCode == 87){
+
+    if ((parseInt(document.getElementById('arrow11').style.top) < 90)&&(parseInt(document.getElementById('arrow11').style.top) > 65)) {
+          document.getElementById('arrow11').style.visibility = 'hidden'
+        score = score + 500
+      }
+
+
+      else if (((parseInt(document.getElementById('arrow11').style.top) < 125)&&(parseInt(document.getElementById('arrow11').style.top) > 50))&&(parseInt(document.getElementById('arrow11').style.top) != 75))
+        {
+    document.getElementById('arrow11').style.visibility = 'hidden'
+          score = score + 250
+
+        }
+
+
 
     document.getElementById('div').innerHTML = 'Score: ' +score
 
 
 
 }
-  //  if (myEventA.keyCode == 38){document.getElementById('myImg02').style.top = parseInt(document.getElementById('myImg02').style.top) - 10 +'px'     //arrow up
-  //  }
-  //  if (myEventA.keyCode == 37){ document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) - 10 +'px'  //arrow left
-//    document.getElementById('myImg02').style.transform= 'rotate(0deg)'
-  //  }
-  //  if (myEventA.keyCode == 39){ document.getElementById('myImg02').style.left = parseInt(document.getElementById('myImg02').style.left) + 10 +'px'  //arrow right
-  //  document.getElementById('myImg02').style.transform= 'rotate(0deg)'
-  //  }
-  //  if (myEventA.keyCode == 40){document.getElementById('myImg02').style.top = parseInt(document.getElementById('myImg02').style.top) + 10 +'px'    //arrow down
-  //  document.getElementById('myImg02').style.transform= 'rotate(90deg)'
-  //  }
+
+
+if (myEventA.keyCode == 65){
+
+if ((parseInt(document.getElementById('arrow21').style.top) < 90)&&(parseInt(document.getElementById('arrow21').style.top) > 65)) {
+  document.getElementById('arrow21').style.visibility = 'hidden'
+    score = score + 500
+  }
+
+
+  else if (((parseInt(document.getElementById('arrow21').style.top) < 125)&&(parseInt(document.getElementById('arrow21').style.top) > 50))&&(parseInt(document.getElementById('arrow21').style.top) != 75))
+    {
+document.getElementById('arrow21').style.visibility = 'hidden'
+      score = score + 250
+
+    }
+
+
+
+document.getElementById('div').innerHTML = 'Score: ' +score
+
+
+
+}
+if (myEventA.keyCode == 68){
+
+if ((parseInt(document.getElementById('arrow31').style.top) < 90)&&(parseInt(document.getElementById('arrow31').style.top) > 65)) {
+  document.getElementById('arrow31').style.visibility = 'hidden'
+    score = score + 500
+  }
+
+
+  else if (((parseInt(document.getElementById('arrow31').style.top) < 125)&&(parseInt(document.getElementById('arrow31').style.top) > 50))&&(parseInt(document.getElementById('arrow31').style.top) != 75))
+    {
+document.getElementById('arrow31').style.visibility = 'hidden'
+      score = score + 250
+
+    }
+
+
+document.getElementById('div').innerHTML = 'Score: ' +score
+
+
+
+}
+if (myEventA.keyCode == 83){
+
+if ((parseInt(document.getElementById('arrow41').style.top) < 90)&&(parseInt(document.getElementById('arrow41').style.top) > 65)) {
+  document.getElementById('arrow41').style.visibility = 'hidden'
+    score = score + 500
+  }
+
+
+  else if (((parseInt(document.getElementById('arrow41').style.top) < 125)&&(parseInt(document.getElementById('arrow41').style.top) > 50))&&(parseInt(document.getElementById('arrow41').style.top) != 75))
+    {
+document.getElementById('arrow41').style.visibility = 'hidden'
+      score = score + 250
+
+    }
+
+
+
+document.getElementById('div').innerHTML = 'Score: ' +score
+
+
+}
+
+
+
+
+
+
+
+
+if (myEventA.keyCode == 87){
+
+    if ((parseInt(document.getElementById('arrow12').style.top) < 90)&&(parseInt(document.getElementById('arrow12').style.top) > 65)) {
+          document.getElementById('arrow12').style.visibility = 'hidden'
+        score = score + 500
+      }
+
+
+      else if (((parseInt(document.getElementById('arrow12').style.top) < 125)&&(parseInt(document.getElementById('arrow12').style.top) > 50))&&(parseInt(document.getElementById('arrow12').style.top) != 75))
+        {
+    document.getElementById('arrow12').style.visibility = 'hidden'
+          score = score + 250
+
+        }
+
+
+
+    document.getElementById('div').innerHTML = 'Score: ' +score
+
+
+
+}
+
+
+if (myEventA.keyCode == 65){
+
+if ((parseInt(document.getElementById('arrow22').style.top) < 90)&&(parseInt(document.getElementById('arrow22').style.top) > 65)) {
+  document.getElementById('arrow22').style.visibility = 'hidden'
+    score = score + 500
+  }
+
+
+  else if (((parseInt(document.getElementById('arrow22').style.top) < 125)&&(parseInt(document.getElementById('arrow22').style.top) > 50))&&(parseInt(document.getElementById('arrow22').style.top) != 75))
+    {
+      document.getElementById('arrow22').style.visibility = 'hidden'
+      score = score + 250
+
+    }
+
+
+
+document.getElementById('div').innerHTML = 'Score: ' +score
+
+
+
+}
+if (myEventA.keyCode == 68){
+
+if ((parseInt(document.getElementById('arrow32').style.top) < 90)&&(parseInt(document.getElementById('arrow32').style.top) > 65)) {
+  document.getElementById('arrow32').style.visibility = 'hidden'
+    score = score + 500
+  }
+
+
+  else if (((parseInt(document.getElementById('arrow32').style.top) < 125)&&(parseInt(document.getElementById('arrow32').style.top) > 50))&&(parseInt(document.getElementById('arrow32').style.top) != 75))
+    {
+      document.getElementById('arrow32').style.visibility = 'hidden'
+      score = score + 250
+
+    }
+
+
+
+document.getElementById('div').innerHTML = 'Score: ' +score
+
+
+
+}
+if (myEventA.keyCode == 83){
+
+if ((parseInt(document.getElementById('arrow42').style.top) < 90)&&(parseInt(document.getElementById('arrow42').style.top) > 65)) {
+  document.getElementById('arrow42').style.visibility = 'hidden'
+    score = score + 500
+  }
+
+
+  else if (((parseInt(document.getElementById('arrow42').style.top) < 125)&&(parseInt(document.getElementById('arrow42').style.top) > 50))&&(parseInt(document.getElementById('arrow42').style.top) != 75))
+    {
+document.getElementById('arrow42').style.visibility = 'hidden'
+      score = score + 250
+
+    }
+
+
+
+document.getElementById('div').innerHTML = 'Score: ' +score
+
+
+}
+
+
+
+}
+
 
 
 
@@ -131,8 +319,174 @@ if (myEventA.keyCode == 83){
      clearInterval(myClock)
      myClock = setInterval(function(){
 
-       if(document.getElementById('seconds').innerHTML >= 2){
+       if((document.getElementById('seconds').innerHTML >= 2)||(document.getElementById('minutes').innerHTML == 1)){
          document.getElementById('arrow2').style.top = parseInt(document.getElementById('arrow2').style.top) - 10 + 'px'
+
+       }
+
+       if((document.getElementById('seconds').innerHTML >= 3)||(document.getElementById('minutes').innerHTML == 1)){
+         document.getElementById('arrow3').style.top = parseInt(document.getElementById('arrow3').style.top) - 10 + 'px'
+
+       }
+       if((document.getElementById('seconds').innerHTML >= 4)||(document.getElementById('minutes').innerHTML == 1)){
+         document.getElementById('arrow4').style.top = parseInt(document.getElementById('arrow4').style.top) - 10 + 'px'
+
+       }
+       if((document.getElementById('seconds').innerHTML >= 5)||(document.getElementById('minutes').innerHTML == 1)){
+         document.getElementById('arrow11').style.top = parseInt(document.getElementById('arrow11').style.top) - 10 + 'px'
+
+       }
+       if((document.getElementById('seconds').innerHTML >= 7)||(document.getElementById('minutes').innerHTML == 1)){
+         document.getElementById('arrow21').style.top = parseInt(document.getElementById('arrow21').style.top) - 10 + 'px'
+
+       }
+       if((document.getElementById('seconds').innerHTML >= 8)||(document.getElementById('minutes').innerHTML == 1)){
+         document.getElementById('arrow31').style.top = parseInt(document.getElementById('arrow31').style.top) - 10 + 'px'
+
+       }
+       if((document.getElementById('seconds').innerHTML >= 10)||(document.getElementById('minutes').innerHTML == 1)){
+         document.getElementById('arrow41').style.top = parseInt(document.getElementById('arrow41').style.top) - 10 + 'px'
+
+       }
+       if((document.getElementById('seconds').innerHTML >= 11)||(document.getElementById('minutes').innerHTML == 1)){
+         document.getElementById('arrow12').style.top = parseInt(document.getElementById('arrow12').style.top) - 10 + 'px'
+
+       }
+
+       if((document.getElementById('seconds').innerHTML >= 12)||(document.getElementById('minutes').innerHTML == 1)){
+         document.getElementById('arrow22').style.top = parseInt(document.getElementById('arrow22').style.top) - 10 + 'px'
+
+       }
+
+       if((document.getElementById('seconds').innerHTML >= 13)||(document.getElementById('minutes').innerHTML == 1)){
+         document.getElementById('arrow32').style.top = parseInt(document.getElementById('arrow32').style.top) - 10 + 'px'
+
+       }
+       if((document.getElementById('seconds').innerHTML >= 15)||(document.getElementById('minutes').innerHTML == 1)){
+         document.getElementById('arrow42').style.top = parseInt(document.getElementById('arrow42').style.top) - 10 + 'px'
+
+       }
+       if((document.getElementById('seconds').innerHTML >= 41)||(document.getElementById('minutes').innerHTML == 1)){
+         document.getElementById('arrow13').style.top = parseInt(document.getElementById('arrow12').style.top) - 10 + 'px'
+
+       }
+
+       if((document.getElementById('seconds').innerHTML >= 41)||(document.getElementById('minutes').innerHTML == 1)){
+         document.getElementById('arrow23').style.top = parseInt(document.getElementById('arrow22').style.top) - 10 + 'px'
+
+       }
+
+       if((document.getElementById('seconds').innerHTML >= 42)||(document.getElementById('minutes').innerHTML == 1)){
+         document.getElementById('arrow33').style.top = parseInt(document.getElementById('arrow32').style.top) - 10 + 'px'
+
+       }
+       if((document.getElementById('seconds').innerHTML >= 42)||(document.getElementById('minutes').innerHTML == 1)){
+         document.getElementById('arrow43').style.top = parseInt(document.getElementById('arrow42').style.top) - 10 + 'px'
+
+       }
+
+
+
+
+
+
+
+
+       if(parseInt(document.getElementById('arrow1').style.top) == 0){
+
+         document.getElementById('arrow1').style.top = 700
+         document.getElementById('arrow1').style.visibility = 'visible'
+
+       }
+
+       if(parseInt(document.getElementById('arrow2').style.top) == 0){
+
+         document.getElementById('arrow2').style.top = 700
+         document.getElementById('arrow2').style.visibility = 'visible'
+
+       }
+       if(parseInt(document.getElementById('arrow3').style.top) == 0){
+
+         document.getElementById('arrow3').style.top = 700
+         document.getElementById('arrow3').style.visibility = 'visible'
+
+       }
+       if(parseInt(document.getElementById('arrow4').style.top) == 0){
+
+         document.getElementById('arrow4').style.top = 700
+         document.getElementById('arrow4').style.visibility = 'visible'
+
+       }
+       if(parseInt(document.getElementById('arrow11').style.top) == 0){
+
+         document.getElementById('arrow11').style.top = 700
+         document.getElementById('arrow11').style.visibility = 'visible'
+
+       }
+       if(parseInt(document.getElementById('arrow21').style.top) == 0){
+
+         document.getElementById('arrow21').style.top = 700
+         document.getElementById('arrow21').style.visibility = 'visible'
+
+       }
+       if(parseInt(document.getElementById('arrow31').style.top) == 0){
+
+         document.getElementById('arrow31').style.top = 700
+         document.getElementById('arrow31').style.visibility = 'visible'
+
+       }
+       if(parseInt(document.getElementById('arrow41').style.top) == 0){
+
+         document.getElementById('arrow41').style.top = 700
+         document.getElementById('arrow41').style.visibility = 'visible'
+
+       }
+       if(parseInt(document.getElementById('arrow12').style.top) == 0){
+
+         document.getElementById('arrow12').style.top = 700
+         document.getElementById('arrow12').style.visibility = 'visible'
+
+       }
+       if(parseInt(document.getElementById('arrow22').style.top) == 0){
+
+         document.getElementById('arrow22').style.top = 700
+         document.getElementById('arrow22').style.visibility = 'visible'
+
+       }
+       if(parseInt(document.getElementById('arrow32').style.top) == 0){
+
+         document.getElementById('arrow32').style.top = 700
+         document.getElementById('arrow32').style.visibility = 'visible'
+
+       }
+       if(parseInt(document.getElementById('arrow42').style.top) == 0){
+
+         document.getElementById('arrow42').style.top = 700
+         document.getElementById('arrow42').style.visibility = 'visible'
+
+       }
+       if(parseInt(document.getElementById('arrow13').style.top) == 0){
+
+         document.getElementById('arrow13').style.top = 700
+         document.getElementById('arrow13').style.visibility = 'visible'
+
+       }
+       if(parseInt(document.getElementById('arrow23').style.top) == 0){
+
+         document.getElementById('arrow23').style.top = 700
+         document.getElementById('arrow23').style.visibility = 'visible'
+
+       }
+       if(parseInt(document.getElementById('arrow33').style.top) == 0){
+
+         document.getElementById('arrow33').style.top = 700
+         document.getElementById('arrow33').style.visibility = 'visible'
+
+       }
+       if(parseInt(document.getElementById('arrow43').style.top) == 0){
+
+         document.getElementById('arrow43').style.top = 700
+         document.getElementById('arrow43').style.visibility = 'visible'
 
        }
 
@@ -141,9 +495,25 @@ if (myEventA.keyCode == 83){
        document.getElementById('arrow1').style.top = parseInt(document.getElementById('arrow1').style.top) - 10 + 'px'
 
      }, 200)
+
+
+
 document.getElementById('arrow1').style.visibility = 'visible'
 document.getElementById('arrow2').style.visibility = 'visible'
-
+document.getElementById('arrow3').style.visibility = 'visible'
+document.getElementById('arrow4').style.visibility = 'visible'
+document.getElementById('arrow11').style.visibility = 'visible'
+document.getElementById('arrow21').style.visibility = 'visible'
+document.getElementById('arrow31').style.visibility = 'visible'
+document.getElementById('arrow41').style.visibility = 'visible'
+document.getElementById('arrow12').style.visibility = 'visible'
+document.getElementById('arrow22').style.visibility = 'visible'
+document.getElementById('arrow32').style.visibility = 'visible'
+document.getElementById('arrow42').style.visibility = 'visible'
+document.getElementById('arrow13').style.visibility = 'visible'
+document.getElementById('arrow23').style.visibility = 'visible'
+document.getElementById('arrow33').style.visibility = 'visible'
+document.getElementById('arrow43').style.visibility = 'visible'
 
 
 
@@ -194,10 +564,22 @@ document.getElementById('arrow2').style.visibility = 'visible'
 
 
 
-<img id="arrow1" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(90deg);width:75px; height:75px;position:absolute; left:205px; top:500px; visibility: hidden">
-<img id="arrow2" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(90deg);width:75px; height:75px;position:absolute; left:45px; top:500px; visibility: hidden;">
-<img id="arrow3" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(90deg);width:75px; height:75px;position:absolute; left:300px; top:500px; visibility: hidden">
-<img id="arrow4" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(90deg);width:75px; height:75px; position:absolute; left:130px; top:500px; visibility: hidden">
+<img id="arrow1" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(90deg);width:75px; height:75px;position:absolute; left:205px; top:700px; visibility: hidden">
+<img id="arrow2" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="width:75px; height:75px;position:absolute; left:45px; top:700px; visibility: hidden;">
+<img id="arrow3" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(180deg);width:75px; height:75px;position:absolute; left:300px; top:700px; visibility: hidden">
+<img id="arrow4" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(270deg);width:75px; height:75px; position:absolute; left:130px; top:700px; visibility: hidden">
+<img id="arrow11" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(90deg);width:75px; height:75px;position:absolute; left:205px; top:700px; visibility: hidden">
+<img id="arrow21" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="width:75px; height:75px;position:absolute; left:45px; top:700px; visibility: hidden;">
+<img id="arrow31" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(180deg);width:75px; height:75px;position:absolute; left:300px; top:700px; visibility: hidden">
+<img id="arrow41" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(270deg);width:75px; height:75px; position:absolute; left:130px; top:700px; visibility: hidden">
+<img id="arrow12" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(90deg);width:75px; height:75px;position:absolute; left:205px; top:700px; visibility: hidden">
+<img id="arrow22" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="width:75px; height:75px;position:absolute; left:45px; top:700px; visibility: hidden;">
+<img id="arrow32" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(180deg);width:75px; height:75px;position:absolute; left:300px; top:700px; visibility: hidden">
+<img id="arrow42" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(270deg);width:75px; height:75px; position:absolute; left:130px; top:700px; visibility: hidden">
+<img id="arrow13" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(90deg);width:75px; height:75px;position:absolute; left:205px; top:700px; visibility: hidden">
+<img id="arrow23" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="width:75px; height:75px;position:absolute; left:45px; top:700px; visibility: hidden;">
+<img id="arrow33" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(180deg);width:75px; height:75px;position:absolute; left:300px; top:700px; visibility: hidden">
+<img id="arrow43" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(270deg);width:75px; height:75px; position:absolute; left:130px; top:700px; visibility: hidden">
 
 
 
