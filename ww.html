@@ -16,11 +16,10 @@
 
   function checkKey(myEventA) {
 
-
     if (myEventA.keyCode == 87){
 
         if ((parseInt(document.getElementById('arrow1').style.top) < 90)&&(parseInt(document.getElementById('arrow1').style.top) > 65)) {
-                  document.getElementById('arrow1').style.visibility = 'hidden'
+              document.getElementById('arrow1').style.visibility = 'hidden'
             score = score + 500
             combo = combo + 1
             if ((combo <= 20)&&(combo >= 10)){
@@ -28,6 +27,9 @@
               score = score + 500
               document.getElementById('one').style.visibility = 'hidden'
               document.getElementById('two').style.visibility = 'visible'
+              document.getElementById('pOne').style.visibility = 'hidden'
+              document.getElementById('pTwo').style.visibility = 'visible'
+
 
             }
 
@@ -36,6 +38,9 @@
               score = score + 1000
               document.getElementById('two').style.visibility = 'hidden'
               document.getElementById('three').style.visibility = 'visible'
+              document.getElementById('pTwo').style.visibility = 'hidden'
+              document.getElementById('pThree').style.visibility = 'visible'
+
 
             }
 
@@ -44,6 +49,9 @@
               score = score + 1500
               document.getElementById('three').style.visibility = 'hidden'
               document.getElementById('four').style.visibility = 'visible'
+              document.getElementById('pThree').style.visibility = 'hidden'
+              document.getElementById('pFour').style.visibility = 'visible'
+
 
             }
             if ((combo <= 50)&&(combo >= 41)){
@@ -51,6 +59,9 @@
               score = score + 2000
               document.getElementById('four').style.visibility = 'hidden'
               document.getElementById('five').style.visibility = 'visible'
+              document.getElementById('pFour').style.visibility = 'hidden'
+              document.getElementById('pFive').style.visibility = 'visible'
+
 
             }
             if ((combo <= 60)&&(combo >= 51)){
@@ -58,6 +69,9 @@
               score = score + 2500
               document.getElementById('five').style.visibility = 'hidden'
               document.getElementById('six').style.visibility = 'visible'
+              document.getElementById('pFive').style.visibility = 'hidden'
+              document.getElementById('pSix').style.visibility = 'visible'
+
 
             }
             if ((combo <= 70)&&(combo >= 61)){
@@ -65,6 +79,9 @@
               score = score + 3000
               document.getElementById('six').style.visibility = 'hidden'
               document.getElementById('seven').style.visibility = 'visible'
+              document.getElementById('pSix').style.visibility = 'hidden'
+              document.getElementById('pSeven').style.visibility = 'visible'
+
 
             }
             if ((combo <= 80)&&(combo >= 71)){
@@ -72,6 +89,9 @@
               score = score + 3500
               document.getElementById('seven').style.visibility = 'hidden'
               document.getElementById('eight').style.visibility = 'visible'
+              document.getElementById('pSeven').style.visibility = 'hidden'
+              document.getElementById('pEight').style.visibility = 'visible'
+
 
             }
             if ((combo <= 90)&&(combo >= 81)){
@@ -79,6 +99,9 @@
               score = score + 4000
               document.getElementById('eight').style.visibility = 'hidden'
               document.getElementById('nine').style.visibility = 'visible'
+              document.getElementById('pEight').style.visibility = 'hidden'
+              document.getElementById('pNine').style.visibility = 'visible'
+
 
             }
             if ((combo <= 100)&&(combo >= 91)){
@@ -87,6 +110,9 @@
               document.getElementById('nine').style.visibility = 'hidden'
               document.getElementById('one').style.visibility = 'visible'
               document.getElementById('zero').style.visibility = 'visible'
+              document.getElementById('pNine').style.visibility = 'hidden'
+              document.getElementById('pTen').style.visibility = 'visible'
+
 
             }
           }
@@ -99,70 +125,90 @@
               combo = combo + 1
               if ((combo <= 20)&&(combo >= 10)){
 
-                score = score + 250
-                document.getElementById('one').style.visibility = 'hidden'
-                document.getElementById('two').style.visibility = 'visible'
+              score = score + 250
+              document.getElementById('one').style.visibility = 'hidden'
+              document.getElementById('two').style.visibility = 'visible'
+              document.getElementById('pOne').style.visibility = 'hidden'
+              document.getElementById('pTwo').style.visibility = 'visible'
 
-              }
+            }
 
-              if ((combo <= 30)&&(combo >= 21)){
+            if ((combo <= 30)&&(combo >= 21)){
 
-                score = score + 500
-                document.getElementById('two').style.visibility = 'hidden'
-                document.getElementById('three').style.visibility = 'visible'
+              score = score + 500
+              document.getElementById('two').style.visibility = 'hidden'
+              document.getElementById('three').style.visibility = 'visible'
+              document.getElementById('pTwo').style.visibility = 'hidden'
+              document.getElementById('pThree').style.visibility = 'visible'
 
-              }
+            }
 
-              if ((combo <= 40)&&(combo >= 31)){
+            if ((combo <= 40)&&(combo >= 31)){
 
-                score = score + 1000
-                document.getElementById('three').style.visibility = 'hidden'
-                document.getElementById('four').style.visibility = 'visible'
+              score = score + 1000
+              document.getElementById('three').style.visibility = 'hidden'
+              document.getElementById('four').style.visibility = 'visible'
+              document.getElementById('pThree').style.visibility = 'hidden'
+              document.getElementById('pFour').style.visibility = 'visible'
 
-              }
-              if ((combo <= 50)&&(combo >= 41)){
+            }
+            if ((combo <= 50)&&(combo >= 41)){
 
-                score = score + 1500
-                document.getElementById('four').style.visibility = 'hidden'
-                document.getElementById('five').style.visibility = 'visible'
+              score = score + 1500
+              document.getElementById('four').style.visibility = 'hidden'
+              document.getElementById('five').style.visibility = 'visible'
+              document.getElementById('pFour').style.visibility = 'hidden'
+              document.getElementById('pFive').style.visibility = 'visible'
 
-              }
-              if ((combo <= 60)&&(combo >= 51)){
+            }
+            if ((combo <= 60)&&(combo >= 51)){
 
-                score = score + 2000
-                document.getElementById('five').style.visibility = 'hidden'
-                document.getElementById('six').style.visibility = 'visible'
+              score = score + 2000
+              document.getElementById('five').style.visibility = 'hidden'
+              document.getElementById('six').style.visibility = 'visible'
+              document.getElementById('pFive').style.visibility = 'hidden'
+              document.getElementById('pSix').style.visibility = 'visible'
 
-              }
-              if ((combo <= 70)&&(combo >= 61)){
+            }
+            if ((combo <= 70)&&(combo >= 61)){
 
-                score = score + 2500
-                document.getElementById('six').style.visibility = 'hidden'
-                document.getElementById('seven').style.visibility = 'visible'
+              score = score + 2500
+              document.getElementById('six').style.visibility = 'hidden'
+              document.getElementById('seven').style.visibility = 'visible'
+              document.getElementById('pSix').style.visibility = 'hidden'
+              document.getElementById('pSeven').style.visibility = 'visible'
 
-              }
-              if ((combo <= 80)&&(combo >= 71)){
+            }
+            if ((combo <= 80)&&(combo >= 71)){
 
-                score = score + 3000
-                document.getElementById('seven').style.visibility = 'hidden'
-                document.getElementById('eight').style.visibility = 'visible'
+              score = score + 3000
+              document.getElementById('seven').style.visibility = 'hidden'
+              document.getElementById('eight').style.visibility = 'visible'
+              document.getElementById('pSeven').style.visibility = 'hidden'
+              document.getElementById('pEight').style.visibility = 'visible'
 
-              }
-              if ((combo <= 90)&&(combo >= 81)){
+            }
+            if ((combo <= 90)&&(combo >= 81)){
 
-                score = score + 3500
-                document.getElementById('eight').style.visibility = 'hidden'
-                document.getElementById('nine').style.visibility = 'visible'
+              score = score + 3500
+              document.getElementById('eight').style.visibility = 'hidden'
+              document.getElementById('nine').style.visibility = 'visible'
 
-              }
-              if ((combo <= 100)&&(combo >= 91)){
+              document.getElementById('pEight').style.visibility = 'hidden'
+              document.getElementById('pNine').style.visibility = 'visible'
 
-                score = score + 4000
-                document.getElementById('nine').style.visibility = 'hidden'
-                document.getElementById('one').style.visibility = 'visible'
-                document.getElementById('zero').style.visibility = 'visible'
+            }
+            if ((combo <= 100)&&(combo >= 91)){
 
-              }
+              score = score + 4000
+              document.getElementById('nine').style.visibility = 'hidden'
+              document.getElementById('one').style.visibility = 'visible'
+              document.getElementById('zero').style.visibility = 'visible'
+
+              document.getElementById('pNine').style.visibility = 'hidden'
+              document.getElementById('pTen').style.visibility = 'visible'
+
+            }
 
             }
 
@@ -173,12 +219,10 @@
 
 
     }
-
-
-if (myEventA.keyCode == 65){
+    if (myEventA.keyCode == 65){
 
     if ((parseInt(document.getElementById('arrow2').style.top) < 90)&&(parseInt(document.getElementById('arrow2').style.top) > 65)) {
-          document.getElementById('arrow2').style.visibility = 'hidden'
+      document.getElementById('arrow2').style.visibility = 'hidden'
         score = score + 500
         combo = combo + 1
         if ((combo <= 20)&&(combo >= 10)){
@@ -186,6 +230,9 @@ if (myEventA.keyCode == 65){
           score = score + 500
           document.getElementById('one').style.visibility = 'hidden'
           document.getElementById('two').style.visibility = 'visible'
+          document.getElementById('pOne').style.visibility = 'hidden'
+          document.getElementById('pTwo').style.visibility = 'visible'
+
 
         }
 
@@ -194,6 +241,9 @@ if (myEventA.keyCode == 65){
           score = score + 1000
           document.getElementById('two').style.visibility = 'hidden'
           document.getElementById('three').style.visibility = 'visible'
+          document.getElementById('pTwo').style.visibility = 'hidden'
+          document.getElementById('pThree').style.visibility = 'visible'
+
 
         }
 
@@ -202,6 +252,9 @@ if (myEventA.keyCode == 65){
           score = score + 1500
           document.getElementById('three').style.visibility = 'hidden'
           document.getElementById('four').style.visibility = 'visible'
+          document.getElementById('pThree').style.visibility = 'hidden'
+          document.getElementById('pFour').style.visibility = 'visible'
+
 
         }
         if ((combo <= 50)&&(combo >= 41)){
@@ -209,6 +262,9 @@ if (myEventA.keyCode == 65){
           score = score + 2000
           document.getElementById('four').style.visibility = 'hidden'
           document.getElementById('five').style.visibility = 'visible'
+          document.getElementById('pFour').style.visibility = 'hidden'
+          document.getElementById('pFive').style.visibility = 'visible'
+
 
         }
         if ((combo <= 60)&&(combo >= 51)){
@@ -216,6 +272,9 @@ if (myEventA.keyCode == 65){
           score = score + 2500
           document.getElementById('five').style.visibility = 'hidden'
           document.getElementById('six').style.visibility = 'visible'
+          document.getElementById('pFive').style.visibility = 'hidden'
+          document.getElementById('pSix').style.visibility = 'visible'
+
 
         }
         if ((combo <= 70)&&(combo >= 61)){
@@ -223,6 +282,9 @@ if (myEventA.keyCode == 65){
           score = score + 3000
           document.getElementById('six').style.visibility = 'hidden'
           document.getElementById('seven').style.visibility = 'visible'
+          document.getElementById('pSix').style.visibility = 'hidden'
+          document.getElementById('pSeven').style.visibility = 'visible'
+
 
         }
         if ((combo <= 80)&&(combo >= 71)){
@@ -230,6 +292,9 @@ if (myEventA.keyCode == 65){
           score = score + 3500
           document.getElementById('seven').style.visibility = 'hidden'
           document.getElementById('eight').style.visibility = 'visible'
+          document.getElementById('pSeven').style.visibility = 'hidden'
+          document.getElementById('pEight').style.visibility = 'visible'
+
 
         }
         if ((combo <= 90)&&(combo >= 81)){
@@ -237,6 +302,9 @@ if (myEventA.keyCode == 65){
           score = score + 4000
           document.getElementById('eight').style.visibility = 'hidden'
           document.getElementById('nine').style.visibility = 'visible'
+          document.getElementById('pEight').style.visibility = 'hidden'
+          document.getElementById('pNine').style.visibility = 'visible'
+
 
         }
         if ((combo <= 100)&&(combo >= 91)){
@@ -245,6 +313,9 @@ if (myEventA.keyCode == 65){
           document.getElementById('nine').style.visibility = 'hidden'
           document.getElementById('one').style.visibility = 'visible'
           document.getElementById('zero').style.visibility = 'visible'
+          document.getElementById('pNine').style.visibility = 'hidden'
+          document.getElementById('pTen').style.visibility = 'visible'
+
 
         }
       }
@@ -252,96 +323,119 @@ if (myEventA.keyCode == 65){
 
       else if (((parseInt(document.getElementById('arrow2').style.top) < 125)&&(parseInt(document.getElementById('arrow2').style.top) > 50))&&(parseInt(document.getElementById('arrow2').style.top) != 75))
         {
-    document.getElementById('arrow2').style.visibility = 'hidden'
+          document.getElementById('arrow2').style.visibility = 'hidden'
           score = score + 250
           combo = combo + 1
           if ((combo <= 20)&&(combo >= 10)){
 
-            score = score + 250
-            document.getElementById('one').style.visibility = 'hidden'
-            document.getElementById('two').style.visibility = 'visible'
+                score = score + 250
+                document.getElementById('one').style.visibility = 'hidden'
+                document.getElementById('two').style.visibility = 'visible'
+                document.getElementById('pOne').style.visibility = 'hidden'
+                document.getElementById('pTwo').style.visibility = 'visible'
 
-          }
+              }
 
-          if ((combo <= 30)&&(combo >= 21)){
+              if ((combo <= 30)&&(combo >= 21)){
 
-            score = score + 500
-            document.getElementById('two').style.visibility = 'hidden'
-            document.getElementById('three').style.visibility = 'visible'
+                score = score + 500
+                document.getElementById('two').style.visibility = 'hidden'
+                document.getElementById('three').style.visibility = 'visible'
+                document.getElementById('pTwo').style.visibility = 'hidden'
+                document.getElementById('pThree').style.visibility = 'visible'
 
-          }
+              }
 
-          if ((combo <= 40)&&(combo >= 31)){
+              if ((combo <= 40)&&(combo >= 31)){
 
-            score = score + 1000
-            document.getElementById('three').style.visibility = 'hidden'
-            document.getElementById('four').style.visibility = 'visible'
+                score = score + 1000
+                document.getElementById('three').style.visibility = 'hidden'
+                document.getElementById('four').style.visibility = 'visible'
+                document.getElementById('pThree').style.visibility = 'hidden'
+                document.getElementById('pFour').style.visibility = 'visible'
 
-          }
-          if ((combo <= 50)&&(combo >= 41)){
+              }
+              if ((combo <= 50)&&(combo >= 41)){
 
-            score = score + 1500
-            document.getElementById('four').style.visibility = 'hidden'
-            document.getElementById('five').style.visibility = 'visible'
+                score = score + 1500
+                document.getElementById('four').style.visibility = 'hidden'
+                document.getElementById('five').style.visibility = 'visible'
+                document.getElementById('pFour').style.visibility = 'hidden'
+                document.getElementById('pFive').style.visibility = 'visible'
 
-          }
-          if ((combo <= 60)&&(combo >= 51)){
+              }
+              if ((combo <= 60)&&(combo >= 51)){
 
-            score = score + 2000
-            document.getElementById('five').style.visibility = 'hidden'
-            document.getElementById('six').style.visibility = 'visible'
+                score = score + 2000
+                document.getElementById('five').style.visibility = 'hidden'
+                document.getElementById('six').style.visibility = 'visible'
+                document.getElementById('pFive').style.visibility = 'hidden'
+                document.getElementById('pSix').style.visibility = 'visible'
 
-          }
-          if ((combo <= 70)&&(combo >= 61)){
+              }
+              if ((combo <= 70)&&(combo >= 61)){
 
-            score = score + 2500
-            document.getElementById('six').style.visibility = 'hidden'
-            document.getElementById('seven').style.visibility = 'visible'
+                score = score + 2500
+                document.getElementById('six').style.visibility = 'hidden'
+                document.getElementById('seven').style.visibility = 'visible'
+                document.getElementById('pSix').style.visibility = 'hidden'
+                document.getElementById('pSeven').style.visibility = 'visible'
 
-          }
-          if ((combo <= 80)&&(combo >= 71)){
+              }
+              if ((combo <= 80)&&(combo >= 71)){
 
-            score = score + 3000
-            document.getElementById('seven').style.visibility = 'hidden'
-            document.getElementById('eight').style.visibility = 'visible'
+                score = score + 3000
+                document.getElementById('seven').style.visibility = 'hidden'
+                document.getElementById('eight').style.visibility = 'visible'
+                document.getElementById('pSeven').style.visibility = 'hidden'
+                document.getElementById('pEight').style.visibility = 'visible'
 
-          }
-          if ((combo <= 90)&&(combo >= 81)){
+              }
+              if ((combo <= 90)&&(combo >= 81)){
 
-            score = score + 3500
-            document.getElementById('eight').style.visibility = 'hidden'
-            document.getElementById('nine').style.visibility = 'visible'
+                score = score + 3500
+                document.getElementById('eight').style.visibility = 'hidden'
+                document.getElementById('nine').style.visibility = 'visible'
 
-          }
-          if ((combo <= 100)&&(combo >= 91)){
+                document.getElementById('pEight').style.visibility = 'hidden'
+                document.getElementById('pNine').style.visibility = 'visible'
 
-            score = score + 4000
-            document.getElementById('nine').style.visibility = 'hidden'
-            document.getElementById('one').style.visibility = 'visible'
-            document.getElementById('zero').style.visibility = 'visible'
+              }
+              if ((combo <= 100)&&(combo >= 91)){
 
-          }
+                score = score + 4000
+                document.getElementById('nine').style.visibility = 'hidden'
+                document.getElementById('one').style.visibility = 'visible'
+                document.getElementById('zero').style.visibility = 'visible'
+
+                document.getElementById('pNine').style.visibility = 'hidden'
+                document.getElementById('pTen').style.visibility = 'visible'
+
+              }
 
         }
+
 
 
     document.getElementById('div').innerHTML = '<b>'+score+'</b>'
 
 
 
-}
-if (myEventA.keyCode == 68){
+    }
+    if (myEventA.keyCode == 68){
 
     if ((parseInt(document.getElementById('arrow3').style.top) < 90)&&(parseInt(document.getElementById('arrow3').style.top) > 65)) {
-          document.getElementById('arrow3').style.visibility = 'hidden'
+      document.getElementById('arrow3').style.visibility = 'hidden'
         score = score + 500
         combo = combo + 1
-
         if ((combo <= 20)&&(combo >= 10)){
 
           score = score + 500
           document.getElementById('one').style.visibility = 'hidden'
           document.getElementById('two').style.visibility = 'visible'
+          document.getElementById('pOne').style.visibility = 'hidden'
+          document.getElementById('pTwo').style.visibility = 'visible'
+
 
         }
 
@@ -350,6 +444,9 @@ if (myEventA.keyCode == 68){
           score = score + 1000
           document.getElementById('two').style.visibility = 'hidden'
           document.getElementById('three').style.visibility = 'visible'
+          document.getElementById('pTwo').style.visibility = 'hidden'
+          document.getElementById('pThree').style.visibility = 'visible'
+
 
         }
 
@@ -358,6 +455,9 @@ if (myEventA.keyCode == 68){
           score = score + 1500
           document.getElementById('three').style.visibility = 'hidden'
           document.getElementById('four').style.visibility = 'visible'
+          document.getElementById('pThree').style.visibility = 'hidden'
+          document.getElementById('pFour').style.visibility = 'visible'
+
 
         }
         if ((combo <= 50)&&(combo >= 41)){
@@ -365,6 +465,9 @@ if (myEventA.keyCode == 68){
           score = score + 2000
           document.getElementById('four').style.visibility = 'hidden'
           document.getElementById('five').style.visibility = 'visible'
+          document.getElementById('pFour').style.visibility = 'hidden'
+          document.getElementById('pFive').style.visibility = 'visible'
+
 
         }
         if ((combo <= 60)&&(combo >= 51)){
@@ -372,6 +475,9 @@ if (myEventA.keyCode == 68){
           score = score + 2500
           document.getElementById('five').style.visibility = 'hidden'
           document.getElementById('six').style.visibility = 'visible'
+          document.getElementById('pFive').style.visibility = 'hidden'
+          document.getElementById('pSix').style.visibility = 'visible'
+
 
         }
         if ((combo <= 70)&&(combo >= 61)){
@@ -379,6 +485,9 @@ if (myEventA.keyCode == 68){
           score = score + 3000
           document.getElementById('six').style.visibility = 'hidden'
           document.getElementById('seven').style.visibility = 'visible'
+          document.getElementById('pSix').style.visibility = 'hidden'
+          document.getElementById('pSeven').style.visibility = 'visible'
+
 
         }
         if ((combo <= 80)&&(combo >= 71)){
@@ -386,6 +495,9 @@ if (myEventA.keyCode == 68){
           score = score + 3500
           document.getElementById('seven').style.visibility = 'hidden'
           document.getElementById('eight').style.visibility = 'visible'
+          document.getElementById('pSeven').style.visibility = 'hidden'
+          document.getElementById('pEight').style.visibility = 'visible'
+
 
         }
         if ((combo <= 90)&&(combo >= 81)){
@@ -393,6 +505,9 @@ if (myEventA.keyCode == 68){
           score = score + 4000
           document.getElementById('eight').style.visibility = 'hidden'
           document.getElementById('nine').style.visibility = 'visible'
+          document.getElementById('pEight').style.visibility = 'hidden'
+          document.getElementById('pNine').style.visibility = 'visible'
+
 
         }
         if ((combo <= 100)&&(combo >= 91)){
@@ -401,84 +516,105 @@ if (myEventA.keyCode == 68){
           document.getElementById('nine').style.visibility = 'hidden'
           document.getElementById('one').style.visibility = 'visible'
           document.getElementById('zero').style.visibility = 'visible'
+          document.getElementById('pNine').style.visibility = 'hidden'
+          document.getElementById('pTen').style.visibility = 'visible'
+
 
         }
-
-
       }
 
 
       else if (((parseInt(document.getElementById('arrow3').style.top) < 125)&&(parseInt(document.getElementById('arrow3').style.top) > 50))&&(parseInt(document.getElementById('arrow3').style.top) != 75))
         {
-    document.getElementById('arrow3').style.visibility = 'hidden'
+          document.getElementById('arrow3').style.visibility = 'hidden'
           score = score + 250
           combo = combo + 1
           if ((combo <= 20)&&(combo >= 10)){
 
-            score = score + 250
-            document.getElementById('one').style.visibility = 'hidden'
-            document.getElementById('two').style.visibility = 'visible'
+              score = score + 250
+              document.getElementById('one').style.visibility = 'hidden'
+              document.getElementById('two').style.visibility = 'visible'
+              document.getElementById('pOne').style.visibility = 'hidden'
+              document.getElementById('pTwo').style.visibility = 'visible'
 
-          }
+            }
 
-          if ((combo <= 30)&&(combo >= 21)){
+            if ((combo <= 30)&&(combo >= 21)){
 
-            score = score + 500
-            document.getElementById('two').style.visibility = 'hidden'
-            document.getElementById('three').style.visibility = 'visible'
+              score = score + 500
+              document.getElementById('two').style.visibility = 'hidden'
+              document.getElementById('three').style.visibility = 'visible'
+              document.getElementById('pTwo').style.visibility = 'hidden'
+              document.getElementById('pThree').style.visibility = 'visible'
 
-          }
+            }
 
-          if ((combo <= 40)&&(combo >= 31)){
+            if ((combo <= 40)&&(combo >= 31)){
 
-            score = score + 1000
-            document.getElementById('three').style.visibility = 'hidden'
-            document.getElementById('four').style.visibility = 'visible'
+              score = score + 1000
+              document.getElementById('three').style.visibility = 'hidden'
+              document.getElementById('four').style.visibility = 'visible'
+              document.getElementById('pThree').style.visibility = 'hidden'
+              document.getElementById('pFour').style.visibility = 'visible'
 
-          }
-          if ((combo <= 50)&&(combo >= 41)){
+            }
+            if ((combo <= 50)&&(combo >= 41)){
 
-            score = score + 1500
-            document.getElementById('four').style.visibility = 'hidden'
-            document.getElementById('five').style.visibility = 'visible'
+              score = score + 1500
+              document.getElementById('four').style.visibility = 'hidden'
+              document.getElementById('five').style.visibility = 'visible'
+              document.getElementById('pFour').style.visibility = 'hidden'
+              document.getElementById('pFive').style.visibility = 'visible'
 
-          }
-          if ((combo <= 60)&&(combo >= 51)){
+            }
+            if ((combo <= 60)&&(combo >= 51)){
 
-            score = score + 2000
-            document.getElementById('five').style.visibility = 'hidden'
-            document.getElementById('six').style.visibility = 'visible'
+              score = score + 2000
+              document.getElementById('five').style.visibility = 'hidden'
+              document.getElementById('six').style.visibility = 'visible'
+              document.getElementById('pFive').style.visibility = 'hidden'
+              document.getElementById('pSix').style.visibility = 'visible'
 
-          }
-          if ((combo <= 70)&&(combo >= 61)){
+            }
+            if ((combo <= 70)&&(combo >= 61)){
 
-            score = score + 2500
-            document.getElementById('six').style.visibility = 'hidden'
-            document.getElementById('seven').style.visibility = 'visible'
+              score = score + 2500
+              document.getElementById('six').style.visibility = 'hidden'
+              document.getElementById('seven').style.visibility = 'visible'
+              document.getElementById('pSix').style.visibility = 'hidden'
+              document.getElementById('pSeven').style.visibility = 'visible'
 
-          }
-          if ((combo <= 80)&&(combo >= 71)){
+            }
+            if ((combo <= 80)&&(combo >= 71)){
 
-            score = score + 3000
-            document.getElementById('seven').style.visibility = 'hidden'
-            document.getElementById('eight').style.visibility = 'visible'
+              score = score + 3000
+              document.getElementById('seven').style.visibility = 'hidden'
+              document.getElementById('eight').style.visibility = 'visible'
+              document.getElementById('pSeven').style.visibility = 'hidden'
+              document.getElementById('pEight').style.visibility = 'visible'
 
-          }
-          if ((combo <= 90)&&(combo >= 81)){
+            }
+            if ((combo <= 90)&&(combo >= 81)){
 
-            score = score + 3500
-            document.getElementById('eight').style.visibility = 'hidden'
-            document.getElementById('nine').style.visibility = 'visible'
+              score = score + 3500
+              document.getElementById('eight').style.visibility = 'hidden'
+              document.getElementById('nine').style.visibility = 'visible'
 
-          }
-          if ((combo <= 100)&&(combo >= 91)){
+              document.getElementById('pEight').style.visibility = 'hidden'
+              document.getElementById('pNine').style.visibility = 'visible'
 
-            score = score + 4000
-            document.getElementById('nine').style.visibility = 'hidden'
-            document.getElementById('one').style.visibility = 'visible'
-            document.getElementById('zero').style.visibility = 'visible'
+            }
+            if ((combo <= 100)&&(combo >= 91)){
 
-          }
+              score = score + 4000
+              document.getElementById('nine').style.visibility = 'hidden'
+              document.getElementById('one').style.visibility = 'visible'
+              document.getElementById('zero').style.visibility = 'visible'
+
+              document.getElementById('pNine').style.visibility = 'hidden'
+              document.getElementById('pTen').style.visibility = 'visible'
+
+            }
 
         }
 
@@ -488,11 +624,11 @@ if (myEventA.keyCode == 68){
 
 
 
-}
-if (myEventA.keyCode == 83){
+    }
+    if (myEventA.keyCode == 83){
 
     if ((parseInt(document.getElementById('arrow4').style.top) < 90)&&(parseInt(document.getElementById('arrow4').style.top) > 65)) {
-          document.getElementById('arrow4').style.visibility = 'hidden'
+      document.getElementById('arrow4').style.visibility = 'hidden'
         score = score + 500
         combo = combo + 1
         if ((combo <= 20)&&(combo >= 10)){
@@ -500,6 +636,9 @@ if (myEventA.keyCode == 83){
           score = score + 500
           document.getElementById('one').style.visibility = 'hidden'
           document.getElementById('two').style.visibility = 'visible'
+          document.getElementById('pOne').style.visibility = 'hidden'
+          document.getElementById('pTwo').style.visibility = 'visible'
+
 
         }
 
@@ -508,6 +647,9 @@ if (myEventA.keyCode == 83){
           score = score + 1000
           document.getElementById('two').style.visibility = 'hidden'
           document.getElementById('three').style.visibility = 'visible'
+          document.getElementById('pTwo').style.visibility = 'hidden'
+          document.getElementById('pThree').style.visibility = 'visible'
+
 
         }
 
@@ -516,6 +658,9 @@ if (myEventA.keyCode == 83){
           score = score + 1500
           document.getElementById('three').style.visibility = 'hidden'
           document.getElementById('four').style.visibility = 'visible'
+          document.getElementById('pThree').style.visibility = 'hidden'
+          document.getElementById('pFour').style.visibility = 'visible'
+
 
         }
         if ((combo <= 50)&&(combo >= 41)){
@@ -523,6 +668,9 @@ if (myEventA.keyCode == 83){
           score = score + 2000
           document.getElementById('four').style.visibility = 'hidden'
           document.getElementById('five').style.visibility = 'visible'
+          document.getElementById('pFour').style.visibility = 'hidden'
+          document.getElementById('pFive').style.visibility = 'visible'
+
 
         }
         if ((combo <= 60)&&(combo >= 51)){
@@ -530,6 +678,9 @@ if (myEventA.keyCode == 83){
           score = score + 2500
           document.getElementById('five').style.visibility = 'hidden'
           document.getElementById('six').style.visibility = 'visible'
+          document.getElementById('pFive').style.visibility = 'hidden'
+          document.getElementById('pSix').style.visibility = 'visible'
+
 
         }
         if ((combo <= 70)&&(combo >= 61)){
@@ -537,6 +688,9 @@ if (myEventA.keyCode == 83){
           score = score + 3000
           document.getElementById('six').style.visibility = 'hidden'
           document.getElementById('seven').style.visibility = 'visible'
+          document.getElementById('pSix').style.visibility = 'hidden'
+          document.getElementById('pSeven').style.visibility = 'visible'
+
 
         }
         if ((combo <= 80)&&(combo >= 71)){
@@ -544,6 +698,9 @@ if (myEventA.keyCode == 83){
           score = score + 3500
           document.getElementById('seven').style.visibility = 'hidden'
           document.getElementById('eight').style.visibility = 'visible'
+          document.getElementById('pSeven').style.visibility = 'hidden'
+          document.getElementById('pEight').style.visibility = 'visible'
+
 
         }
         if ((combo <= 90)&&(combo >= 81)){
@@ -551,6 +708,9 @@ if (myEventA.keyCode == 83){
           score = score + 4000
           document.getElementById('eight').style.visibility = 'hidden'
           document.getElementById('nine').style.visibility = 'visible'
+          document.getElementById('pEight').style.visibility = 'hidden'
+          document.getElementById('pNine').style.visibility = 'visible'
+
 
         }
         if ((combo <= 100)&&(combo >= 91)){
@@ -559,6 +719,9 @@ if (myEventA.keyCode == 83){
           document.getElementById('nine').style.visibility = 'hidden'
           document.getElementById('one').style.visibility = 'visible'
           document.getElementById('zero').style.visibility = 'visible'
+          document.getElementById('pNine').style.visibility = 'hidden'
+          document.getElementById('pTen').style.visibility = 'visible'
+
 
         }
       }
@@ -568,73 +731,101 @@ if (myEventA.keyCode == 83){
         {
     document.getElementById('arrow4').style.visibility = 'hidden'
           score = score + 250
-          combo = combo + 1
-          if ((combo <= 20)&&(combo >= 10)){
 
-            score = score + 250
-            document.getElementById('one').style.visibility = 'hidden'
-            document.getElementById('two').style.visibility = 'visible'
+            combo = combo + 1
 
-          }
+            if ((combo <= 20)&&(combo >= 10)){
 
-          if ((combo <= 30)&&(combo >= 21)){
+              score = score + 250
+              document.getElementById('one').style.visibility = 'hidden'
+              document.getElementById('two').style.visibility = 'visible'
+              document.getElementById('pOne').style.visibility = 'hidden'
+              document.getElementById('pTwo').style.visibility = 'visible'
 
-            score = score + 500
-            document.getElementById('two').style.visibility = 'hidden'
-            document.getElementById('three').style.visibility = 'visible'
+            }
 
-          }
+            if ((combo <= 30)&&(combo >= 21)){
 
-          if ((combo <= 40)&&(combo >= 31)){
+              score = score + 500
+              document.getElementById('two').style.visibility = 'hidden'
+              document.getElementById('three').style.visibility = 'visible'
+              document.getElementById('pTwo').style.visibility = 'hidden'
+              document.getElementById('pThree').style.visibility = 'visible'
 
-            score = score + 1000
-            document.getElementById('three').style.visibility = 'hidden'
-            document.getElementById('four').style.visibility = 'visible'
+            }
 
-          }
-          if ((combo <= 50)&&(combo >= 41)){
+            if ((combo <= 40)&&(combo >= 31)){
 
-            score = score + 1500
-            document.getElementById('four').style.visibility = 'hidden'
-            document.getElementById('five').style.visibility = 'visible'
+              score = score + 1000
+              document.getElementById('three').style.visibility = 'hidden'
+              document.getElementById('four').style.visibility = 'visible'
+              document.getElementById('pThree').style.visibility = 'hidden'
+              document.getElementById('pFour').style.visibility = 'visible'
 
-          }
-          if ((combo <= 60)&&(combo >= 51)){
+            }
+            if ((combo <= 50)&&(combo >= 41)){
 
-            score = score + 2000
-            document.getElementById('five').style.visibility = 'hidden'
-            document.getElementById('six').style.visibility = 'visible'
+              score = score + 1500
+              document.getElementById('four').style.visibility = 'hidden'
+              document.getElementById('five').style.visibility = 'visible'
+              document.getElementById('pFour').style.visibility = 'hidden'
+              document.getElementById('pFive').style.visibility = 'visible'
 
-          }
-          if ((combo <= 70)&&(combo >= 61)){
+            }
+            if ((combo <= 60)&&(combo >= 51)){
 
-            score = score + 2500
-            document.getElementById('six').style.visibility = 'hidden'
-            document.getElementById('seven').style.visibility = 'visible'
+              score = score + 2000
+              document.getElementById('five').style.visibility = 'hidden'
+              document.getElementById('six').style.visibility = 'visible'
+              document.getElementById('pFive').style.visibility = 'hidden'
+              document.getElementById('pSix').style.visibility = 'visible'
 
-          }
-          if ((combo <= 80)&&(combo >= 71)){
+            }
+            if ((combo <= 70)&&(combo >= 61)){
 
-            score = score + 3000
-            document.getElementById('seven').style.visibility = 'hidden'
-            document.getElementById('eight').style.visibility = 'visible'
+              score = score + 2500
+              document.getElementById('six').style.visibility = 'hidden'
+              document.getElementById('seven').style.visibility = 'visible'
+              document.getElementById('pSix').style.visibility = 'hidden'
+              document.getElementById('pSeven').style.visibility = 'visible'
 
-          }
-          if ((combo <= 90)&&(combo >= 81)){
+            }
+            if ((combo <= 80)&&(combo >= 71)){
 
-            score = score + 3500
-            document.getElementById('eight').style.visibility = 'hidden'
-            document.getElementById('nine').style.visibility = 'visible'
+              score = score + 3000
+              document.getElementById('seven').style.visibility = 'hidden'
+              document.getElementById('eight').style.visibility = 'visible'
+              document.getElementById('pSeven').style.visibility = 'hidden'
+              document.getElementById('pEight').style.visibility = 'visible'
 
-          }
-          if ((combo <= 100)&&(combo >= 91)){
+            }
+            if ((combo <= 90)&&(combo >= 81)){
 
-            score = score + 4000
-            document.getElementById('nine').style.visibility = 'hidden'
-            document.getElementById('one').style.visibility = 'visible'
-            document.getElementById('zero').style.visibility = 'visible'
+              score = score + 3500
+              document.getElementById('eight').style.visibility = 'hidden'
+              document.getElementById('nine').style.visibility = 'visible'
 
-          }
+              document.getElementById('pEight').style.visibility = 'hidden'
+              document.getElementById('pNine').style.visibility = 'visible'
+
+            }
+            if ((combo <= 100)&&(combo >= 91)){
+
+              score = score + 4000
+              document.getElementById('nine').style.visibility = 'hidden'
+              document.getElementById('one').style.visibility = 'visible'
+              document.getElementById('zero').style.visibility = 'visible'
+
+              document.getElementById('pNine').style.visibility = 'hidden'
+              document.getElementById('pTen').style.visibility = 'visible'
+
+            }
+
+
+
+
+
+
 
         }
 
@@ -643,17 +834,7 @@ if (myEventA.keyCode == 83){
     document.getElementById('div').innerHTML = '<b>'+score+'</b>'
 
 
-}
-
-
-
-
-
-
-
-
-
-
+    }
 
 
 if (myEventA.keyCode == 87){
@@ -667,6 +848,9 @@ if (myEventA.keyCode == 87){
           score = score + 500
           document.getElementById('one').style.visibility = 'hidden'
           document.getElementById('two').style.visibility = 'visible'
+          document.getElementById('pOne').style.visibility = 'hidden'
+          document.getElementById('pTwo').style.visibility = 'visible'
+
 
         }
 
@@ -675,6 +859,9 @@ if (myEventA.keyCode == 87){
           score = score + 1000
           document.getElementById('two').style.visibility = 'hidden'
           document.getElementById('three').style.visibility = 'visible'
+          document.getElementById('pTwo').style.visibility = 'hidden'
+          document.getElementById('pThree').style.visibility = 'visible'
+
 
         }
 
@@ -683,6 +870,9 @@ if (myEventA.keyCode == 87){
           score = score + 1500
           document.getElementById('three').style.visibility = 'hidden'
           document.getElementById('four').style.visibility = 'visible'
+          document.getElementById('pThree').style.visibility = 'hidden'
+          document.getElementById('pFour').style.visibility = 'visible'
+
 
         }
         if ((combo <= 50)&&(combo >= 41)){
@@ -690,6 +880,9 @@ if (myEventA.keyCode == 87){
           score = score + 2000
           document.getElementById('four').style.visibility = 'hidden'
           document.getElementById('five').style.visibility = 'visible'
+          document.getElementById('pFour').style.visibility = 'hidden'
+          document.getElementById('pFive').style.visibility = 'visible'
+
 
         }
         if ((combo <= 60)&&(combo >= 51)){
@@ -697,6 +890,9 @@ if (myEventA.keyCode == 87){
           score = score + 2500
           document.getElementById('five').style.visibility = 'hidden'
           document.getElementById('six').style.visibility = 'visible'
+          document.getElementById('pFive').style.visibility = 'hidden'
+          document.getElementById('pSix').style.visibility = 'visible'
+
 
         }
         if ((combo <= 70)&&(combo >= 61)){
@@ -704,6 +900,9 @@ if (myEventA.keyCode == 87){
           score = score + 3000
           document.getElementById('six').style.visibility = 'hidden'
           document.getElementById('seven').style.visibility = 'visible'
+          document.getElementById('pSix').style.visibility = 'hidden'
+          document.getElementById('pSeven').style.visibility = 'visible'
+
 
         }
         if ((combo <= 80)&&(combo >= 71)){
@@ -711,6 +910,9 @@ if (myEventA.keyCode == 87){
           score = score + 3500
           document.getElementById('seven').style.visibility = 'hidden'
           document.getElementById('eight').style.visibility = 'visible'
+          document.getElementById('pSeven').style.visibility = 'hidden'
+          document.getElementById('pEight').style.visibility = 'visible'
+
 
         }
         if ((combo <= 90)&&(combo >= 81)){
@@ -718,6 +920,9 @@ if (myEventA.keyCode == 87){
           score = score + 4000
           document.getElementById('eight').style.visibility = 'hidden'
           document.getElementById('nine').style.visibility = 'visible'
+          document.getElementById('pEight').style.visibility = 'hidden'
+          document.getElementById('pNine').style.visibility = 'visible'
+
 
         }
         if ((combo <= 100)&&(combo >= 91)){
@@ -726,6 +931,9 @@ if (myEventA.keyCode == 87){
           document.getElementById('nine').style.visibility = 'hidden'
           document.getElementById('one').style.visibility = 'visible'
           document.getElementById('zero').style.visibility = 'visible'
+          document.getElementById('pNine').style.visibility = 'hidden'
+          document.getElementById('pTen').style.visibility = 'visible'
+
 
         }
       }
@@ -738,70 +946,90 @@ if (myEventA.keyCode == 87){
           combo = combo + 1
           if ((combo <= 20)&&(combo >= 10)){
 
-            score = score + 250
-            document.getElementById('one').style.visibility = 'hidden'
-            document.getElementById('two').style.visibility = 'visible'
+          score = score + 250
+          document.getElementById('one').style.visibility = 'hidden'
+          document.getElementById('two').style.visibility = 'visible'
+          document.getElementById('pOne').style.visibility = 'hidden'
+          document.getElementById('pTwo').style.visibility = 'visible'
 
-          }
+        }
 
-          if ((combo <= 30)&&(combo >= 21)){
+        if ((combo <= 30)&&(combo >= 21)){
 
-            score = score + 500
-            document.getElementById('two').style.visibility = 'hidden'
-            document.getElementById('three').style.visibility = 'visible'
+          score = score + 500
+          document.getElementById('two').style.visibility = 'hidden'
+          document.getElementById('three').style.visibility = 'visible'
+          document.getElementById('pTwo').style.visibility = 'hidden'
+          document.getElementById('pThree').style.visibility = 'visible'
 
-          }
+        }
 
-          if ((combo <= 40)&&(combo >= 31)){
+        if ((combo <= 40)&&(combo >= 31)){
 
-            score = score + 1000
-            document.getElementById('three').style.visibility = 'hidden'
-            document.getElementById('four').style.visibility = 'visible'
+          score = score + 1000
+          document.getElementById('three').style.visibility = 'hidden'
+          document.getElementById('four').style.visibility = 'visible'
+          document.getElementById('pThree').style.visibility = 'hidden'
+          document.getElementById('pFour').style.visibility = 'visible'
 
-          }
-          if ((combo <= 50)&&(combo >= 41)){
+        }
+        if ((combo <= 50)&&(combo >= 41)){
 
-            score = score + 1500
-            document.getElementById('four').style.visibility = 'hidden'
-            document.getElementById('five').style.visibility = 'visible'
+          score = score + 1500
+          document.getElementById('four').style.visibility = 'hidden'
+          document.getElementById('five').style.visibility = 'visible'
+          document.getElementById('pFour').style.visibility = 'hidden'
+          document.getElementById('pFive').style.visibility = 'visible'
 
-          }
-          if ((combo <= 60)&&(combo >= 51)){
+        }
+        if ((combo <= 60)&&(combo >= 51)){
 
-            score = score + 2000
-            document.getElementById('five').style.visibility = 'hidden'
-            document.getElementById('six').style.visibility = 'visible'
+          score = score + 2000
+          document.getElementById('five').style.visibility = 'hidden'
+          document.getElementById('six').style.visibility = 'visible'
+          document.getElementById('pFive').style.visibility = 'hidden'
+          document.getElementById('pSix').style.visibility = 'visible'
 
-          }
-          if ((combo <= 70)&&(combo >= 61)){
+        }
+        if ((combo <= 70)&&(combo >= 61)){
 
-            score = score + 2500
-            document.getElementById('six').style.visibility = 'hidden'
-            document.getElementById('seven').style.visibility = 'visible'
+          score = score + 2500
+          document.getElementById('six').style.visibility = 'hidden'
+          document.getElementById('seven').style.visibility = 'visible'
+          document.getElementById('pSix').style.visibility = 'hidden'
+          document.getElementById('pSeven').style.visibility = 'visible'
 
-          }
-          if ((combo <= 80)&&(combo >= 71)){
+        }
+        if ((combo <= 80)&&(combo >= 71)){
 
-            score = score + 3000
-            document.getElementById('seven').style.visibility = 'hidden'
-            document.getElementById('eight').style.visibility = 'visible'
+          score = score + 3000
+          document.getElementById('seven').style.visibility = 'hidden'
+          document.getElementById('eight').style.visibility = 'visible'
+          document.getElementById('pSeven').style.visibility = 'hidden'
+          document.getElementById('pEight').style.visibility = 'visible'
 
-          }
-          if ((combo <= 90)&&(combo >= 81)){
+        }
+        if ((combo <= 90)&&(combo >= 81)){
 
-            score = score + 3500
-            document.getElementById('eight').style.visibility = 'hidden'
-            document.getElementById('nine').style.visibility = 'visible'
+          score = score + 3500
+          document.getElementById('eight').style.visibility = 'hidden'
+          document.getElementById('nine').style.visibility = 'visible'
 
-          }
-          if ((combo <= 100)&&(combo >= 91)){
+          document.getElementById('pEight').style.visibility = 'hidden'
+          document.getElementById('pNine').style.visibility = 'visible'
 
-            score = score + 4000
-            document.getElementById('nine').style.visibility = 'hidden'
-            document.getElementById('one').style.visibility = 'visible'
-            document.getElementById('zero').style.visibility = 'visible'
+        }
+        if ((combo <= 100)&&(combo >= 91)){
 
-          }
+          score = score + 4000
+          document.getElementById('nine').style.visibility = 'hidden'
+          document.getElementById('one').style.visibility = 'visible'
+          document.getElementById('zero').style.visibility = 'visible'
+
+          document.getElementById('pNine').style.visibility = 'hidden'
+          document.getElementById('pTen').style.visibility = 'visible'
+
+        }
 
         }
 
@@ -812,8 +1040,6 @@ if (myEventA.keyCode == 87){
 
 
 }
-
-
 if (myEventA.keyCode == 65){
 
 if ((parseInt(document.getElementById('arrow21').style.top) < 90)&&(parseInt(document.getElementById('arrow21').style.top) > 65)) {
@@ -825,6 +1051,9 @@ if ((parseInt(document.getElementById('arrow21').style.top) < 90)&&(parseInt(doc
       score = score + 500
       document.getElementById('one').style.visibility = 'hidden'
       document.getElementById('two').style.visibility = 'visible'
+      document.getElementById('pOne').style.visibility = 'hidden'
+      document.getElementById('pTwo').style.visibility = 'visible'
+
 
     }
 
@@ -833,6 +1062,9 @@ if ((parseInt(document.getElementById('arrow21').style.top) < 90)&&(parseInt(doc
       score = score + 1000
       document.getElementById('two').style.visibility = 'hidden'
       document.getElementById('three').style.visibility = 'visible'
+      document.getElementById('pTwo').style.visibility = 'hidden'
+      document.getElementById('pThree').style.visibility = 'visible'
+
 
     }
 
@@ -841,6 +1073,9 @@ if ((parseInt(document.getElementById('arrow21').style.top) < 90)&&(parseInt(doc
       score = score + 1500
       document.getElementById('three').style.visibility = 'hidden'
       document.getElementById('four').style.visibility = 'visible'
+      document.getElementById('pThree').style.visibility = 'hidden'
+      document.getElementById('pFour').style.visibility = 'visible'
+
 
     }
     if ((combo <= 50)&&(combo >= 41)){
@@ -848,6 +1083,9 @@ if ((parseInt(document.getElementById('arrow21').style.top) < 90)&&(parseInt(doc
       score = score + 2000
       document.getElementById('four').style.visibility = 'hidden'
       document.getElementById('five').style.visibility = 'visible'
+      document.getElementById('pFour').style.visibility = 'hidden'
+      document.getElementById('pFive').style.visibility = 'visible'
+
 
     }
     if ((combo <= 60)&&(combo >= 51)){
@@ -855,6 +1093,9 @@ if ((parseInt(document.getElementById('arrow21').style.top) < 90)&&(parseInt(doc
       score = score + 2500
       document.getElementById('five').style.visibility = 'hidden'
       document.getElementById('six').style.visibility = 'visible'
+      document.getElementById('pFive').style.visibility = 'hidden'
+      document.getElementById('pSix').style.visibility = 'visible'
+
 
     }
     if ((combo <= 70)&&(combo >= 61)){
@@ -862,6 +1103,9 @@ if ((parseInt(document.getElementById('arrow21').style.top) < 90)&&(parseInt(doc
       score = score + 3000
       document.getElementById('six').style.visibility = 'hidden'
       document.getElementById('seven').style.visibility = 'visible'
+      document.getElementById('pSix').style.visibility = 'hidden'
+      document.getElementById('pSeven').style.visibility = 'visible'
+
 
     }
     if ((combo <= 80)&&(combo >= 71)){
@@ -869,6 +1113,9 @@ if ((parseInt(document.getElementById('arrow21').style.top) < 90)&&(parseInt(doc
       score = score + 3500
       document.getElementById('seven').style.visibility = 'hidden'
       document.getElementById('eight').style.visibility = 'visible'
+      document.getElementById('pSeven').style.visibility = 'hidden'
+      document.getElementById('pEight').style.visibility = 'visible'
+
 
     }
     if ((combo <= 90)&&(combo >= 81)){
@@ -876,6 +1123,9 @@ if ((parseInt(document.getElementById('arrow21').style.top) < 90)&&(parseInt(doc
       score = score + 4000
       document.getElementById('eight').style.visibility = 'hidden'
       document.getElementById('nine').style.visibility = 'visible'
+      document.getElementById('pEight').style.visibility = 'hidden'
+      document.getElementById('pNine').style.visibility = 'visible'
+
 
     }
     if ((combo <= 100)&&(combo >= 91)){
@@ -884,6 +1134,9 @@ if ((parseInt(document.getElementById('arrow21').style.top) < 90)&&(parseInt(doc
       document.getElementById('nine').style.visibility = 'hidden'
       document.getElementById('one').style.visibility = 'visible'
       document.getElementById('zero').style.visibility = 'visible'
+      document.getElementById('pNine').style.visibility = 'hidden'
+      document.getElementById('pTen').style.visibility = 'visible'
+
 
     }
   }
@@ -891,75 +1144,95 @@ if ((parseInt(document.getElementById('arrow21').style.top) < 90)&&(parseInt(doc
 
   else if (((parseInt(document.getElementById('arrow21').style.top) < 125)&&(parseInt(document.getElementById('arrow21').style.top) > 50))&&(parseInt(document.getElementById('arrow21').style.top) != 75))
     {
-document.getElementById('arrow21').style.visibility = 'hidden'
+      document.getElementById('arrow21').style.visibility = 'hidden'
       score = score + 250
       combo = combo + 1
       if ((combo <= 20)&&(combo >= 10)){
 
-        score = score + 250
-        document.getElementById('one').style.visibility = 'hidden'
-        document.getElementById('two').style.visibility = 'visible'
+            score = score + 250
+            document.getElementById('one').style.visibility = 'hidden'
+            document.getElementById('two').style.visibility = 'visible'
+            document.getElementById('pOne').style.visibility = 'hidden'
+            document.getElementById('pTwo').style.visibility = 'visible'
 
-      }
+          }
 
-      if ((combo <= 30)&&(combo >= 21)){
+          if ((combo <= 30)&&(combo >= 21)){
 
-        score = score + 500
-        document.getElementById('two').style.visibility = 'hidden'
-        document.getElementById('three').style.visibility = 'visible'
+            score = score + 500
+            document.getElementById('two').style.visibility = 'hidden'
+            document.getElementById('three').style.visibility = 'visible'
+            document.getElementById('pTwo').style.visibility = 'hidden'
+            document.getElementById('pThree').style.visibility = 'visible'
 
-      }
+          }
 
-      if ((combo <= 40)&&(combo >= 31)){
+          if ((combo <= 40)&&(combo >= 31)){
 
-        score = score + 1000
-        document.getElementById('three').style.visibility = 'hidden'
-        document.getElementById('four').style.visibility = 'visible'
+            score = score + 1000
+            document.getElementById('three').style.visibility = 'hidden'
+            document.getElementById('four').style.visibility = 'visible'
+            document.getElementById('pThree').style.visibility = 'hidden'
+            document.getElementById('pFour').style.visibility = 'visible'
 
-      }
-      if ((combo <= 50)&&(combo >= 41)){
+          }
+          if ((combo <= 50)&&(combo >= 41)){
 
-        score = score + 1500
-        document.getElementById('four').style.visibility = 'hidden'
-        document.getElementById('five').style.visibility = 'visible'
+            score = score + 1500
+            document.getElementById('four').style.visibility = 'hidden'
+            document.getElementById('five').style.visibility = 'visible'
+            document.getElementById('pFour').style.visibility = 'hidden'
+            document.getElementById('pFive').style.visibility = 'visible'
 
-      }
-      if ((combo <= 60)&&(combo >= 51)){
+          }
+          if ((combo <= 60)&&(combo >= 51)){
 
-        score = score + 2000
-        document.getElementById('five').style.visibility = 'hidden'
-        document.getElementById('six').style.visibility = 'visible'
+            score = score + 2000
+            document.getElementById('five').style.visibility = 'hidden'
+            document.getElementById('six').style.visibility = 'visible'
+            document.getElementById('pFive').style.visibility = 'hidden'
+            document.getElementById('pSix').style.visibility = 'visible'
 
-      }
-      if ((combo <= 70)&&(combo >= 61)){
+          }
+          if ((combo <= 70)&&(combo >= 61)){
 
-        score = score + 2500
-        document.getElementById('six').style.visibility = 'hidden'
-        document.getElementById('seven').style.visibility = 'visible'
+            score = score + 2500
+            document.getElementById('six').style.visibility = 'hidden'
+            document.getElementById('seven').style.visibility = 'visible'
+            document.getElementById('pSix').style.visibility = 'hidden'
+            document.getElementById('pSeven').style.visibility = 'visible'
 
-      }
-      if ((combo <= 80)&&(combo >= 71)){
+          }
+          if ((combo <= 80)&&(combo >= 71)){
 
-        score = score + 3000
-        document.getElementById('seven').style.visibility = 'hidden'
-        document.getElementById('eight').style.visibility = 'visible'
+            score = score + 3000
+            document.getElementById('seven').style.visibility = 'hidden'
+            document.getElementById('eight').style.visibility = 'visible'
+            document.getElementById('pSeven').style.visibility = 'hidden'
+            document.getElementById('pEight').style.visibility = 'visible'
 
-      }
-      if ((combo <= 90)&&(combo >= 81)){
+          }
+          if ((combo <= 90)&&(combo >= 81)){
 
-        score = score + 3500
-        document.getElementById('eight').style.visibility = 'hidden'
-        document.getElementById('nine').style.visibility = 'visible'
+            score = score + 3500
+            document.getElementById('eight').style.visibility = 'hidden'
+            document.getElementById('nine').style.visibility = 'visible'
 
-      }
-      if ((combo <= 100)&&(combo >= 91)){
+            document.getElementById('pEight').style.visibility = 'hidden'
+            document.getElementById('pNine').style.visibility = 'visible'
 
-        score = score + 4000
-        document.getElementById('nine').style.visibility = 'hidden'
-        document.getElementById('one').style.visibility = 'visible'
-        document.getElementById('zero').style.visibility = 'visible'
+          }
+          if ((combo <= 100)&&(combo >= 91)){
 
-      }
+            score = score + 4000
+            document.getElementById('nine').style.visibility = 'hidden'
+            document.getElementById('one').style.visibility = 'visible'
+            document.getElementById('zero').style.visibility = 'visible'
+
+            document.getElementById('pNine').style.visibility = 'hidden'
+            document.getElementById('pTen').style.visibility = 'visible'
+
+          }
 
     }
 
@@ -981,6 +1254,9 @@ if ((parseInt(document.getElementById('arrow31').style.top) < 90)&&(parseInt(doc
       score = score + 500
       document.getElementById('one').style.visibility = 'hidden'
       document.getElementById('two').style.visibility = 'visible'
+      document.getElementById('pOne').style.visibility = 'hidden'
+      document.getElementById('pTwo').style.visibility = 'visible'
+
 
     }
 
@@ -989,6 +1265,9 @@ if ((parseInt(document.getElementById('arrow31').style.top) < 90)&&(parseInt(doc
       score = score + 1000
       document.getElementById('two').style.visibility = 'hidden'
       document.getElementById('three').style.visibility = 'visible'
+      document.getElementById('pTwo').style.visibility = 'hidden'
+      document.getElementById('pThree').style.visibility = 'visible'
+
 
     }
 
@@ -997,6 +1276,9 @@ if ((parseInt(document.getElementById('arrow31').style.top) < 90)&&(parseInt(doc
       score = score + 1500
       document.getElementById('three').style.visibility = 'hidden'
       document.getElementById('four').style.visibility = 'visible'
+      document.getElementById('pThree').style.visibility = 'hidden'
+      document.getElementById('pFour').style.visibility = 'visible'
+
 
     }
     if ((combo <= 50)&&(combo >= 41)){
@@ -1004,6 +1286,9 @@ if ((parseInt(document.getElementById('arrow31').style.top) < 90)&&(parseInt(doc
       score = score + 2000
       document.getElementById('four').style.visibility = 'hidden'
       document.getElementById('five').style.visibility = 'visible'
+      document.getElementById('pFour').style.visibility = 'hidden'
+      document.getElementById('pFive').style.visibility = 'visible'
+
 
     }
     if ((combo <= 60)&&(combo >= 51)){
@@ -1011,6 +1296,9 @@ if ((parseInt(document.getElementById('arrow31').style.top) < 90)&&(parseInt(doc
       score = score + 2500
       document.getElementById('five').style.visibility = 'hidden'
       document.getElementById('six').style.visibility = 'visible'
+      document.getElementById('pFive').style.visibility = 'hidden'
+      document.getElementById('pSix').style.visibility = 'visible'
+
 
     }
     if ((combo <= 70)&&(combo >= 61)){
@@ -1018,6 +1306,9 @@ if ((parseInt(document.getElementById('arrow31').style.top) < 90)&&(parseInt(doc
       score = score + 3000
       document.getElementById('six').style.visibility = 'hidden'
       document.getElementById('seven').style.visibility = 'visible'
+      document.getElementById('pSix').style.visibility = 'hidden'
+      document.getElementById('pSeven').style.visibility = 'visible'
+
 
     }
     if ((combo <= 80)&&(combo >= 71)){
@@ -1025,6 +1316,9 @@ if ((parseInt(document.getElementById('arrow31').style.top) < 90)&&(parseInt(doc
       score = score + 3500
       document.getElementById('seven').style.visibility = 'hidden'
       document.getElementById('eight').style.visibility = 'visible'
+      document.getElementById('pSeven').style.visibility = 'hidden'
+      document.getElementById('pEight').style.visibility = 'visible'
+
 
     }
     if ((combo <= 90)&&(combo >= 81)){
@@ -1032,6 +1326,9 @@ if ((parseInt(document.getElementById('arrow31').style.top) < 90)&&(parseInt(doc
       score = score + 4000
       document.getElementById('eight').style.visibility = 'hidden'
       document.getElementById('nine').style.visibility = 'visible'
+      document.getElementById('pEight').style.visibility = 'hidden'
+      document.getElementById('pNine').style.visibility = 'visible'
+
 
     }
     if ((combo <= 100)&&(combo >= 91)){
@@ -1040,6 +1337,9 @@ if ((parseInt(document.getElementById('arrow31').style.top) < 90)&&(parseInt(doc
       document.getElementById('nine').style.visibility = 'hidden'
       document.getElementById('one').style.visibility = 'visible'
       document.getElementById('zero').style.visibility = 'visible'
+      document.getElementById('pNine').style.visibility = 'hidden'
+      document.getElementById('pTen').style.visibility = 'visible'
+
 
     }
   }
@@ -1047,77 +1347,98 @@ if ((parseInt(document.getElementById('arrow31').style.top) < 90)&&(parseInt(doc
 
   else if (((parseInt(document.getElementById('arrow31').style.top) < 125)&&(parseInt(document.getElementById('arrow31').style.top) > 50))&&(parseInt(document.getElementById('arrow31').style.top) != 75))
     {
-document.getElementById('arrow31').style.visibility = 'hidden'
+      document.getElementById('arrow31').style.visibility = 'hidden'
       score = score + 250
       combo = combo + 1
       if ((combo <= 20)&&(combo >= 10)){
 
-        score = score + 250
-        document.getElementById('one').style.visibility = 'hidden'
-        document.getElementById('two').style.visibility = 'visible'
+          score = score + 250
+          document.getElementById('one').style.visibility = 'hidden'
+          document.getElementById('two').style.visibility = 'visible'
+          document.getElementById('pOne').style.visibility = 'hidden'
+          document.getElementById('pTwo').style.visibility = 'visible'
 
-      }
+        }
 
-      if ((combo <= 30)&&(combo >= 21)){
+        if ((combo <= 30)&&(combo >= 21)){
 
-        score = score + 500
-        document.getElementById('two').style.visibility = 'hidden'
-        document.getElementById('three').style.visibility = 'visible'
+          score = score + 500
+          document.getElementById('two').style.visibility = 'hidden'
+          document.getElementById('three').style.visibility = 'visible'
+          document.getElementById('pTwo').style.visibility = 'hidden'
+          document.getElementById('pThree').style.visibility = 'visible'
 
-      }
+        }
 
-      if ((combo <= 40)&&(combo >= 31)){
+        if ((combo <= 40)&&(combo >= 31)){
 
-        score = score + 1000
-        document.getElementById('three').style.visibility = 'hidden'
-        document.getElementById('four').style.visibility = 'visible'
+          score = score + 1000
+          document.getElementById('three').style.visibility = 'hidden'
+          document.getElementById('four').style.visibility = 'visible'
+          document.getElementById('pThree').style.visibility = 'hidden'
+          document.getElementById('pFour').style.visibility = 'visible'
 
-      }
-      if ((combo <= 50)&&(combo >= 41)){
+        }
+        if ((combo <= 50)&&(combo >= 41)){
 
-        score = score + 1500
-        document.getElementById('four').style.visibility = 'hidden'
-        document.getElementById('five').style.visibility = 'visible'
+          score = score + 1500
+          document.getElementById('four').style.visibility = 'hidden'
+          document.getElementById('five').style.visibility = 'visible'
+          document.getElementById('pFour').style.visibility = 'hidden'
+          document.getElementById('pFive').style.visibility = 'visible'
 
-      }
-      if ((combo <= 60)&&(combo >= 51)){
+        }
+        if ((combo <= 60)&&(combo >= 51)){
 
-        score = score + 2000
-        document.getElementById('five').style.visibility = 'hidden'
-        document.getElementById('six').style.visibility = 'visible'
+          score = score + 2000
+          document.getElementById('five').style.visibility = 'hidden'
+          document.getElementById('six').style.visibility = 'visible'
+          document.getElementById('pFive').style.visibility = 'hidden'
+          document.getElementById('pSix').style.visibility = 'visible'
 
-      }
-      if ((combo <= 70)&&(combo >= 61)){
+        }
+        if ((combo <= 70)&&(combo >= 61)){
 
-        score = score + 2500
-        document.getElementById('six').style.visibility = 'hidden'
-        document.getElementById('seven').style.visibility = 'visible'
+          score = score + 2500
+          document.getElementById('six').style.visibility = 'hidden'
+          document.getElementById('seven').style.visibility = 'visible'
+          document.getElementById('pSix').style.visibility = 'hidden'
+          document.getElementById('pSeven').style.visibility = 'visible'
 
-      }
-      if ((combo <= 80)&&(combo >= 71)){
+        }
+        if ((combo <= 80)&&(combo >= 71)){
 
-        score = score + 3000
-        document.getElementById('seven').style.visibility = 'hidden'
-        document.getElementById('eight').style.visibility = 'visible'
+          score = score + 3000
+          document.getElementById('seven').style.visibility = 'hidden'
+          document.getElementById('eight').style.visibility = 'visible'
+          document.getElementById('pSeven').style.visibility = 'hidden'
+          document.getElementById('pEight').style.visibility = 'visible'
 
-      }
-      if ((combo <= 90)&&(combo >= 81)){
+        }
+        if ((combo <= 90)&&(combo >= 81)){
 
-        score = score + 3500
-        document.getElementById('eight').style.visibility = 'hidden'
-        document.getElementById('nine').style.visibility = 'visible'
+          score = score + 3500
+          document.getElementById('eight').style.visibility = 'hidden'
+          document.getElementById('nine').style.visibility = 'visible'
 
-      }
-      if ((combo <= 100)&&(combo >= 91)){
+          document.getElementById('pEight').style.visibility = 'hidden'
+          document.getElementById('pNine').style.visibility = 'visible'
 
-        score = score + 4000
-        document.getElementById('nine').style.visibility = 'hidden'
-        document.getElementById('one').style.visibility = 'visible'
-        document.getElementById('zero').style.visibility = 'visible'
+        }
+        if ((combo <= 100)&&(combo >= 91)){
 
-      }
+          score = score + 4000
+          document.getElementById('nine').style.visibility = 'hidden'
+          document.getElementById('one').style.visibility = 'visible'
+          document.getElementById('zero').style.visibility = 'visible'
+
+          document.getElementById('pNine').style.visibility = 'hidden'
+          document.getElementById('pTen').style.visibility = 'visible'
+
+        }
 
     }
+
 
 
 document.getElementById('div').innerHTML = '<b>'+score+'</b>'
@@ -1136,6 +1457,9 @@ if ((parseInt(document.getElementById('arrow41').style.top) < 90)&&(parseInt(doc
       score = score + 500
       document.getElementById('one').style.visibility = 'hidden'
       document.getElementById('two').style.visibility = 'visible'
+      document.getElementById('pOne').style.visibility = 'hidden'
+      document.getElementById('pTwo').style.visibility = 'visible'
+
 
     }
 
@@ -1144,6 +1468,9 @@ if ((parseInt(document.getElementById('arrow41').style.top) < 90)&&(parseInt(doc
       score = score + 1000
       document.getElementById('two').style.visibility = 'hidden'
       document.getElementById('three').style.visibility = 'visible'
+      document.getElementById('pTwo').style.visibility = 'hidden'
+      document.getElementById('pThree').style.visibility = 'visible'
+
 
     }
 
@@ -1152,6 +1479,9 @@ if ((parseInt(document.getElementById('arrow41').style.top) < 90)&&(parseInt(doc
       score = score + 1500
       document.getElementById('three').style.visibility = 'hidden'
       document.getElementById('four').style.visibility = 'visible'
+      document.getElementById('pThree').style.visibility = 'hidden'
+      document.getElementById('pFour').style.visibility = 'visible'
+
 
     }
     if ((combo <= 50)&&(combo >= 41)){
@@ -1159,6 +1489,9 @@ if ((parseInt(document.getElementById('arrow41').style.top) < 90)&&(parseInt(doc
       score = score + 2000
       document.getElementById('four').style.visibility = 'hidden'
       document.getElementById('five').style.visibility = 'visible'
+      document.getElementById('pFour').style.visibility = 'hidden'
+      document.getElementById('pFive').style.visibility = 'visible'
+
 
     }
     if ((combo <= 60)&&(combo >= 51)){
@@ -1166,6 +1499,9 @@ if ((parseInt(document.getElementById('arrow41').style.top) < 90)&&(parseInt(doc
       score = score + 2500
       document.getElementById('five').style.visibility = 'hidden'
       document.getElementById('six').style.visibility = 'visible'
+      document.getElementById('pFive').style.visibility = 'hidden'
+      document.getElementById('pSix').style.visibility = 'visible'
+
 
     }
     if ((combo <= 70)&&(combo >= 61)){
@@ -1173,6 +1509,9 @@ if ((parseInt(document.getElementById('arrow41').style.top) < 90)&&(parseInt(doc
       score = score + 3000
       document.getElementById('six').style.visibility = 'hidden'
       document.getElementById('seven').style.visibility = 'visible'
+      document.getElementById('pSix').style.visibility = 'hidden'
+      document.getElementById('pSeven').style.visibility = 'visible'
+
 
     }
     if ((combo <= 80)&&(combo >= 71)){
@@ -1180,6 +1519,9 @@ if ((parseInt(document.getElementById('arrow41').style.top) < 90)&&(parseInt(doc
       score = score + 3500
       document.getElementById('seven').style.visibility = 'hidden'
       document.getElementById('eight').style.visibility = 'visible'
+      document.getElementById('pSeven').style.visibility = 'hidden'
+      document.getElementById('pEight').style.visibility = 'visible'
+
 
     }
     if ((combo <= 90)&&(combo >= 81)){
@@ -1187,6 +1529,9 @@ if ((parseInt(document.getElementById('arrow41').style.top) < 90)&&(parseInt(doc
       score = score + 4000
       document.getElementById('eight').style.visibility = 'hidden'
       document.getElementById('nine').style.visibility = 'visible'
+      document.getElementById('pEight').style.visibility = 'hidden'
+      document.getElementById('pNine').style.visibility = 'visible'
+
 
     }
     if ((combo <= 100)&&(combo >= 91)){
@@ -1195,6 +1540,9 @@ if ((parseInt(document.getElementById('arrow41').style.top) < 90)&&(parseInt(doc
       document.getElementById('nine').style.visibility = 'hidden'
       document.getElementById('one').style.visibility = 'visible'
       document.getElementById('zero').style.visibility = 'visible'
+      document.getElementById('pNine').style.visibility = 'hidden'
+      document.getElementById('pTen').style.visibility = 'visible'
+
 
     }
   }
@@ -1204,73 +1552,101 @@ if ((parseInt(document.getElementById('arrow41').style.top) < 90)&&(parseInt(doc
     {
 document.getElementById('arrow41').style.visibility = 'hidden'
       score = score + 250
-      combo = combo + 1
-      if ((combo <= 20)&&(combo >= 10)){
 
-        score = score + 250
-        document.getElementById('one').style.visibility = 'hidden'
-        document.getElementById('two').style.visibility = 'visible'
+        combo = combo + 1
 
-      }
+        if ((combo <= 20)&&(combo >= 10)){
 
-      if ((combo <= 30)&&(combo >= 21)){
+          score = score + 250
+          document.getElementById('one').style.visibility = 'hidden'
+          document.getElementById('two').style.visibility = 'visible'
+          document.getElementById('pOne').style.visibility = 'hidden'
+          document.getElementById('pTwo').style.visibility = 'visible'
 
-        score = score + 500
-        document.getElementById('two').style.visibility = 'hidden'
-        document.getElementById('three').style.visibility = 'visible'
+        }
 
-      }
+        if ((combo <= 30)&&(combo >= 21)){
 
-      if ((combo <= 40)&&(combo >= 31)){
+          score = score + 500
+          document.getElementById('two').style.visibility = 'hidden'
+          document.getElementById('three').style.visibility = 'visible'
+          document.getElementById('pTwo').style.visibility = 'hidden'
+          document.getElementById('pThree').style.visibility = 'visible'
 
-        score = score + 1000
-        document.getElementById('three').style.visibility = 'hidden'
-        document.getElementById('four').style.visibility = 'visible'
+        }
 
-      }
-      if ((combo <= 50)&&(combo >= 41)){
+        if ((combo <= 40)&&(combo >= 31)){
 
-        score = score + 1500
-        document.getElementById('four').style.visibility = 'hidden'
-        document.getElementById('five').style.visibility = 'visible'
+          score = score + 1000
+          document.getElementById('three').style.visibility = 'hidden'
+          document.getElementById('four').style.visibility = 'visible'
+          document.getElementById('pThree').style.visibility = 'hidden'
+          document.getElementById('pFour').style.visibility = 'visible'
 
-      }
-      if ((combo <= 60)&&(combo >= 51)){
+        }
+        if ((combo <= 50)&&(combo >= 41)){
 
-        score = score + 2000
-        document.getElementById('five').style.visibility = 'hidden'
-        document.getElementById('six').style.visibility = 'visible'
+          score = score + 1500
+          document.getElementById('four').style.visibility = 'hidden'
+          document.getElementById('five').style.visibility = 'visible'
+          document.getElementById('pFour').style.visibility = 'hidden'
+          document.getElementById('pFive').style.visibility = 'visible'
 
-      }
-      if ((combo <= 70)&&(combo >= 61)){
+        }
+        if ((combo <= 60)&&(combo >= 51)){
 
-        score = score + 2500
-        document.getElementById('six').style.visibility = 'hidden'
-        document.getElementById('seven').style.visibility = 'visible'
+          score = score + 2000
+          document.getElementById('five').style.visibility = 'hidden'
+          document.getElementById('six').style.visibility = 'visible'
+          document.getElementById('pFive').style.visibility = 'hidden'
+          document.getElementById('pSix').style.visibility = 'visible'
 
-      }
-      if ((combo <= 80)&&(combo >= 71)){
+        }
+        if ((combo <= 70)&&(combo >= 61)){
 
-        score = score + 3000
-        document.getElementById('seven').style.visibility = 'hidden'
-        document.getElementById('eight').style.visibility = 'visible'
+          score = score + 2500
+          document.getElementById('six').style.visibility = 'hidden'
+          document.getElementById('seven').style.visibility = 'visible'
+          document.getElementById('pSix').style.visibility = 'hidden'
+          document.getElementById('pSeven').style.visibility = 'visible'
 
-      }
-      if ((combo <= 90)&&(combo >= 81)){
+        }
+        if ((combo <= 80)&&(combo >= 71)){
 
-        score = score + 3500
-        document.getElementById('eight').style.visibility = 'hidden'
-        document.getElementById('nine').style.visibility = 'visible'
+          score = score + 3000
+          document.getElementById('seven').style.visibility = 'hidden'
+          document.getElementById('eight').style.visibility = 'visible'
+          document.getElementById('pSeven').style.visibility = 'hidden'
+          document.getElementById('pEight').style.visibility = 'visible'
 
-      }
-      if ((combo <= 100)&&(combo >= 91)){
+        }
+        if ((combo <= 90)&&(combo >= 81)){
 
-        score = score + 4000
-        document.getElementById('nine').style.visibility = 'hidden'
-        document.getElementById('one').style.visibility = 'visible'
-        document.getElementById('zero').style.visibility = 'visible'
+          score = score + 3500
+          document.getElementById('eight').style.visibility = 'hidden'
+          document.getElementById('nine').style.visibility = 'visible'
 
-      }
+          document.getElementById('pEight').style.visibility = 'hidden'
+          document.getElementById('pNine').style.visibility = 'visible'
+
+        }
+        if ((combo <= 100)&&(combo >= 91)){
+
+          score = score + 4000
+          document.getElementById('nine').style.visibility = 'hidden'
+          document.getElementById('one').style.visibility = 'visible'
+          document.getElementById('zero').style.visibility = 'visible'
+
+          document.getElementById('pNine').style.visibility = 'hidden'
+          document.getElementById('pTen').style.visibility = 'visible'
+
+        }
+
+
+
+
+
+
 
     }
 
@@ -1280,12 +1656,6 @@ document.getElementById('div').innerHTML = '<b>'+score+'</b>'
 
 
 }
-
-
-
-
-
-
 
 
 if (myEventA.keyCode == 87){
@@ -1299,6 +1669,9 @@ if (myEventA.keyCode == 87){
           score = score + 500
           document.getElementById('one').style.visibility = 'hidden'
           document.getElementById('two').style.visibility = 'visible'
+          document.getElementById('pOne').style.visibility = 'hidden'
+          document.getElementById('pTwo').style.visibility = 'visible'
+
 
         }
 
@@ -1307,6 +1680,9 @@ if (myEventA.keyCode == 87){
           score = score + 1000
           document.getElementById('two').style.visibility = 'hidden'
           document.getElementById('three').style.visibility = 'visible'
+          document.getElementById('pTwo').style.visibility = 'hidden'
+          document.getElementById('pThree').style.visibility = 'visible'
+
 
         }
 
@@ -1315,6 +1691,9 @@ if (myEventA.keyCode == 87){
           score = score + 1500
           document.getElementById('three').style.visibility = 'hidden'
           document.getElementById('four').style.visibility = 'visible'
+          document.getElementById('pThree').style.visibility = 'hidden'
+          document.getElementById('pFour').style.visibility = 'visible'
+
 
         }
         if ((combo <= 50)&&(combo >= 41)){
@@ -1322,6 +1701,9 @@ if (myEventA.keyCode == 87){
           score = score + 2000
           document.getElementById('four').style.visibility = 'hidden'
           document.getElementById('five').style.visibility = 'visible'
+          document.getElementById('pFour').style.visibility = 'hidden'
+          document.getElementById('pFive').style.visibility = 'visible'
+
 
         }
         if ((combo <= 60)&&(combo >= 51)){
@@ -1329,6 +1711,9 @@ if (myEventA.keyCode == 87){
           score = score + 2500
           document.getElementById('five').style.visibility = 'hidden'
           document.getElementById('six').style.visibility = 'visible'
+          document.getElementById('pFive').style.visibility = 'hidden'
+          document.getElementById('pSix').style.visibility = 'visible'
+
 
         }
         if ((combo <= 70)&&(combo >= 61)){
@@ -1336,6 +1721,9 @@ if (myEventA.keyCode == 87){
           score = score + 3000
           document.getElementById('six').style.visibility = 'hidden'
           document.getElementById('seven').style.visibility = 'visible'
+          document.getElementById('pSix').style.visibility = 'hidden'
+          document.getElementById('pSeven').style.visibility = 'visible'
+
 
         }
         if ((combo <= 80)&&(combo >= 71)){
@@ -1343,6 +1731,9 @@ if (myEventA.keyCode == 87){
           score = score + 3500
           document.getElementById('seven').style.visibility = 'hidden'
           document.getElementById('eight').style.visibility = 'visible'
+          document.getElementById('pSeven').style.visibility = 'hidden'
+          document.getElementById('pEight').style.visibility = 'visible'
+
 
         }
         if ((combo <= 90)&&(combo >= 81)){
@@ -1350,6 +1741,9 @@ if (myEventA.keyCode == 87){
           score = score + 4000
           document.getElementById('eight').style.visibility = 'hidden'
           document.getElementById('nine').style.visibility = 'visible'
+          document.getElementById('pEight').style.visibility = 'hidden'
+          document.getElementById('pNine').style.visibility = 'visible'
+
 
         }
         if ((combo <= 100)&&(combo >= 91)){
@@ -1358,6 +1752,9 @@ if (myEventA.keyCode == 87){
           document.getElementById('nine').style.visibility = 'hidden'
           document.getElementById('one').style.visibility = 'visible'
           document.getElementById('zero').style.visibility = 'visible'
+          document.getElementById('pNine').style.visibility = 'hidden'
+          document.getElementById('pTen').style.visibility = 'visible'
+
 
         }
       }
@@ -1370,70 +1767,90 @@ if (myEventA.keyCode == 87){
           combo = combo + 1
           if ((combo <= 20)&&(combo >= 10)){
 
-            score = score + 250
-            document.getElementById('one').style.visibility = 'hidden'
-            document.getElementById('two').style.visibility = 'visible'
+          score = score + 250
+          document.getElementById('one').style.visibility = 'hidden'
+          document.getElementById('two').style.visibility = 'visible'
+          document.getElementById('pOne').style.visibility = 'hidden'
+          document.getElementById('pTwo').style.visibility = 'visible'
 
-          }
+        }
 
-          if ((combo <= 30)&&(combo >= 21)){
+        if ((combo <= 30)&&(combo >= 21)){
 
-            score = score + 500
-            document.getElementById('two').style.visibility = 'hidden'
-            document.getElementById('three').style.visibility = 'visible'
+          score = score + 500
+          document.getElementById('two').style.visibility = 'hidden'
+          document.getElementById('three').style.visibility = 'visible'
+          document.getElementById('pTwo').style.visibility = 'hidden'
+          document.getElementById('pThree').style.visibility = 'visible'
 
-          }
+        }
 
-          if ((combo <= 40)&&(combo >= 31)){
+        if ((combo <= 40)&&(combo >= 31)){
 
-            score = score + 1000
-            document.getElementById('three').style.visibility = 'hidden'
-            document.getElementById('four').style.visibility = 'visible'
+          score = score + 1000
+          document.getElementById('three').style.visibility = 'hidden'
+          document.getElementById('four').style.visibility = 'visible'
+          document.getElementById('pThree').style.visibility = 'hidden'
+          document.getElementById('pFour').style.visibility = 'visible'
 
-          }
-          if ((combo <= 50)&&(combo >= 41)){
+        }
+        if ((combo <= 50)&&(combo >= 41)){
 
-            score = score + 1500
-            document.getElementById('four').style.visibility = 'hidden'
-            document.getElementById('five').style.visibility = 'visible'
+          score = score + 1500
+          document.getElementById('four').style.visibility = 'hidden'
+          document.getElementById('five').style.visibility = 'visible'
+          document.getElementById('pFour').style.visibility = 'hidden'
+          document.getElementById('pFive').style.visibility = 'visible'
 
-          }
-          if ((combo <= 60)&&(combo >= 51)){
+        }
+        if ((combo <= 60)&&(combo >= 51)){
 
-            score = score + 2000
-            document.getElementById('five').style.visibility = 'hidden'
-            document.getElementById('six').style.visibility = 'visible'
+          score = score + 2000
+          document.getElementById('five').style.visibility = 'hidden'
+          document.getElementById('six').style.visibility = 'visible'
+          document.getElementById('pFive').style.visibility = 'hidden'
+          document.getElementById('pSix').style.visibility = 'visible'
 
-          }
-          if ((combo <= 70)&&(combo >= 61)){
+        }
+        if ((combo <= 70)&&(combo >= 61)){
 
-            score = score + 2500
-            document.getElementById('six').style.visibility = 'hidden'
-            document.getElementById('seven').style.visibility = 'visible'
+          score = score + 2500
+          document.getElementById('six').style.visibility = 'hidden'
+          document.getElementById('seven').style.visibility = 'visible'
+          document.getElementById('pSix').style.visibility = 'hidden'
+          document.getElementById('pSeven').style.visibility = 'visible'
 
-          }
-          if ((combo <= 80)&&(combo >= 71)){
+        }
+        if ((combo <= 80)&&(combo >= 71)){
 
-            score = score + 3000
-            document.getElementById('seven').style.visibility = 'hidden'
-            document.getElementById('eight').style.visibility = 'visible'
+          score = score + 3000
+          document.getElementById('seven').style.visibility = 'hidden'
+          document.getElementById('eight').style.visibility = 'visible'
+          document.getElementById('pSeven').style.visibility = 'hidden'
+          document.getElementById('pEight').style.visibility = 'visible'
 
-          }
-          if ((combo <= 90)&&(combo >= 81)){
+        }
+        if ((combo <= 90)&&(combo >= 81)){
 
-            score = score + 3500
-            document.getElementById('eight').style.visibility = 'hidden'
-            document.getElementById('nine').style.visibility = 'visible'
+          score = score + 3500
+          document.getElementById('eight').style.visibility = 'hidden'
+          document.getElementById('nine').style.visibility = 'visible'
 
-          }
-          if ((combo <= 100)&&(combo >= 91)){
+          document.getElementById('pEight').style.visibility = 'hidden'
+          document.getElementById('pNine').style.visibility = 'visible'
 
-            score = score + 4000
-            document.getElementById('nine').style.visibility = 'hidden'
-            document.getElementById('one').style.visibility = 'visible'
-            document.getElementById('zero').style.visibility = 'visible'
+        }
+        if ((combo <= 100)&&(combo >= 91)){
 
-          }
+          score = score + 4000
+          document.getElementById('nine').style.visibility = 'hidden'
+          document.getElementById('one').style.visibility = 'visible'
+          document.getElementById('zero').style.visibility = 'visible'
+
+          document.getElementById('pNine').style.visibility = 'hidden'
+          document.getElementById('pTen').style.visibility = 'visible'
+
+        }
 
         }
 
@@ -1444,8 +1861,6 @@ if (myEventA.keyCode == 87){
 
 
 }
-
-
 if (myEventA.keyCode == 65){
 
 if ((parseInt(document.getElementById('arrow22').style.top) < 90)&&(parseInt(document.getElementById('arrow22').style.top) > 65)) {
@@ -1457,6 +1872,9 @@ if ((parseInt(document.getElementById('arrow22').style.top) < 90)&&(parseInt(doc
       score = score + 500
       document.getElementById('one').style.visibility = 'hidden'
       document.getElementById('two').style.visibility = 'visible'
+      document.getElementById('pOne').style.visibility = 'hidden'
+      document.getElementById('pTwo').style.visibility = 'visible'
+
 
     }
 
@@ -1465,6 +1883,9 @@ if ((parseInt(document.getElementById('arrow22').style.top) < 90)&&(parseInt(doc
       score = score + 1000
       document.getElementById('two').style.visibility = 'hidden'
       document.getElementById('three').style.visibility = 'visible'
+      document.getElementById('pTwo').style.visibility = 'hidden'
+      document.getElementById('pThree').style.visibility = 'visible'
+
 
     }
 
@@ -1473,6 +1894,9 @@ if ((parseInt(document.getElementById('arrow22').style.top) < 90)&&(parseInt(doc
       score = score + 1500
       document.getElementById('three').style.visibility = 'hidden'
       document.getElementById('four').style.visibility = 'visible'
+      document.getElementById('pThree').style.visibility = 'hidden'
+      document.getElementById('pFour').style.visibility = 'visible'
+
 
     }
     if ((combo <= 50)&&(combo >= 41)){
@@ -1480,6 +1904,9 @@ if ((parseInt(document.getElementById('arrow22').style.top) < 90)&&(parseInt(doc
       score = score + 2000
       document.getElementById('four').style.visibility = 'hidden'
       document.getElementById('five').style.visibility = 'visible'
+      document.getElementById('pFour').style.visibility = 'hidden'
+      document.getElementById('pFive').style.visibility = 'visible'
+
 
     }
     if ((combo <= 60)&&(combo >= 51)){
@@ -1487,6 +1914,9 @@ if ((parseInt(document.getElementById('arrow22').style.top) < 90)&&(parseInt(doc
       score = score + 2500
       document.getElementById('five').style.visibility = 'hidden'
       document.getElementById('six').style.visibility = 'visible'
+      document.getElementById('pFive').style.visibility = 'hidden'
+      document.getElementById('pSix').style.visibility = 'visible'
+
 
     }
     if ((combo <= 70)&&(combo >= 61)){
@@ -1494,6 +1924,9 @@ if ((parseInt(document.getElementById('arrow22').style.top) < 90)&&(parseInt(doc
       score = score + 3000
       document.getElementById('six').style.visibility = 'hidden'
       document.getElementById('seven').style.visibility = 'visible'
+      document.getElementById('pSix').style.visibility = 'hidden'
+      document.getElementById('pSeven').style.visibility = 'visible'
+
 
     }
     if ((combo <= 80)&&(combo >= 71)){
@@ -1501,6 +1934,9 @@ if ((parseInt(document.getElementById('arrow22').style.top) < 90)&&(parseInt(doc
       score = score + 3500
       document.getElementById('seven').style.visibility = 'hidden'
       document.getElementById('eight').style.visibility = 'visible'
+      document.getElementById('pSeven').style.visibility = 'hidden'
+      document.getElementById('pEight').style.visibility = 'visible'
+
 
     }
     if ((combo <= 90)&&(combo >= 81)){
@@ -1508,6 +1944,9 @@ if ((parseInt(document.getElementById('arrow22').style.top) < 90)&&(parseInt(doc
       score = score + 4000
       document.getElementById('eight').style.visibility = 'hidden'
       document.getElementById('nine').style.visibility = 'visible'
+      document.getElementById('pEight').style.visibility = 'hidden'
+      document.getElementById('pNine').style.visibility = 'visible'
+
 
     }
     if ((combo <= 100)&&(combo >= 91)){
@@ -1516,6 +1955,9 @@ if ((parseInt(document.getElementById('arrow22').style.top) < 90)&&(parseInt(doc
       document.getElementById('nine').style.visibility = 'hidden'
       document.getElementById('one').style.visibility = 'visible'
       document.getElementById('zero').style.visibility = 'visible'
+      document.getElementById('pNine').style.visibility = 'hidden'
+      document.getElementById('pTen').style.visibility = 'visible'
+
 
     }
   }
@@ -1528,70 +1970,90 @@ if ((parseInt(document.getElementById('arrow22').style.top) < 90)&&(parseInt(doc
       combo = combo + 1
       if ((combo <= 20)&&(combo >= 10)){
 
-        score = score + 250
-        document.getElementById('one').style.visibility = 'hidden'
-        document.getElementById('two').style.visibility = 'visible'
+            score = score + 250
+            document.getElementById('one').style.visibility = 'hidden'
+            document.getElementById('two').style.visibility = 'visible'
+            document.getElementById('pOne').style.visibility = 'hidden'
+            document.getElementById('pTwo').style.visibility = 'visible'
 
-      }
+          }
 
-      if ((combo <= 30)&&(combo >= 21)){
+          if ((combo <= 30)&&(combo >= 21)){
 
-        score = score + 500
-        document.getElementById('two').style.visibility = 'hidden'
-        document.getElementById('three').style.visibility = 'visible'
+            score = score + 500
+            document.getElementById('two').style.visibility = 'hidden'
+            document.getElementById('three').style.visibility = 'visible'
+            document.getElementById('pTwo').style.visibility = 'hidden'
+            document.getElementById('pThree').style.visibility = 'visible'
 
-      }
+          }
 
-      if ((combo <= 40)&&(combo >= 31)){
+          if ((combo <= 40)&&(combo >= 31)){
 
-        score = score + 1000
-        document.getElementById('three').style.visibility = 'hidden'
-        document.getElementById('four').style.visibility = 'visible'
+            score = score + 1000
+            document.getElementById('three').style.visibility = 'hidden'
+            document.getElementById('four').style.visibility = 'visible'
+            document.getElementById('pThree').style.visibility = 'hidden'
+            document.getElementById('pFour').style.visibility = 'visible'
 
-      }
-      if ((combo <= 50)&&(combo >= 41)){
+          }
+          if ((combo <= 50)&&(combo >= 41)){
 
-        score = score + 1500
-        document.getElementById('four').style.visibility = 'hidden'
-        document.getElementById('five').style.visibility = 'visible'
+            score = score + 1500
+            document.getElementById('four').style.visibility = 'hidden'
+            document.getElementById('five').style.visibility = 'visible'
+            document.getElementById('pFour').style.visibility = 'hidden'
+            document.getElementById('pFive').style.visibility = 'visible'
 
-      }
-      if ((combo <= 60)&&(combo >= 51)){
+          }
+          if ((combo <= 60)&&(combo >= 51)){
 
-        score = score + 2000
-        document.getElementById('five').style.visibility = 'hidden'
-        document.getElementById('six').style.visibility = 'visible'
+            score = score + 2000
+            document.getElementById('five').style.visibility = 'hidden'
+            document.getElementById('six').style.visibility = 'visible'
+            document.getElementById('pFive').style.visibility = 'hidden'
+            document.getElementById('pSix').style.visibility = 'visible'
 
-      }
-      if ((combo <= 70)&&(combo >= 61)){
+          }
+          if ((combo <= 70)&&(combo >= 61)){
 
-        score = score + 2500
-        document.getElementById('six').style.visibility = 'hidden'
-        document.getElementById('seven').style.visibility = 'visible'
+            score = score + 2500
+            document.getElementById('six').style.visibility = 'hidden'
+            document.getElementById('seven').style.visibility = 'visible'
+            document.getElementById('pSix').style.visibility = 'hidden'
+            document.getElementById('pSeven').style.visibility = 'visible'
 
-      }
-      if ((combo <= 80)&&(combo >= 71)){
+          }
+          if ((combo <= 80)&&(combo >= 71)){
 
-        score = score + 3000
-        document.getElementById('seven').style.visibility = 'hidden'
-        document.getElementById('eight').style.visibility = 'visible'
+            score = score + 3000
+            document.getElementById('seven').style.visibility = 'hidden'
+            document.getElementById('eight').style.visibility = 'visible'
+            document.getElementById('pSeven').style.visibility = 'hidden'
+            document.getElementById('pEight').style.visibility = 'visible'
 
-      }
-      if ((combo <= 90)&&(combo >= 81)){
+          }
+          if ((combo <= 90)&&(combo >= 81)){
 
-        score = score + 3500
-        document.getElementById('eight').style.visibility = 'hidden'
-        document.getElementById('nine').style.visibility = 'visible'
+            score = score + 3500
+            document.getElementById('eight').style.visibility = 'hidden'
+            document.getElementById('nine').style.visibility = 'visible'
 
-      }
-      if ((combo <= 100)&&(combo >= 91)){
+            document.getElementById('pEight').style.visibility = 'hidden'
+            document.getElementById('pNine').style.visibility = 'visible'
 
-        score = score + 4000
-        document.getElementById('nine').style.visibility = 'hidden'
-        document.getElementById('one').style.visibility = 'visible'
-        document.getElementById('zero').style.visibility = 'visible'
+          }
+          if ((combo <= 100)&&(combo >= 91)){
 
-      }
+            score = score + 4000
+            document.getElementById('nine').style.visibility = 'hidden'
+            document.getElementById('one').style.visibility = 'visible'
+            document.getElementById('zero').style.visibility = 'visible'
+
+            document.getElementById('pNine').style.visibility = 'hidden'
+            document.getElementById('pTen').style.visibility = 'visible'
+
+          }
 
     }
 
@@ -1613,6 +2075,9 @@ if ((parseInt(document.getElementById('arrow32').style.top) < 90)&&(parseInt(doc
       score = score + 500
       document.getElementById('one').style.visibility = 'hidden'
       document.getElementById('two').style.visibility = 'visible'
+      document.getElementById('pOne').style.visibility = 'hidden'
+      document.getElementById('pTwo').style.visibility = 'visible'
+
 
     }
 
@@ -1621,6 +2086,9 @@ if ((parseInt(document.getElementById('arrow32').style.top) < 90)&&(parseInt(doc
       score = score + 1000
       document.getElementById('two').style.visibility = 'hidden'
       document.getElementById('three').style.visibility = 'visible'
+      document.getElementById('pTwo').style.visibility = 'hidden'
+      document.getElementById('pThree').style.visibility = 'visible'
+
 
     }
 
@@ -1629,6 +2097,9 @@ if ((parseInt(document.getElementById('arrow32').style.top) < 90)&&(parseInt(doc
       score = score + 1500
       document.getElementById('three').style.visibility = 'hidden'
       document.getElementById('four').style.visibility = 'visible'
+      document.getElementById('pThree').style.visibility = 'hidden'
+      document.getElementById('pFour').style.visibility = 'visible'
+
 
     }
     if ((combo <= 50)&&(combo >= 41)){
@@ -1636,6 +2107,9 @@ if ((parseInt(document.getElementById('arrow32').style.top) < 90)&&(parseInt(doc
       score = score + 2000
       document.getElementById('four').style.visibility = 'hidden'
       document.getElementById('five').style.visibility = 'visible'
+      document.getElementById('pFour').style.visibility = 'hidden'
+      document.getElementById('pFive').style.visibility = 'visible'
+
 
     }
     if ((combo <= 60)&&(combo >= 51)){
@@ -1643,6 +2117,9 @@ if ((parseInt(document.getElementById('arrow32').style.top) < 90)&&(parseInt(doc
       score = score + 2500
       document.getElementById('five').style.visibility = 'hidden'
       document.getElementById('six').style.visibility = 'visible'
+      document.getElementById('pFive').style.visibility = 'hidden'
+      document.getElementById('pSix').style.visibility = 'visible'
+
 
     }
     if ((combo <= 70)&&(combo >= 61)){
@@ -1650,6 +2127,9 @@ if ((parseInt(document.getElementById('arrow32').style.top) < 90)&&(parseInt(doc
       score = score + 3000
       document.getElementById('six').style.visibility = 'hidden'
       document.getElementById('seven').style.visibility = 'visible'
+      document.getElementById('pSix').style.visibility = 'hidden'
+      document.getElementById('pSeven').style.visibility = 'visible'
+
 
     }
     if ((combo <= 80)&&(combo >= 71)){
@@ -1657,6 +2137,9 @@ if ((parseInt(document.getElementById('arrow32').style.top) < 90)&&(parseInt(doc
       score = score + 3500
       document.getElementById('seven').style.visibility = 'hidden'
       document.getElementById('eight').style.visibility = 'visible'
+      document.getElementById('pSeven').style.visibility = 'hidden'
+      document.getElementById('pEight').style.visibility = 'visible'
+
 
     }
     if ((combo <= 90)&&(combo >= 81)){
@@ -1664,6 +2147,9 @@ if ((parseInt(document.getElementById('arrow32').style.top) < 90)&&(parseInt(doc
       score = score + 4000
       document.getElementById('eight').style.visibility = 'hidden'
       document.getElementById('nine').style.visibility = 'visible'
+      document.getElementById('pEight').style.visibility = 'hidden'
+      document.getElementById('pNine').style.visibility = 'visible'
+
 
     }
     if ((combo <= 100)&&(combo >= 91)){
@@ -1672,6 +2158,9 @@ if ((parseInt(document.getElementById('arrow32').style.top) < 90)&&(parseInt(doc
       document.getElementById('nine').style.visibility = 'hidden'
       document.getElementById('one').style.visibility = 'visible'
       document.getElementById('zero').style.visibility = 'visible'
+      document.getElementById('pNine').style.visibility = 'hidden'
+      document.getElementById('pTen').style.visibility = 'visible'
+
 
     }
   }
@@ -1684,70 +2173,90 @@ if ((parseInt(document.getElementById('arrow32').style.top) < 90)&&(parseInt(doc
       combo = combo + 1
       if ((combo <= 20)&&(combo >= 10)){
 
-        score = score + 250
-        document.getElementById('one').style.visibility = 'hidden'
-        document.getElementById('two').style.visibility = 'visible'
+          score = score + 250
+          document.getElementById('one').style.visibility = 'hidden'
+          document.getElementById('two').style.visibility = 'visible'
+          document.getElementById('pOne').style.visibility = 'hidden'
+          document.getElementById('pTwo').style.visibility = 'visible'
 
-      }
+        }
 
-      if ((combo <= 30)&&(combo >= 21)){
+        if ((combo <= 30)&&(combo >= 21)){
 
-        score = score + 500
-        document.getElementById('two').style.visibility = 'hidden'
-        document.getElementById('three').style.visibility = 'visible'
+          score = score + 500
+          document.getElementById('two').style.visibility = 'hidden'
+          document.getElementById('three').style.visibility = 'visible'
+          document.getElementById('pTwo').style.visibility = 'hidden'
+          document.getElementById('pThree').style.visibility = 'visible'
 
-      }
+        }
 
-      if ((combo <= 40)&&(combo >= 31)){
+        if ((combo <= 40)&&(combo >= 31)){
 
-        score = score + 1000
-        document.getElementById('three').style.visibility = 'hidden'
-        document.getElementById('four').style.visibility = 'visible'
+          score = score + 1000
+          document.getElementById('three').style.visibility = 'hidden'
+          document.getElementById('four').style.visibility = 'visible'
+          document.getElementById('pThree').style.visibility = 'hidden'
+          document.getElementById('pFour').style.visibility = 'visible'
 
-      }
-      if ((combo <= 50)&&(combo >= 41)){
+        }
+        if ((combo <= 50)&&(combo >= 41)){
 
-        score = score + 1500
-        document.getElementById('four').style.visibility = 'hidden'
-        document.getElementById('five').style.visibility = 'visible'
+          score = score + 1500
+          document.getElementById('four').style.visibility = 'hidden'
+          document.getElementById('five').style.visibility = 'visible'
+          document.getElementById('pFour').style.visibility = 'hidden'
+          document.getElementById('pFive').style.visibility = 'visible'
 
-      }
-      if ((combo <= 60)&&(combo >= 51)){
+        }
+        if ((combo <= 60)&&(combo >= 51)){
 
-        score = score + 2000
-        document.getElementById('five').style.visibility = 'hidden'
-        document.getElementById('six').style.visibility = 'visible'
+          score = score + 2000
+          document.getElementById('five').style.visibility = 'hidden'
+          document.getElementById('six').style.visibility = 'visible'
+          document.getElementById('pFive').style.visibility = 'hidden'
+          document.getElementById('pSix').style.visibility = 'visible'
 
-      }
-      if ((combo <= 70)&&(combo >= 61)){
+        }
+        if ((combo <= 70)&&(combo >= 61)){
 
-        score = score + 2500
-        document.getElementById('six').style.visibility = 'hidden'
-        document.getElementById('seven').style.visibility = 'visible'
+          score = score + 2500
+          document.getElementById('six').style.visibility = 'hidden'
+          document.getElementById('seven').style.visibility = 'visible'
+          document.getElementById('pSix').style.visibility = 'hidden'
+          document.getElementById('pSeven').style.visibility = 'visible'
 
-      }
-      if ((combo <= 80)&&(combo >= 71)){
+        }
+        if ((combo <= 80)&&(combo >= 71)){
 
-        score = score + 3000
-        document.getElementById('seven').style.visibility = 'hidden'
-        document.getElementById('eight').style.visibility = 'visible'
+          score = score + 3000
+          document.getElementById('seven').style.visibility = 'hidden'
+          document.getElementById('eight').style.visibility = 'visible'
+          document.getElementById('pSeven').style.visibility = 'hidden'
+          document.getElementById('pEight').style.visibility = 'visible'
 
-      }
-      if ((combo <= 90)&&(combo >= 81)){
+        }
+        if ((combo <= 90)&&(combo >= 81)){
 
-        score = score + 3500
-        document.getElementById('eight').style.visibility = 'hidden'
-        document.getElementById('nine').style.visibility = 'visible'
+          score = score + 3500
+          document.getElementById('eight').style.visibility = 'hidden'
+          document.getElementById('nine').style.visibility = 'visible'
 
-      }
-      if ((combo <= 100)&&(combo >= 91)){
+          document.getElementById('pEight').style.visibility = 'hidden'
+          document.getElementById('pNine').style.visibility = 'visible'
 
-        score = score + 4000
-        document.getElementById('nine').style.visibility = 'hidden'
-        document.getElementById('one').style.visibility = 'visible'
-        document.getElementById('zero').style.visibility = 'visible'
+        }
+        if ((combo <= 100)&&(combo >= 91)){
 
-      }
+          score = score + 4000
+          document.getElementById('nine').style.visibility = 'hidden'
+          document.getElementById('one').style.visibility = 'visible'
+          document.getElementById('zero').style.visibility = 'visible'
+
+          document.getElementById('pNine').style.visibility = 'hidden'
+          document.getElementById('pTen').style.visibility = 'visible'
+
+        }
 
     }
 
@@ -1769,6 +2278,9 @@ if ((parseInt(document.getElementById('arrow42').style.top) < 90)&&(parseInt(doc
       score = score + 500
       document.getElementById('one').style.visibility = 'hidden'
       document.getElementById('two').style.visibility = 'visible'
+      document.getElementById('pOne').style.visibility = 'hidden'
+      document.getElementById('pTwo').style.visibility = 'visible'
+
 
     }
 
@@ -1777,6 +2289,9 @@ if ((parseInt(document.getElementById('arrow42').style.top) < 90)&&(parseInt(doc
       score = score + 1000
       document.getElementById('two').style.visibility = 'hidden'
       document.getElementById('three').style.visibility = 'visible'
+      document.getElementById('pTwo').style.visibility = 'hidden'
+      document.getElementById('pThree').style.visibility = 'visible'
+
 
     }
 
@@ -1785,6 +2300,9 @@ if ((parseInt(document.getElementById('arrow42').style.top) < 90)&&(parseInt(doc
       score = score + 1500
       document.getElementById('three').style.visibility = 'hidden'
       document.getElementById('four').style.visibility = 'visible'
+      document.getElementById('pThree').style.visibility = 'hidden'
+      document.getElementById('pFour').style.visibility = 'visible'
+
 
     }
     if ((combo <= 50)&&(combo >= 41)){
@@ -1792,6 +2310,9 @@ if ((parseInt(document.getElementById('arrow42').style.top) < 90)&&(parseInt(doc
       score = score + 2000
       document.getElementById('four').style.visibility = 'hidden'
       document.getElementById('five').style.visibility = 'visible'
+      document.getElementById('pFour').style.visibility = 'hidden'
+      document.getElementById('pFive').style.visibility = 'visible'
+
 
     }
     if ((combo <= 60)&&(combo >= 51)){
@@ -1799,6 +2320,9 @@ if ((parseInt(document.getElementById('arrow42').style.top) < 90)&&(parseInt(doc
       score = score + 2500
       document.getElementById('five').style.visibility = 'hidden'
       document.getElementById('six').style.visibility = 'visible'
+      document.getElementById('pFive').style.visibility = 'hidden'
+      document.getElementById('pSix').style.visibility = 'visible'
+
 
     }
     if ((combo <= 70)&&(combo >= 61)){
@@ -1806,6 +2330,9 @@ if ((parseInt(document.getElementById('arrow42').style.top) < 90)&&(parseInt(doc
       score = score + 3000
       document.getElementById('six').style.visibility = 'hidden'
       document.getElementById('seven').style.visibility = 'visible'
+      document.getElementById('pSix').style.visibility = 'hidden'
+      document.getElementById('pSeven').style.visibility = 'visible'
+
 
     }
     if ((combo <= 80)&&(combo >= 71)){
@@ -1813,6 +2340,9 @@ if ((parseInt(document.getElementById('arrow42').style.top) < 90)&&(parseInt(doc
       score = score + 3500
       document.getElementById('seven').style.visibility = 'hidden'
       document.getElementById('eight').style.visibility = 'visible'
+      document.getElementById('pSeven').style.visibility = 'hidden'
+      document.getElementById('pEight').style.visibility = 'visible'
+
 
     }
     if ((combo <= 90)&&(combo >= 81)){
@@ -1820,6 +2350,9 @@ if ((parseInt(document.getElementById('arrow42').style.top) < 90)&&(parseInt(doc
       score = score + 4000
       document.getElementById('eight').style.visibility = 'hidden'
       document.getElementById('nine').style.visibility = 'visible'
+      document.getElementById('pEight').style.visibility = 'hidden'
+      document.getElementById('pNine').style.visibility = 'visible'
+
 
     }
     if ((combo <= 100)&&(combo >= 91)){
@@ -1828,6 +2361,9 @@ if ((parseInt(document.getElementById('arrow42').style.top) < 90)&&(parseInt(doc
       document.getElementById('nine').style.visibility = 'hidden'
       document.getElementById('one').style.visibility = 'visible'
       document.getElementById('zero').style.visibility = 'visible'
+      document.getElementById('pNine').style.visibility = 'hidden'
+      document.getElementById('pTen').style.visibility = 'visible'
+
 
     }
   }
@@ -1845,6 +2381,8 @@ document.getElementById('arrow42').style.visibility = 'hidden'
           score = score + 250
           document.getElementById('one').style.visibility = 'hidden'
           document.getElementById('two').style.visibility = 'visible'
+          document.getElementById('pOne').style.visibility = 'hidden'
+          document.getElementById('pTwo').style.visibility = 'visible'
 
         }
 
@@ -1853,6 +2391,8 @@ document.getElementById('arrow42').style.visibility = 'hidden'
           score = score + 500
           document.getElementById('two').style.visibility = 'hidden'
           document.getElementById('three').style.visibility = 'visible'
+          document.getElementById('pTwo').style.visibility = 'hidden'
+          document.getElementById('pThree').style.visibility = 'visible'
 
         }
 
@@ -1861,6 +2401,8 @@ document.getElementById('arrow42').style.visibility = 'hidden'
           score = score + 1000
           document.getElementById('three').style.visibility = 'hidden'
           document.getElementById('four').style.visibility = 'visible'
+          document.getElementById('pThree').style.visibility = 'hidden'
+          document.getElementById('pFour').style.visibility = 'visible'
 
         }
         if ((combo <= 50)&&(combo >= 41)){
@@ -1868,6 +2410,8 @@ document.getElementById('arrow42').style.visibility = 'hidden'
           score = score + 1500
           document.getElementById('four').style.visibility = 'hidden'
           document.getElementById('five').style.visibility = 'visible'
+          document.getElementById('pFour').style.visibility = 'hidden'
+          document.getElementById('pFive').style.visibility = 'visible'
 
         }
         if ((combo <= 60)&&(combo >= 51)){
@@ -1875,6 +2419,8 @@ document.getElementById('arrow42').style.visibility = 'hidden'
           score = score + 2000
           document.getElementById('five').style.visibility = 'hidden'
           document.getElementById('six').style.visibility = 'visible'
+          document.getElementById('pFive').style.visibility = 'hidden'
+          document.getElementById('pSix').style.visibility = 'visible'
 
         }
         if ((combo <= 70)&&(combo >= 61)){
@@ -1882,6 +2428,8 @@ document.getElementById('arrow42').style.visibility = 'hidden'
           score = score + 2500
           document.getElementById('six').style.visibility = 'hidden'
           document.getElementById('seven').style.visibility = 'visible'
+          document.getElementById('pSix').style.visibility = 'hidden'
+          document.getElementById('pSeven').style.visibility = 'visible'
 
         }
         if ((combo <= 80)&&(combo >= 71)){
@@ -1889,6 +2437,8 @@ document.getElementById('arrow42').style.visibility = 'hidden'
           score = score + 3000
           document.getElementById('seven').style.visibility = 'hidden'
           document.getElementById('eight').style.visibility = 'visible'
+          document.getElementById('pSeven').style.visibility = 'hidden'
+          document.getElementById('pEight').style.visibility = 'visible'
 
         }
         if ((combo <= 90)&&(combo >= 81)){
@@ -1897,6 +2447,9 @@ document.getElementById('arrow42').style.visibility = 'hidden'
           document.getElementById('eight').style.visibility = 'hidden'
           document.getElementById('nine').style.visibility = 'visible'
 
+          document.getElementById('pEight').style.visibility = 'hidden'
+          document.getElementById('pNine').style.visibility = 'visible'
+
         }
         if ((combo <= 100)&&(combo >= 91)){
 
@@ -1904,6 +2457,9 @@ document.getElementById('arrow42').style.visibility = 'hidden'
           document.getElementById('nine').style.visibility = 'hidden'
           document.getElementById('one').style.visibility = 'visible'
           document.getElementById('zero').style.visibility = 'visible'
+
+          document.getElementById('pNine').style.visibility = 'hidden'
+          document.getElementById('pTen').style.visibility = 'visible'
 
         }
 
@@ -1923,8 +2479,23 @@ document.getElementById('div').innerHTML = '<b>'+score+'</b>'
 }
 
 
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1937,6 +2508,9 @@ document.getElementById('div').innerHTML = '<b>'+score+'</b>'
 
      clearInterval(myClock)
      myClock = setInterval(function(){
+
+document.getElementById('arrow1').style.top = parseInt(document.getElementById('arrow1').style.top) - 10 + 'px'
+
 
        if((document.getElementById('seconds').innerHTML >= 2)||(document.getElementById('minutes').innerHTML >= 1)){
          document.getElementById('arrow2').style.top = parseInt(document.getElementById('arrow2').style.top) - 10 + 'px'
@@ -1995,6 +2569,7 @@ document.getElementById('div').innerHTML = '<b>'+score+'</b>'
 
   //     }
 
+
     //   if((document.getElementById('seconds').innerHTML >= 44)||(document.getElementById('minutes').innerHTML >= 1)){
     //     document.getElementById('arrow33').style.top = parseInt(document.getElementById('arrow32').style.top) - 10 + 'px'
 
@@ -2006,7 +2581,40 @@ document.getElementById('div').innerHTML = '<b>'+score+'</b>'
 
 
 
+    if ((((((parseInt(document.getElementById('arrow1').style.top) == 0)&&(document.getElementById('arrow1').style.visibility == 'visible'))||((parseInt(document.getElementById('arrow2').style.top) == 0)&&(document.getElementById('arrow2').style.visibility == 'visible')))||(((parseInt(document.getElementById('arrow3').style.top) == 0)&&(document.getElementById('arrow3').style.visibility == 'visible'))||((parseInt(document.getElementById('arrow4').style.top) == 0)&&(document.getElementById('arrow4').style.visibility == 'visible'))))||((((parseInt(document.getElementById('arrow11').style.top) == 0)&&(document.getElementById('arrow11').style.visibility == 'visible'))||((parseInt(document.getElementById('arrow21').style.top) == 0)&&(document.getElementById('arrow21').style.visibility == 'visible')))||(((parseInt(document.getElementById('arrow31').style.top) == 0)&&(document.getElementById('arrow31').style.visibility == 'visible'))||((parseInt(document.getElementById('arrow41').style.top) == 0)&&(document.getElementById('arrow41').style.visibility == 'visible')))))||(((((parseInt(document.getElementById('arrow12').style.top) == 0)&&(document.getElementById('arrow12').style.visibility == 'visible'))||((parseInt(document.getElementById('arrow22').style.top) == 0)&&(document.getElementById('arrow22').style.visibility == 'visible')))||(((parseInt(document.getElementById('arrow32').style.top) == 0)&&(document.getElementById('arrow32').style.visibility == 'visible'))||((parseInt(document.getElementById('arrow42').style.top) == 0)&&(document.getElementById('arrow42').style.visibility == 'visible'))))||((((parseInt(document.getElementById('arrow13').style.top) == 0)&&(document.getElementById('arrow13').style.visibility == 'visible'))||((parseInt(document.getElementById('arrow23').style.top) == 0)&&(document.getElementById('arrow23').style.visibility == 'visible')))||(((parseInt(document.getElementById('arrow33').style.top) == 0)&&(document.getElementById('arrow33').style.visibility == 'visible'))||((parseInt(document.getElementById('arrow43').style.top) == 0)&&(document.getElementById('arrow43').style.visibility == 'visible'))))))
+    {
 
+      combo = 0
+
+       document.getElementById('one').style.visibility = 'visible'
+       document.getElementById('nine').style.visibility = 'hidden'
+       document.getElementById('eight').style.visibility = 'hidden'
+       document.getElementById('seven').style.visibility = 'hidden'
+       document.getElementById('six').style.visibility = 'hidden'
+       document.getElementById('five').style.visibility = 'hidden'
+       document.getElementById('four').style.visibility = 'hidden'
+       document.getElementById('three').style.visibility = 'hidden'
+       document.getElementById('two').style.visibility = 'hidden'
+       document.getElementById('zero').style.visibility = 'hidden'
+
+
+
+       document.getElementById('pOne').style.visibility = 'visible'
+       document.getElementById('pNine').style.visibility = 'hidden'
+       document.getElementById('pEight').style.visibility = 'hidden'
+       document.getElementById('pSeven').style.visibility = 'hidden'
+       document.getElementById('pSix').style.visibility = 'hidden'
+       document.getElementById('pFive').style.visibility = 'hidden'
+       document.getElementById('pFour').style.visibility = 'hidden'
+       document.getElementById('pThree').style.visibility = 'hidden'
+       document.getElementById('pTwo').style.visibility = 'hidden'
+       document.getElementById('pTen').style.visibility = 'hidden'
+
+
+
+
+
+    }
 
 
 
@@ -2085,19 +2693,16 @@ document.getElementById('div').innerHTML = '<b>'+score+'</b>'
 
        }
 
-       if((((()||())||(()||()))||((()||())||(()||())))||(((()||())||(()||()))||((()||())||(()||())))){
 
 
 
 
 
-       }
 
 
 
 
 
-       document.getElementById('arrow1').style.top = parseInt(document.getElementById('arrow1').style.top) - 10 + 'px'
 
      }, 200)
 
@@ -2198,6 +2803,17 @@ document.getElementById('arrow43').style.visibility = 'visible'
 <img id="eight" src="https://cdn.pixabay.com/photo/2015/02/13/09/48/pay-634907_960_720.png" style="width:300px; height:300px; position:absolute; left:700px; top:300px; visibility: hidden">
 <img id="nine" src="http://www.freepngimg.com/download/numbers/3-2-9-number-png.png" style="width:300px; height:300px; position:absolute; left:700px; top:300px; visibility: hidden">
 <img id="zero" src="https://cdn.pixabay.com/photo/2015/02/13/09/48/pay-634905_960_720.png" style="width:300px; height:300px; position:absolute; left:1000px; top:300px; visibility: hidden">
+
+<img id="pOne" src="https://fcit.usf.edu/matrix/wp-content/uploads/2017/01/DanceBot-3-LG.gif" style=" height:300px; position:absolute; left:1000px; top:300px; visibility: visible">
+<img id="pTwo" src="https://media.giphy.com/media/1007jc7jstgLlu/giphy.gif" style=" height:300px; position:absolute; left:1000px; top:300px; visibility: hidden">
+<img id="pThree" src="https://i.gifer.com/6mx.gif" style=" height:300px; position:absolute; left:1000px; top:300px; visibility: hidden">
+<img id="pFour" src="https://i.gifer.com/6ov.gif" style=" height:300px; position:absolute; left:1000px; top:300px; visibility: hidden">
+<img id="pFive" src="https://i.gifer.com/JUl.gif" style=" height:300px; position:absolute; left:1000px; top:300px; visibility: hidden">
+<img id="pSix" src="https://i.imgur.com/rMsGafK.gif" style=" height:300px; position:absolute; left:1000px; top:300px; visibility: hidden">
+<img id="pSeven" src="https://i.gifer.com/DEk.gif" style=" height:300px; position:absolute; left:1000px; top:300px; visibility: hidden">
+<img id="pEight" src="https://media1.giphy.com/media/BetLyuCzghyww/200w.gif" style=" height:300px; position:absolute; left:1000px; top:300px; visibility: hidden">
+<img id="pNine" src="https://i.gifer.com/R36c.gif" style=" height:300px; position:absolute; left:1000px; top:300px; visibility: hidden">
+<img id="pTen" src="https://media.giphy.com/media/wn8rVP7qC8TNC/giphy.gif" style=" height:300px; position:absolute; left:1000px; top:300px; visibility: hidden">
 
 
 
