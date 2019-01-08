@@ -1,4 +1,5 @@
 <h2 align="center">Keyboard DDR</h2>
+
 <script type="text/javascript">
 
   let myClock
@@ -8,7 +9,7 @@
  let combo = 0
 
 
-
+let a = 0
 
 
 
@@ -3332,41 +3333,41 @@ document.getElementById('div').innerHTML = '<b>'+score+'</b>'
 document.getElementById('arrow1').style.top = parseInt(document.getElementById('arrow1').style.top) - 10 + 'px'
 
 
-       if((document.getElementById('seconds').innerHTML >= 2)||(document.getElementById('minutes').innerHTML >= 1)){
+       if((document.getElementById('seconds').innerHTML >= 2)||(document.getElementById('minutes').innerHTML == 1)){
          document.getElementById('arrow2').style.top = parseInt(document.getElementById('arrow2').style.top) - 10 + 'px'
 
        }
 
-       if((document.getElementById('seconds').innerHTML >= 3)||(document.getElementById('minutes').innerHTML >= 1)){
+       if((document.getElementById('seconds').innerHTML >= 3)||(document.getElementById('minutes').innerHTML == 1)){
          document.getElementById('arrow3').style.top = parseInt(document.getElementById('arrow3').style.top) - 10 + 'px'
 
        }
-       if((document.getElementById('seconds').innerHTML >= 4)||(document.getElementById('minutes').innerHTML >= 1)){
+       if((document.getElementById('seconds').innerHTML >= 4)||(document.getElementById('minutes').innerHTML == 1)){
          document.getElementById('arrow4').style.top = parseInt(document.getElementById('arrow4').style.top) - 10 + 'px'
 
        }
-       if((document.getElementById('seconds').innerHTML >= 5)||(document.getElementById('minutes').innerHTML >= 1)){
+       if((document.getElementById('seconds').innerHTML >= 5)||(document.getElementById('minutes').innerHTML == 1)){
          document.getElementById('arrow11').style.top = parseInt(document.getElementById('arrow11').style.top) - 10 + 'px'
 
        }
-       if((document.getElementById('seconds').innerHTML >= 7)||(document.getElementById('minutes').innerHTML >= 1)){
+       if((document.getElementById('seconds').innerHTML >= 7)||(document.getElementById('minutes').innerHTML == 1)){
          document.getElementById('arrow21').style.top = parseInt(document.getElementById('arrow21').style.top) - 10 + 'px'
 
        }
-       if((document.getElementById('seconds').innerHTML >= 8)||(document.getElementById('minutes').innerHTML >= 1)){
+       if((document.getElementById('seconds').innerHTML >= 8)||(document.getElementById('minutes').innerHTML == 1)){
          document.getElementById('arrow31').style.top = parseInt(document.getElementById('arrow31').style.top) - 10 + 'px'
 
        }
-       if((document.getElementById('seconds').innerHTML >= 10)||(document.getElementById('minutes').innerHTML >= 1)){
+       if((document.getElementById('seconds').innerHTML >= 10)||(document.getElementById('minutes').innerHTML == 1)){
          document.getElementById('arrow41').style.top = parseInt(document.getElementById('arrow41').style.top) - 10 + 'px'
 
        }
-       if((document.getElementById('seconds').innerHTML >= 11)||(document.getElementById('minutes').innerHTML >= 1)){
+       if((document.getElementById('seconds').innerHTML >= 11)||(document.getElementById('minutes').innerHTML == 1)){
          document.getElementById('arrow12').style.top = parseInt(document.getElementById('arrow12').style.top) - 10 + 'px'
 
        }
 
-       if((document.getElementById('seconds').innerHTML >= 12)||(document.getElementById('minutes').innerHTML >= 1)){
+       if((document.getElementById('seconds').innerHTML >= 12)||(document.getElementById('minutes').innerHTML == 1)){
          document.getElementById('arrow22').style.top = parseInt(document.getElementById('arrow22').style.top) - 10 + 'px'
 
        }
@@ -3379,22 +3380,22 @@ document.getElementById('arrow1').style.top = parseInt(document.getElementById('
          document.getElementById('arrow42').style.top = parseInt(document.getElementById('arrow42').style.top) - 10 + 'px'
 
        }
-       if((document.getElementById('seconds').innerHTML >= 33)||(document.getElementById('minutes').innerHTML >= 1)){
+       if((document.getElementById('seconds').innerHTML >= 33)||(document.getElementById('minutes').innerHTML == 1)){
          document.getElementById('arrow13').style.top = parseInt(document.getElementById('arrow13').style.top) - 10 + 'px'
 
        }
 
-       if((document.getElementById('seconds').innerHTML >= 38)||(document.getElementById('minutes').innerHTML >= 1)){
+       if((document.getElementById('seconds').innerHTML >= 38)||(document.getElementById('minutes').innerHTML == 1)){
          document.getElementById('arrow23').style.top = parseInt(document.getElementById('arrow23').style.top) - 10 + 'px'
 
        }
 
 
-       if((document.getElementById('seconds').innerHTML >= 30)||(document.getElementById('minutes').innerHTML >= 1)){
+       if((document.getElementById('seconds').innerHTML >= 30)||(document.getElementById('minutes').innerHTML == 1)){
          document.getElementById('arrow33').style.top = parseInt(document.getElementById('arrow33').style.top) - 10 + 'px'
 
        }
-       if((document.getElementById('seconds').innerHTML >= 37)||(document.getElementById('minutes').innerHTML >= 1)){
+       if((document.getElementById('seconds').innerHTML >= 37)||(document.getElementById('minutes').innerHTML == 1)){
          document.getElementById('arrow43').style.top = parseInt(document.getElementById('arrow43').style.top) - 10 + 'px'
 
        }
@@ -3537,7 +3538,59 @@ document.getElementById('arrow1').style.top = parseInt(document.getElementById('
 
 
 
+if ((document.getElementById('minutes').innerHTML == 1)&&(document.getElementById('seconds').innerHTML == 30)){
 
+  document.getElementById('arrow1').style.visibility = 'hidden'
+  document.getElementById('arrow2').style.visibility = 'hidden'
+  document.getElementById('arrow3').style.visibility = 'hidden'
+  document.getElementById('arrow4').style.visibility = 'hidden'
+  document.getElementById('arrow11').style.visibility = 'hidden'
+  document.getElementById('arrow21').style.visibility = 'hidden'
+  document.getElementById('arrow31').style.visibility = 'hidden'
+  document.getElementById('arrow41').style.visibility = 'hidden'
+  document.getElementById('arrow12').style.visibility = 'hidden'
+  document.getElementById('arrow22').style.visibility = 'hidden'
+  document.getElementById('arrow32').style.visibility = 'hidden'
+  document.getElementById('arrow42').style.visibility = 'hidden'
+  document.getElementById('arrow13').style.visibility = 'hidden'
+  document.getElementById('arrow23').style.visibility = 'hidden'
+  document.getElementById('arrow33').style.visibility = 'hidden'
+  document.getElementById('arrow43').style.visibility = 'hidden'
+
+
+
+
+document.getElementById('arrow1').style.top = parseInt(document.getElementById('arrow1').style.top) + 10 + 'px'
+document.getElementById('arrow2').style.top = parseInt(document.getElementById('arrow2').style.top) + 10 + 'px'
+document.getElementById('arrow3').style.top = parseInt(document.getElementById('arrow3').style.top) + 10 + 'px'
+document.getElementById('arrow4').style.top = parseInt(document.getElementById('arrow4').style.top) + 10 + 'px'
+document.getElementById('arrow11').style.top = parseInt(document.getElementById('arrow11').style.top) + 10 + 'px'
+document.getElementById('arrow21').style.top = parseInt(document.getElementById('arrow21').style.top) + 10 + 'px'
+document.getElementById('arrow31').style.top = parseInt(document.getElementById('arrow31').style.top) + 10 + 'px'
+document.getElementById('arrow41').style.top = parseInt(document.getElementById('arrow41').style.top) + 10 + 'px'
+document.getElementById('arrow12').style.top = parseInt(document.getElementById('arrow12').style.top) + 10 + 'px'
+document.getElementById('arrow22').style.top = parseInt(document.getElementById('arrow22').style.top) + 10 + 'px'
+document.getElementById('arrow32').style.top = parseInt(document.getElementById('arrow32').style.top) + 10 + 'px'
+document.getElementById('arrow42').style.top = parseInt(document.getElementById('arrow42').style.top) + 10 + 'px'
+document.getElementById('arrow13').style.top = parseInt(document.getElementById('arrow13').style.top) + 10 + 'px'
+document.getElementById('arrow23').style.top = parseInt(document.getElementById('arrow23').style.top) + 10 + 'px'
+document.getElementById('arrow33').style.top = parseInt(document.getElementById('arrow33').style.top) + 10 + 'px'
+document.getElementById('arrow43').style.top = parseInt(document.getElementById('arrow43').style.top) + 10 + 'px'
+
+
+
+var global = {}
+global.settings = {
+
+transfer: score
+
+}
+
+
+
+  location = 'endscreen.html'
+
+}
 
 
 
@@ -3563,7 +3616,10 @@ document.getElementById('arrow1').style.top = parseInt(document.getElementById('
      document.getElementById('arrow23').style.visibility = 'visible'
      document.getElementById('arrow33').style.visibility = 'visible'
      document.getElementById('arrow43').style.visibility = 'visible'
-
+     document.getElementById('arrow14').style.visibility = 'visible'
+     document.getElementById('arrow24').style.visibility = 'visible'
+     document.getElementById('arrow34').style.visibility = 'visible'
+     document.getElementById('arrow44').style.visibility = 'visible'
 
 
 
@@ -3595,7 +3651,7 @@ document.getElementById('arrow1').style.top = parseInt(document.getElementById('
 
 }">
 
-<label id="minutes">00</label>:<label id="seconds">00</label>
+<label id="minutes"style="color:crimson; font-size: 150%">00</label>:<label id="seconds"style="color:crimson; font-size: 150%">00</label>
 <br><div id="div" style="color:violet; font-size:500%; position:absolute; left:800px; top:100px">
   <b>000</b>
 </div>
@@ -3629,6 +3685,10 @@ document.getElementById('arrow1').style.top = parseInt(document.getElementById('
 <img id="arrow23" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="width:75px; height:75px;position:absolute; left:45px; top:700px; visibility: hidden;">
 <img id="arrow33" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(180deg);width:75px; height:75px;position:absolute; left:300px; top:700px; visibility: hidden">
 <img id="arrow43" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(270deg);width:75px; height:75px; position:absolute; left:130px; top:700px; visibility: hidden">
+<img id="arrow14" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(90deg);width:75px; height:75px;position:absolute; left:205px; top:700px; visibility: hidden">
+<img id="arrow24" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="width:75px; height:75px;position:absolute; left:45px; top:700px; visibility: hidden;">
+<img id="arrow34" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(180deg);width:75px; height:75px;position:absolute; left:300px; top:700px; visibility: hidden">
+<img id="arrow44" src="https://www.freeiconspng.com/uploads/simple-left-arrow-icon-22.png" style="transform:rotate(270deg);width:75px; height:75px; position:absolute; left:130px; top:700px; visibility: hidden">
 
 
 
